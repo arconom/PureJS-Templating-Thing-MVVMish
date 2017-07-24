@@ -1,0 +1,27 @@
+{
+    "version": "0.1"
+    ,"name": "PureJs DivTable Template"
+    ,"description": "Builds a UI using divs and Bootstrap that allows the Insert, Update, and Delete of items"
+    ,"launch_path": "/default.html"
+    
+    ,"icons": 
+    {
+        "128": ""
+    }
+    
+    ,"developer": 
+    {
+      "name": "Arconom"
+      ,"url": ""
+    }
+  
+    ,"permissions": 
+        [
+            "desktop-notification": 
+            {
+                "description": "Needed for creating system notifications."
+            }
+            ,  "..."
+            ,"fileSystem"
+        ]
+}

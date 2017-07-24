@@ -1,0 +1,27 @@
+//{
+//    "options":
+//    {
+//        "browser": true,
+//        "for": false,
+//        "fudge": true,
+//        "multivar": false,
+//        "node": true,
+//        "predef":
+//        {
+//            "jQuery": false,
+//            "$": false
+//        },
+//        "this": true,
+//        "unparam": true
+//        "white": true
+//    },
+//    "ignore":
+//    [
+//        "\\libraries\\",
+//        "app-min.js"
+//    ],
+//    "output": "Warning",
+//    "runOnSave": true,
+//    "runOnBuild": true,
+//    "cancelBuild": true
+//}

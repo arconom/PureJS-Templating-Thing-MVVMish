@@ -1,0 +1,422 @@
+﻿*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #e0e0e0;
+    margin: 1%;
+}
+
+input
+{
+    z-index: 2;
+}
+
+    /*input[type=file]
+    {
+        height: 3.01em;
+    }*/
+    /*input[type=text], label, textarea
+    {
+        text-align: left;
+        font-size: large;
+    }*/
+
+    /*label
+{
+    overflow: hidden;
+    overflow-y: hidden;
+}*/
+
+    /*textarea
+{
+    width: auto;
+    height: 8em;
+    border: thin;
+    -webkit-box-shadow: 1px 1px 1px 1px;
+    -moz-box-shadow: 1px 1px 1px 1px;
+    box-shadow: 1px 1px 1px 1px;
+    overflow: scroll;
+    display: block;
+}*/
+
+
+    input[placeholder]
+    {
+        color: #999;
+    }
+
+    input[type=submit], input[type=file]
+    {
+        font-size: x-large;
+        text-align: center;
+    }
+
+.col-xs-1 > *
+{
+    width: 100%;
+}
+
+.col-xs-1
+{
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    overflow: hidden;
+}
+
+.nopad
+{
+    padding: 0;
+}
+
+.smallPad
+{
+    padding: 1px;
+}
+
+.medPad
+{
+    padding: 4px;
+}
+
+.largePad
+{
+    padding: .3em;
+}
+
+.borderThin
+{
+    border: 1px solid black;
+}
+
+.dataSourceDiv
+{
+    /*border: 1px solid black;*/
+    width: 30%;
+    margin: 8px;
+}
+
+.comboBoxDiv
+{
+    display: block;
+    /*width: 100%;*/
+    height: 2em;
+}
+
+.comboBoxInput
+{
+    position: absolute;
+    z-index: 2;
+    /*border:none;*/
+    width: calc(100% - 1.2em);
+    height: 1.5em;
+}
+
+.comboBoxSelect
+{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 1.5em;
+}
+
+.relative
+{
+    position: relative;
+}
+
+.json > textarea
+{
+    width: 100%;
+}
+
+.lrpadsmall
+{
+    padding-left: 0;
+    padding-right: .1em;
+}
+
+.tbpadsmall
+{
+    padding-top: .1em;
+}
+
+.countSelected
+{
+    word-wrap: break-word;
+    /*white-space:pre;*/
+    width: 1.5em;
+}
+
+.destroy, .delete
+{
+    background-color: #8B0000;
+    color: #FFF;
+    border: thin;
+}
+
+/*.asdf
+{
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}*/
+
+.divList
+{
+    border-collapse: collapse;
+    overflow: hidden;
+    position: fixed;
+    table-layout: fixed;
+    /*width: calc(100%-6em);*/
+    /*width: auto;*/
+    /*margin: 0;*/
+}
+
+.divListHeader
+{
+    font-size: large;
+    font-weight: 300;
+    background-color: #404040;
+}
+
+    .divListHeader .header, .divListHeader .countSelected
+    {
+        color: #fff;
+    }
+
+/*.divListHeader > div > label
+    {
+        display: inline-block;
+    }*/
+
+.divListBody
+{
+    height: auto;
+    overflow-y: auto;
+    width: auto;
+    font-size: large;
+}
+
+    .divListBody div[data-id]:nth-child(even)
+    {
+        background: lightgray;
+    }
+
+    .divListBody div[data-id]:nth-child(odd)
+    {
+        background: #FFF;
+    }
+
+    .divListBody > div > label:hover
+    {
+        overflow: visible;
+        white-space: pre;
+    }
+
+.filter
+{
+    /*margin: 0  !important;
+    margin-left: 10px !important;*/
+    font-size: large;
+}
+
+.filterRow
+{
+    vertical-align: middle;
+}
+
+.help
+{
+    white-space: pre;
+    word-wrap: break-word;
+}
+
+.left
+{
+    float: left;
+}
+
+.multiline
+{
+    text-overflow: ellipsis;
+}
+
+.right
+{
+    float: right;
+}
+
+.row
+{
+    margin-left: -15px;
+}
+
+.SaveLoad, .Parser
+{
+    height: 10%;
+    /*margin: 15px;*/
+}
+
+    .SaveLoad > input[type=text]
+    {
+        width: 20vw;
+    }
+
+    .SaveLoad > input, .Parser > input
+    {
+        /*height: 5vh;*/
+    }
+
+.sorted
+{
+    font-size: xx-large;
+}
+
+.square
+{
+    height: 5vh !important;
+    width: 5vh !important;
+    line-height: 5vh !important;
+}
+
+input[type=checkbox], .toggleDiv, .countDiv
+{
+    height: 5vh !important;
+    width: 5vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*.toggleDiv, .countDiv
+{
+    width: 2%;
+    margin: 0;
+}*/
+
+steve
+{
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    padding: 10px;
+}
+
+
+.height5
+{
+    height: 5vh;
+}
+
+.height10
+{
+    height: 10vh;
+}
+
+
+/*adjusting column widths stop fit thead container*/
+
+.col1
+{
+    width: 92%;
+}
+
+.col2
+{
+    width: calc(92% / 2);
+}
+
+.col3
+{
+    width: calc(92% / 3);
+}
+
+.col4
+{
+    width: calc(92% / 4);
+}
+
+.col5
+{
+    width: calc(92% / 5);
+}
+
+.col6
+{
+    width: calc(92% / 6);
+}
+
+.col7
+{
+    width: calc(92% / 7);
+}
+
+.col8
+{
+    width: calc(92% / 8);
+}
+
+.col9
+{
+    width: calc(92% / 9);
+}
+
+.col10
+{
+    width: calc(92% / 10);
+}
+
+.col11
+{
+    width: calc(92% / 11);
+}
+
+.col12
+{
+    width: calc(92% / 12);
+}
+
+.col13
+{
+    width: calc(92% / 13);
+}
+
+.col14
+{
+    width: calc(92% / 14);
+}
+
+.col15
+{
+    width: calc(92% / 15);
+}
+
+.col16
+{
+    width: calc(92% / 16);
+}
+
+.col17
+{
+    width: calc(92% / 17);
+}
+
+.col18
+{
+    width: calc(92% / 18);
+}
+
+.col19
+{
+    width: calc(92% / 19);
+}
+
+.col20
+{
+    width: calc(92% / 20);
+}
