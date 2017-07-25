@@ -135,6 +135,52 @@ var Helper =
         };
     },
 
+    events: {
+        // addEventListener wrapper:,
+        $on: function (target, type, callback, useCapture)
+        {
+            console.log("Helper.&on");
+            if (target !== null)
+            {
+                // if the browser is old
+                if (!target.addEventListener)
+                {
+                    target.attachEvent(type, callback);
+                }
+                else
+                {
+                    target.addEventListener(type, callback, !!useCapture);
+                }
+            }
+        },
+
+        // Attach a handler to event for all elements that match the selector,
+        // now or in the future, based on a root element
+        $delegate: function (target, selector, type, handler)
+        {
+            console.log("Helper.&delegate");
+            var that = this;
+
+            function dispatchEvent(event)
+            {
+                var targetElement = event.target;
+                var potentialElements = that.qsa(selector, target);
+                var hasMatch = Array.prototype.indexOf.call(potentialElements, targetElement) >= 0;
+
+                if (hasMatch)
+                {
+                    handler.call(targetElement, event);
+                }
+            }
+
+            // https://developer.mozilla.org/en-US/docs/Web/Events/blur
+            var useCapture = type === 'blur' || type === 'focus';
+
+            this.$on(target, type, dispatchEvent, useCapture);
+            //window.$on(target, type, dispatchEvent, useCapture);
+        },
+    },
+
     /**
     * Filters items based on the given query
     * @param {object} query is an object with the desired key/value
@@ -402,7 +448,21 @@ var Helper =
 
             sender.style.width = sender.style.width > width ?
                 width : sender.style.width;
-        }
+        },
+
+        qs: function (selector, scope)
+        {
+            console.log("Helper.qs");
+            var temp = scope || document;
+            return temp.querySelector(selector);
+        },
+
+        qsa: function (selector, scope)
+        {
+            console.log("Helper.qsa");
+            var temp = scope || document;
+            return temp.querySelectorAll(selector);
+        },
     },
 
     /**
@@ -418,6 +478,25 @@ var Helper =
         {
             return destination.indexOf(item) < 0;
         }));
+    },
+
+    math: {
+        /*
+        I try to parse an argument through math.js
+        I return a parsed string
+        */
+        // todo this should probably move into a controller
+        doMath: function (thing)
+        {
+            try
+            {
+                return math.eval(thing);
+            }
+            catch (e)
+            {
+                return thing;
+            }
+        },
     },
 
     /**
@@ -442,6 +521,21 @@ var Helper =
         {
             return;
         }
+    },
+
+    mvc: {
+        getModelPrefix: function (guid)
+        {
+            return "Model." + guid + ".";
+        },
+        getControllerPrefix: function (guid)
+        {
+            return "Controller." + guid + ".";
+        },
+        getViewPrefix: function (guid)
+        {
+            return "View." + guid + ".";
+        },
     },
 
     regex: {
