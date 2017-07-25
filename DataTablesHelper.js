@@ -27,7 +27,7 @@ var DataTablesHelper = {
             e.stopPropagation();
         };
 
-        return Helper.dataTables.addFilter(column, markup, changeEvent, function () { }, clickEvent);
+        return DataTablesHelper.addFilter(column, markup, changeEvent, function () { }, clickEvent);
     },
 
     /**
@@ -38,15 +38,15 @@ var DataTablesHelper = {
     addDateRangeFilter: function (column)
     {
         console.log("AddDateRangeFilter", column);
-        var beginDate = '<input type="text" class="datepicker" data-key="beginDate" placeholder="Start Date"/>';
-        var endDate = '<input type="text" class="datepicker" data-key="endDate" placeholder="End Date"/>';
+        var beginDate = '<input type="text" class="datepicker" data-key="beginDate" placeholder="Start Date mm/dd/yyyy"/>';
+        var endDate = '<input type="text" class="datepicker" data-key="endDate" placeholder="End Date mm/dd/yyyy"/>';
         var markup = beginDate + endDate;
 
         //don't want to push a bunch of the same function into the dataTables prototype,
         //so we gate it with a switch
-        if (!Helper.dataTables.dateRangeFiltering)
+        if (!DataTablesHelper.dateRangeFiltering)
         {
-            Helper.dataTables.setupDateRangeFiltering();
+            DataTablesHelper.setupDateRangeFiltering();
         }
 
         var changeEvent = function ()
@@ -66,7 +66,38 @@ var DataTablesHelper = {
             e.stopPropagation();
         };
 
-        return Helper.dataTables.addFilter(column, markup, changeEvent, function () { }, clickEvent);
+        return DataTablesHelper.addFilter(column, markup, changeEvent, function () { }, clickEvent);
+    },
+
+    /**
+    * adds two text fields to a column header in a DataTable and then returns a reference to them
+    * @param {string} column identifies the column in which to create the text fields
+    * @returns {object} a text field
+    */
+    addNumberRangeFilter: function (column)
+    {
+        console.log("addNumberRangeFilter", column);
+        var minValue = '<input type="text" class="minRange" data-key="minValue" placeholder="Type to filter.  Press enter to query."/>';
+        var maxValue = '<input type="text" class="maxRange" data-key="maxValue" placeholder="Type to filter.  Press enter to query."/>';
+        var markup = minValue + maxValue;
+
+        //don't want to push a bunch of the same function into the dataTables prototype,
+        //so we gate it with a switch
+        if (!DataTablesHelper.numberRangeFiltering)
+        {
+            DataTablesHelper.setupNumberRangeFiltering();
+        }
+
+        var changeEvent = function ()
+        {
+            column.draw();
+        }
+        var clickEvent = function (e)
+        {
+            e.stopPropagation();
+        };
+
+        return DataTablesHelper.addFilter(column, markup, changeEvent, function () { }, clickEvent);
     },
 
     /**
@@ -94,7 +125,7 @@ var DataTablesHelper = {
             e.stopPropagation();
         };
 
-        return Helper.dataTables.addFilter(column, markup, changeEvent, keyupEvent, clickEvent);
+        return DataTablesHelper.addFilter(column, markup, changeEvent, keyupEvent, clickEvent);
     },
 
     /**
@@ -121,7 +152,7 @@ var DataTablesHelper = {
             e.stopPropagation();
         };
 
-        return Helper.dataTables.addFilter(column, markup, function () { }, keyupEvent, clickEvent);
+        return DataTablesHelper.addFilter(column, markup, function () { }, keyupEvent, clickEvent);
     },
 
     /**
@@ -169,6 +200,7 @@ var DataTablesHelper = {
     },
 
     dateRangeFiltering: false,
+    numberRangeFiltering: false,
 
     /**
     * Queries a given object array for objects with [filter] matching query
@@ -316,16 +348,18 @@ var DataTablesHelper = {
             scrollCollapse: true,
             paging: false,
 
+            //im not sure why the extra s needs to be there.  the documentation wasn't clear
             //scrollY: 'calc(50vh - 3em)',
             "sScrollY": "calc(50vh - 3em)",
             //"fnDrawCallback": adjust(selector)
             initComplete: function ()
             {
                 //I use the columns data to determine what kind of controls to use for filtering
-                var textIndexes = Helper.dataTables.getColumnIndex("text", columns);
-                var dropdownIndexes = Helper.dataTables.getColumnIndex("dropdown", columns);
-                var datePickerIndexes = Helper.dataTables.getColumnIndex("datePicker", columns);
-                var dateRangeIndexes = Helper.dataTables.getColumnIndex("dateRange", columns);
+                var textIndexes = DataTablesHelper.getColumnIndex("text", columns);
+                var dropdownIndexes = DataTablesHelper.getColumnIndex("dropdown", columns);
+                var datePickerIndexes = DataTablesHelper.getColumnIndex("datePicker", columns);
+                var dateRangeIndexes = DataTablesHelper.getColumnIndex("dateRange", columns);
+                var numberRangeIndexes = DataTablesHelper.getColumnIndex("numberRange", columns);
 
                 this.api().columns().every(function ()
                 {
@@ -334,12 +368,12 @@ var DataTablesHelper = {
 
                     if (textIndexes.indexOf(column[0][0]) !== -1)
                     {
-                        Helper.dataTables.addTextFilter(title, column);
+                        DataTablesHelper.addTextFilter(title, column);
                     }
 
                     if (dropdownIndexes.indexOf(column[0][0]) !== -1)
                     {
-                        var select = Helper.dataTables.addSelectFilter(column);
+                        var select = DataTablesHelper.addSelectFilter(column);
 
                         column.data().unique().sort().each(function (d, j)
                         {
@@ -349,16 +383,52 @@ var DataTablesHelper = {
 
                     if (datePickerIndexes.indexOf(column[0][0]) !== -1)
                     {
-                        Helper.dataTables.addDatePickerFilter(column);
+                        DataTablesHelper.addDatePickerFilter(column);
                     }
 
                     if (dateRangeIndexes.indexOf(column[0][0]) !== -1)
                     {
-                        Helper.dataTables.addDateRangeFilter(column);
+                        DataTablesHelper.addDateRangeFilter(column);
+                    }
+
+                    if (numberRangeIndexes.indexOf(column[0][0]) !== -1)
+                    {
+                        DataTablesHelper.addNumberRangeFilter(column);
                     }
                 });
             }
         });
+    },
+
+    /*
+    * Sets up a filtering event that occurs each time the DataTable is drawn
+    */
+    setupNumberRangeFiltering: function ()
+    {
+        $.fn.dataTableExt.afnFiltering.push(
+            function (oSettings, aData, iDataIndex)
+            {
+                var returnMe = true;
+
+                oSettings.aoColumns.forEach(function (column)
+                {
+                    if (column.filter === "numberRange")
+                    {
+                        var minValue = $(column.nTh).parent().find('[data-key="minValue"]').val() || "";
+                        var maxValue = $(column.nTh).parent().find('[data-key="maxValue"]').val() || "";
+                        var currentValue = aData[column.idx].toString()
+
+                        if (!Helper.sorting.between(minValue, maxValue, currentValue))
+                        {
+                            returnMe = false;
+                        }
+                    }
+                });
+
+                return returnMe;
+            });
+
+        DataTablesHelper.numberRangeFiltering = true;
     },
 
     /**
@@ -391,6 +461,8 @@ var DataTablesHelper = {
 
                         //formatter yyyymmdd
                         var temp = aData[column.idx].toString()
+                            //just for testing
+                            //.trim()
                             //truncate the time
                             .split(" ")[0]
                             .split("T")[0]
@@ -426,6 +498,6 @@ var DataTablesHelper = {
                 return returnMe;
             }
         );
-        Helper.dataTables.dateRangeFiltering = true;
+        DataTablesHelper.dateRangeFiltering = true;
     }
-}
+};
