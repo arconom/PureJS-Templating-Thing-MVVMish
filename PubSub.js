@@ -8,7 +8,7 @@ var PubSub = (function ()
     eventName is the event whose callbacks we want to run
     data is whatever object will be sent into the callback for processing
     */
-    that.PublishAsync = function (eventName, data)
+    that.publishAsync = function (eventName, data)
     {
         var context, intervalId, idx = 0;
         if (queue[eventName])
@@ -31,19 +31,35 @@ var PubSub = (function ()
         }
     };
 
-    that.Publish = function (/* String */eventName, /* Array? */data)
+    that.publish = function (/* String */eventName, /* Array? */data)
     {
-        try
+        var context, intervalId, idx = 0;
+
+        if (queue[eventName])
         {
-            d.each(cache[eventName], function ()
+            if (queue[eventName][idx])
             {
-                this.apply(d, data || []);
-            });
-        } catch (err)
-        {
-            // handle this error
-            console.log(err);
+                context = queue[eventName][idx].context || this;
+                queue[eventName][idx].callback.call(context, data);
+                idx += 1;
+            }
+            else
+            {
+                clearInterval(intervalId);
+            }
         }
+
+        //try
+        //{
+        //    d.each(cache[eventName], function ()
+        //    {
+        //        this.apply(d, data || []);
+        //    });
+        //} catch (err)
+        //{
+        //    // handle this error
+        //    console.log(err);
+        //}
     };
 
     /*
@@ -52,7 +68,7 @@ var PubSub = (function ()
     callback is a function to call when the event is published
     context is the context that executes the callback
     */
-    that.Subscribe = function (eventName, callback, context)
+    that.subscribe = function (eventName, callback, context)
     {
         if (!queue[eventName])
         {
@@ -67,11 +83,11 @@ var PubSub = (function ()
     callback is the callback to remove from the subscription
     context is the context to remove from the subscription
     */
-    that.Unsubscribe = function (eventName, callback, context)
+    that.unsubscribe = function (eventName, callback, context)
     {
         if (queue[eventName])
         {
-            for ( i = 0; i 
+            for (i = 0; i
 
 < queue[eventName].length; i++)
             {
