@@ -480,6 +480,26 @@ var Helper =
         }));
     },
 
+    json: {
+        /**
+         * determines whether or not the data is in a parseable format
+         * and returns a parsed object if possible
+         *
+         * @param {string} data is JSON or an object
+         * @returns {object} parsed data
+         */
+        tryParse: function (data)
+        {
+            if (typeof (data) === "string")
+            {
+                return JSON.parse(data);
+            } else
+            {
+                return data;
+            }
+        }
+    },
+
     math: {
         /*
         I try to parse an argument through math.js
