@@ -234,6 +234,8 @@ var DataTablesHelper = {
     loadFromAjax: function (selector, dataSource, columns)
     {
         console.log("loadFromAjax", selector, dataSource, columns);
+        throw "loadFromAjax is not implemented";
+
         //$(selector).DataTable({
         //
         //    "ajax": function (data, callback, settings) {
@@ -267,6 +269,8 @@ var DataTablesHelper = {
     loadFromArray: function (selector, dataSource, columns)
     {
         console.log("loadFromArray", selector, dataSource, columns);
+        throw "loadFromArray is not implemented";
+
         //$(selector).DataTable({
         //    data: datasource,
         //    "columns": columns,
@@ -277,46 +281,6 @@ var DataTablesHelper = {
     @param {string} selector - targets the table
     @param {array<object>} dataSource - is an array of objects that have properties that map to the columns parameter
     @param {array<string>} columns - determines which properties from the dataSource to load into columns
-
-    The following function is an example of the columns for a table.
-
-    the value of "data" corresponds to an object key
-    the value of "title" determines the column header
-    the render function should return some markup to render the value of "data"
-    filter is a string which indicates what kind of control to render in the column header for filtering
-
-    function getColumns()
-    {
-        return [{
-            "data": "id",
-            "title": "RFQ ID",
-            render: function (data, type, row)
-            {
-                return "<a href=\"" + "viewrfq.aspx?rfqid=" + row.id + "\" class=\"link\">" + row.id + "</a>";
-            },
-            "filter": "text"
-        }, {
-            "data": "name",
-            "title": "Name",
-            "filter": "text"
-        }, {
-            "data": "status.name",
-            //render: function (data, type, row) {
-            //    return "<td><span data-id=\"" + row.status.id + "\">" + row.status.name + "</span></td>";
-            //},
-            "title": "Status",
-            "filter": "dropdown"
-        }, {
-            "data": "customer",
-            "title": "Customer",
-            render: $.fn.dataTable.render.text(),
-            "filter": "text"
-        }, {
-            "data": "dateCreated",
-            "title": "Date Created",
-            "filter": "dateRange"
-        }];
-    }
 
     @param {function} dataSrcCallback - runs for every row
     example
@@ -335,7 +299,7 @@ var DataTablesHelper = {
             return '<a href="' + data + '">Download</a>';
         }
     */
-    loadFromObjectArray: function (selector, dataSource, columns, dataSrcCallback, renderCallback)
+    loadFromObjectArray: function (selector, dataSource, columns, dataSrcCallback, renderCallback, columnReorderEnabled, pagingEnabled)
     {
         console.log("loadFromObjectArray", selector, dataSource, columns, dataSrcCallback, renderCallback);
         return $(selector).DataTable({
@@ -343,10 +307,11 @@ var DataTablesHelper = {
             //"" makes this point to the root of the object rather than the data property
             "dataSrc": "",//dataSrcCallback === undefined ? "" : dataSrcCallback,
             "columns": columns,
+            "colReorder": columnReorderEnabled,
             //"render": renderCallback === undefined ? null : renderCallback
             //for some reason this causes column alignment issues
             scrollCollapse: true,
-            paging: false,
+            paging: pagingEnabled,
 
             //im not sure why the extra s needs to be there.  the documentation wasn't clear
             //scrollY: 'calc(50vh - 3em)',
@@ -414,9 +379,12 @@ var DataTablesHelper = {
                 {
                     if (column.filter === "numberRange")
                     {
-                        var minValue = $(column.nTh).parent().find('[data-key="minValue"]').val() || "";
-                        var maxValue = $(column.nTh).parent().find('[data-key="maxValue"]').val() || "";
-                        var currentValue = aData[column.idx].toString()
+                        var minValue = parseFloat($(column.nTh).find('[data-key="minValue"]').val()) || "";
+                        var maxValue = parseFloat($(column.nTh).find('[data-key="maxValue"]').val()) || "";
+                        var currentValue = parseFloat(aData[column.idx]);
+                        debugger;
+
+                        //returnMe = Helper.sorting.between(minValue, maxValue, currentValue);
 
                         if (!Helper.sorting.between(minValue, maxValue, currentValue))
                         {
@@ -453,16 +421,14 @@ var DataTablesHelper = {
                     {
                         //need to find the input fields for the dates.
                         //they are in the header, so nTh should point there
-                        var beginDateValue = $(column.nTh).parent().find('[data-key="beginDate"]').val() || "";
-                        var endDateValue = $(column.nTh).parent().find('[data-key="endDate"]').val() || "";
+                        var beginDateValue = $(column.nTh).find('[data-key="beginDate"]').val() || "";
+                        var endDateValue = $(column.nTh).find('[data-key="endDate"]').val() || "";
 
                         beginDateValue = beginDateValue.substring(6, 10) + beginDateValue.substring(0, 2) + beginDateValue.substring(3, 5);
                         endDateValue = endDateValue.substring(6, 10) + endDateValue.substring(0, 2) + endDateValue.substring(3, 5);
 
                         //formatter yyyymmdd
                         var temp = aData[column.idx].toString()
-                            //just for testing
-                            //.trim()
                             //truncate the time
                             .split(" ")[0]
                             .split("T")[0]
@@ -499,5 +465,224 @@ var DataTablesHelper = {
             }
         );
         DataTablesHelper.dateRangeFiltering = true;
+    },
+
+    /*
+    This sets up the rendering and the subscriptions for a basic data table.
+
+    @param {function} renderCallback - runs at render time
+
+    @param {string} targetSelector - references the html element to contain the data table
+    @param {string} queryUrl - contains a reference to a controller that will return data
+    @param {function} queryCallback - will execute on a successful query
+    @param {array(object)} columns - is used to configure the data table
+
+        [
+            {
+                // the value of "data" corresponds to an object key
+                "data": "cell0",
+
+                // the value of "title" determines the column header
+                "title": "Pri",
+
+                // the render function should return some markup to render the value of "data"
+                render: $.fn.dataTable.render.text() ||
+                render: function (data, type, row)
+                {
+                    return "<a href=\"" + encodeURI("ipeWorkloadStatusDisplay.asp?wonum=" + data) + "\" class=\"link\">" + data + "</a>";
+                },
+
+                // filter is a string which indicates what kind of control to render in the column header for filtering
+                "filter": "datePicker" || "dateRange" || "dropdown" || "numberRange" || "text"
+            }
+        ];
+
+    */
+    setupViewModel: function (targetSelector, queryUrl, queryCallback, columns, columnReorderEnabled, pagingEnabled)
+    {
+        var viewModel = {
+            // initial data is set in here. makes viewing in the browser easier.
+            data: (function ()
+            {
+                var _all = [];
+
+                return {
+                    get: function ()
+                    {
+                        return _all;
+                    },
+                    set: function (value)
+                    {
+                        console.log("data.set", value);
+                        _all = value;
+                        PubSub.publish("data.change", this);
+                    },
+                    add: function (value)
+                    {
+                        _all.push(value);
+                        PubSub.publish("data.change", this);
+                    },
+                    /**
+                     * accessor
+                     * @returns {array}
+                     */
+                    get subset()
+                    {
+                        return _all.filter(function (x)
+                        {
+                            // a predicate goes here
+                            return false;
+                        })
+                    },
+                    /**
+                     * make an ajax request for the data at the given url
+                     *
+                     * @param {} url
+                     * @param {} successCallback
+                     * @param {} data
+                     *
+                     * @returns {array}
+                     */
+                    search: function (url, data, successCallback)
+                    {
+                        console.log("search", callback, data);
+                        queryCallback(url, data, successCallback);
+                    },
+                    /**
+                     * Generate test data
+                     * @returns {object} with all keys containing randomly generated values
+                     */
+                    generateRow: function ()
+                    {
+                        console.log("generateRow");
+
+                        var returnMe = {};
+
+                        columns.forEach(function (columns)
+                        {
+                            returnMe[column.data] = Helper.generateGuid();
+                        });
+
+                        return returnMe;
+                    },
+                };
+            })(),
+            // ui level data goes here. and functions too.
+            ui:
+            {
+                //selectors: { tableSelector: "#jqdt" },
+                //references to DataTables, needed for redrawing
+                table: null,
+
+                /**
+                 * Sets up subscriptions
+                 */
+                bind: function ()
+                {
+                    PubSub.subscribe("data.change", this.redraw, this);
+                },
+                events: {},
+                /**
+                 * Hides the tabs that contain the tables
+                 */
+                hide: function ()
+                {
+                    $(targetSelector).hide();
+                },
+                /**
+                * redraws a dataTable, saving the current scroll position and maintaining focus
+                */
+                redraw: function ()
+                {
+                    console.log("ui.redraw");
+                    redrawTable(viewModel.data.get(), this.table, targetSelector);
+
+                    /*
+                    * @param {array} data is an array with each index representing a row of data
+                    * @param {object} table is a jQuery DataTable to be redrawn
+                    * @param {string} selector identifies the html table that corresponds to the jQuery DataTable
+                    */
+                    function redrawTable(data, table, selector)
+                    {
+                        if (table)
+                        {
+                            var scroll = $(selector).parent().scrollTop();
+                            table.clear().rows.add(data).draw(false);
+                            $(selector).focus();
+                            $(selector).parent().scrollTop(scroll).focus();
+                        }
+                    }
+                },
+                /**
+                 * Sets up the DataTable and populates it with data
+                 * @param {object} viewModel.data.rfqs
+                 */
+                render: function (data)
+                {
+                    console.log("ui.render");
+                    var that = this;
+
+                    this.show();
+                    load(viewModel.data.get());
+
+                    function load(data)
+                    {
+                        console.log("ui.load", data);
+
+                        if (data.length > 0)
+                        {
+                            that.table = DataTablesHelper.loadFromObjectArray(targetSelector, data, columns, function () { }, function () { }, columnReorderEnabled, pagingEnabled);
+                        }
+
+                        Helper.setupInfiniteScroll(targetSelector, 200, -400, function ()
+                        {
+                            //query for more data
+                            //data.add(data.generate());
+                        });
+                    }
+                },
+                /**
+                 * Displays the tab and the tables it contains
+                 */
+                show: function ()
+                {
+                    console.log("ui.show");
+                    $(targetSelector).show().height("auto").addClass("display");
+                }
+            },
+            /**
+            * Sets up bindings,
+            * Gets data,
+            * Renders table
+            */
+            init: function ()
+            {
+                console.log("vm.init");
+                var promises = [];
+                var printMe = "";
+                var self = this;
+
+                self.ui.bind();
+
+                //put all the promises from the ajax into an array for processing
+                promises.push(getList(function (w)
+                {
+                    self.data.set(Helper.json.tryParse(w));
+                }));
+
+                //process the promises
+                $.when.apply($, promises).then(function ()
+                {
+                    // returned data is in arguments[0][0], arguments[1][0], ... arguments[9][0]
+                    // setup the tables
+                    self.ui.render(self.data);
+                }, function ()
+                {
+                    console.log("Error during rendering");
+                });
+            }
+        };
+        viewModel.init();
+        return viewModel;
     }
 };
