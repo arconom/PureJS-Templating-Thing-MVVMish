@@ -21,7 +21,7 @@ var DataTablesHelper = {
             column
                 .search(val ? "^" + val + "$" : "", true, false)
                 .draw();
-        }
+        };
         var clickEvent = function (e)
         {
             e.stopPropagation();
@@ -60,7 +60,7 @@ var DataTablesHelper = {
             column
             //    .search($.fn.dataTable.util.escapeRegex(Helper.GetDateRangeRegex(beginDateValue, endDateValue)), true, false)
                 .draw();
-        }
+        };
         var clickEvent = function (e)
         {
             e.stopPropagation();
@@ -91,7 +91,7 @@ var DataTablesHelper = {
         var changeEvent = function ()
         {
             column.draw();
-        }
+        };
         var clickEvent = function (e)
         {
             e.stopPropagation();
@@ -119,7 +119,7 @@ var DataTablesHelper = {
             column
                 .search(val ? "^" + val + "$" : "", true, false)
                 .draw();
-        }
+        };
         var clickEvent = function (e)
         {
             e.stopPropagation();
@@ -211,7 +211,7 @@ var DataTablesHelper = {
     getColumnIndex: function (query, columns)
     {
         console.log("GetColumnIndex(query, columns)", query, columns);
-        var matches = columns.filter(function (x) { return x.filter === query });
+        var matches = columns.filter(function (x) { return x.filter === query; });
         var returnMe = [];
 
         matches.forEach(function (x)
@@ -299,7 +299,7 @@ var DataTablesHelper = {
             return '<a href="' + data + '">Download</a>';
         }
     */
-    loadFromObjectArray: function (selector, dataSource, columns, dataSrcCallback, renderCallback, columnReorderEnabled, pagingEnabled)
+    loadFromObjectArray: function (selector, dataSource, columns, dataSrcCallback, renderCallback, columnReorderEnabled, pagingEnabled, height)
     {
         console.log("loadFromObjectArray", selector, dataSource, columns, dataSrcCallback, renderCallback);
         return $(selector).DataTable({
@@ -315,7 +315,7 @@ var DataTablesHelper = {
 
             //im not sure why the extra s needs to be there.  the documentation wasn't clear
             //scrollY: 'calc(50vh - 3em)',
-            "sScrollY": "calc(50vh - 3em)",
+            "sScrollY": height,
             //"fnDrawCallback": adjust(selector)
             initComplete: function ()
             {
@@ -382,9 +382,7 @@ var DataTablesHelper = {
                         var minValue = parseFloat($(column.nTh).find('[data-key="minValue"]').val()) || "";
                         var maxValue = parseFloat($(column.nTh).find('[data-key="maxValue"]').val()) || "";
                         var currentValue = parseFloat(aData[column.idx]);
-                        debugger;
 
-                        //returnMe = Helper.sorting.between(minValue, maxValue, currentValue);
 
                         if (!Helper.sorting.between(minValue, maxValue, currentValue))
                         {
@@ -403,7 +401,6 @@ var DataTablesHelper = {
     * Sets up a filtering event that occurs each time the DataTable is drawn
     * must be done this way because using the column.search() function requires regex
     * and date range regex is a pain
-    * @returns {bool}
     */
     setupDateRangeFiltering: function ()
     {
@@ -442,7 +439,7 @@ var DataTablesHelper = {
 
                         temp.forEach(function (datePart)
                         {
-                            if ((datePart) && (datePart.length === 1))
+                            if (datePart && datePart.length === 1)
                             {
                                 date.push("0" + datePart);
                             }
@@ -498,7 +495,7 @@ var DataTablesHelper = {
         ];
 
     */
-    setupViewModel: function (targetSelector, queryUrl, queryCallback, columns, columnReorderEnabled, pagingEnabled)
+    setupViewModel: function (targetSelector, queryUrl, queryCallback, columns, columnReorderEnabled, pagingEnabled, height)
     {
         var viewModel = {
             // initial data is set in here. makes viewing in the browser easier.
@@ -615,7 +612,7 @@ var DataTablesHelper = {
                 },
                 /**
                  * Sets up the DataTable and populates it with data
-                 * @param {object} viewModel.data.rfqs
+                 * @param {object} 
                  */
                 render: function (data)
                 {
@@ -631,7 +628,7 @@ var DataTablesHelper = {
 
                         if (data.length > 0)
                         {
-                            that.table = DataTablesHelper.loadFromObjectArray(targetSelector, data, columns, function () { }, function () { }, columnReorderEnabled, pagingEnabled);
+                            that.table = DataTablesHelper.loadFromObjectArray(targetSelector, data, columns, function () { }, function () { }, columnReorderEnabled, pagingEnabled, height);
                         }
 
                         Helper.setupInfiniteScroll(targetSelector, 200, -400, function ()
@@ -684,5 +681,102 @@ var DataTablesHelper = {
         };
         viewModel.init();
         return viewModel;
+    },
+
+    setupCustomControl: function (scopeSelector)
+    {
+        // See https://html.spec.whatwg.org/multipage/indices.html#element-interfaces
+        // for the list of other DOM interfaces.
+        class jQueryDataTable extends HTMLElement
+        {
+            constructor(reference) //templateSelector, width, height, etc
+            {
+                super(); // always call super() first in the ctor.
+
+                //setup shadow DOM
+                let shadowRoot = this.attachShadow({ mode: 'open' });
+                const t = document.querySelector('#jQuery-DataTable-Template');
+                const instance = t.content.cloneNode(true);
+                shadowRoot.appendChild(instance);
+            }
+
+            static get observedAttributes()
+            {
+                return ["width", "height"];
+            }
+
+            connectedCallback()
+            {
+                console.log("connectedCallback");
+                console.log("this", this);
+
+                reference = DataTablesHelper.setupViewModel(targetSelector, queryUrl, queryCallback, columns, "calc(70vh)");
+            }
+            disconnectedCallback()
+            {
+                console.log("disconnectedCallback");
+            }
+            attributeChangedCallback(attrName, oldVal, newVal)
+            {
+                console.log("attributeChangedCallback");
+
+                //height changed
+                if (attrName == "height")
+                {
+                    //adjust the height of the scrollable area
+                    $('div.dataTables_scrollBody').height(newVal);
+                }
+                    //data changed
+                else if (attrName == "data-source")
+                {
+                    //redraw
+                    this.dataset.source = newVal;
+                    //this should trigger the redraw via the pubsub
+                    viewModel.data.set(window[this.dataset.source]);
+                    //viewModel.ui.redraw();
+                }
+            }
+            adoptedCallback()
+            {
+                console.log("adoptedCallback");
+            }
+        }
+
+        customElements.define(DataTablesHelper.getCustomControlName(), jQueryDataTable);
+
+        customElements.whenDefined(DataTablesHelper.getCustomControlName()).then(() =>
+        {
+            console.log("jQuery-DataTable defined");
+            scopeSelector.insertAdjacentHTML("beforeend", getJQueryDataTableTemplate(Helper.generateGuid()));
+        });
+
+    },
+
+    /*
+     * This returns the HTML template for the data table
+     */
+    getJQueryDataTableTemplate: function (id)
+    {
+        console.log("getJQueryDataTableTemplate");
+
+        return "<template id=\"jQuery-DataTable-Template\">"
+        + "<style>"
+        + "p { color: orange; }"
+        + "</style>"
+        + "<p>I'm in Shadow DOM. My markup was stamped from a &lt;template&gt;.</p>"
+        + "<table id=\"" + id + "\"></table>"
+        + "</template>";
+    },
+
+    getCustomControlName: function ()
+    {
+        return "jquery-datatable";
+    },
+
+    getCustomControl: function (viewModel, scopeSelector)
+    {
+        DataTablesHelper.setupCustomControl(scopeSelector);
+        var ctor = customElements.get(DataTablesHelper.getCustomControlName());
+        return new ctor(viewModel);
     }
 };
