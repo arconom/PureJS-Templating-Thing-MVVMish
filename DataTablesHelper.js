@@ -683,13 +683,15 @@ var DataTablesHelper = {
         return viewModel;
     },
 
-    setupCustomControl: function (scopeSelector)
+    setupCustomControl: function (queryUrl, queryCallback, columns, height)
     {
+        document.body.insertAdjacentHTML("beforeend", this.getJQueryDataTableTemplate());
+
         // See https://html.spec.whatwg.org/multipage/indices.html#element-interfaces
         // for the list of other DOM interfaces.
         class jQueryDataTable extends HTMLElement
         {
-            constructor(reference) //templateSelector, width, height, etc
+            constructor() //templateSelector, width, height, etc
             {
                 super(); // always call super() first in the ctor.
 
@@ -698,19 +700,20 @@ var DataTablesHelper = {
                 const t = document.querySelector('#jQuery-DataTable-Template');
                 const instance = t.content.cloneNode(true);
                 shadowRoot.appendChild(instance);
+                return instance;
             }
 
             static get observedAttributes()
             {
-                return ["width", "height"];
+                return ["width", "height", "data-source"];
             }
 
             connectedCallback()
             {
                 console.log("connectedCallback");
                 console.log("this", this);
-
-                reference = DataTablesHelper.setupViewModel(targetSelector, queryUrl, queryCallback, columns, "calc(70vh)");
+                //todo how to expose this properly
+                DataTablesHelper.setupViewModel(this.querySelector("table", queryUrl, queryCallback, columns, "calc(70vh)"));
             }
             disconnectedCallback()
             {
@@ -747,7 +750,6 @@ var DataTablesHelper = {
         customElements.whenDefined(DataTablesHelper.getCustomControlName()).then(() =>
         {
             console.log("jQuery-DataTable defined");
-            scopeSelector.insertAdjacentHTML("beforeend", getJQueryDataTableTemplate(Helper.generateGuid()));
         });
 
     },
@@ -755,7 +757,7 @@ var DataTablesHelper = {
     /*
      * This returns the HTML template for the data table
      */
-    getJQueryDataTableTemplate: function (id)
+    getJQueryDataTableTemplate: function ()
     {
         console.log("getJQueryDataTableTemplate");
 
@@ -764,7 +766,7 @@ var DataTablesHelper = {
         + "p { color: orange; }"
         + "</style>"
         + "<p>I'm in Shadow DOM. My markup was stamped from a &lt;template&gt;.</p>"
-        + "<table id=\"" + id + "\"></table>"
+        + "<table></table>"
         + "</template>";
     },
 
@@ -773,10 +775,13 @@ var DataTablesHelper = {
         return "jquery-datatable";
     },
 
-    getCustomControl: function (viewModel, scopeSelector)
+    /*
+     * Todo consider using a config object rather than a bunch of parameters
+     */
+    getCustomControl: function (queryUrl, queryCallback, columns, height)
     {
-        DataTablesHelper.setupCustomControl(scopeSelector);
+        DataTablesHelper.setupCustomControl(queryUrl, queryCallback, columns, height);
         var ctor = customElements.get(DataTablesHelper.getCustomControlName());
-        return new ctor(viewModel);
+        return new ctor();
     }
 };
