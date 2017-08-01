@@ -393,25 +393,25 @@ function DataTablesHelper()
                     console.log("jQueryDataTable constructor");
                     // always call super() first in the ctor.
                     super();
-
+            
                     //todo probably need to move this into a library and pass in the context to make it reusable
                     //setup shadow DOM
-                    let shadowRoot = this.attachShadow({ mode: "open" });
+                    //let shadowRoot = this.attachShadow({ mode: "open" });
                     this.id = id;
                     const t = document.querySelector("#jQuery-DataTable-Template");
                     const instance = t.content.cloneNode(true);
-                    shadowRoot.appendChild(instance);
+                    //shadowRoot.appendChild(instance);
+                    this.appendChild(instance);
                 }
-
+            
                 static get observedAttributes()
                 {
                     return ["width", "height"];
                 }
-
+            
                 connectedCallback()
                 {
                     console.log("connectedCallback");
-                    console.log("this", this);
                 }
                 disconnectedCallback()
                 {
@@ -420,7 +420,7 @@ function DataTablesHelper()
                 attributeChangedCallback(attrName, oldVal, newVal)
                 {
                     console.log("attributeChangedCallback");
-
+            
                     //height changed
                     if (attrName == "height")
                     {
