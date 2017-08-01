@@ -301,14 +301,33 @@ var Helper =
     generateGuid: function ()
     {
         var template = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";
+        //    var template = "xxxxxxxxxxxxyxxxyxxxxxxxxxxxxxxx";
         var returnMe = template.replace(/[xy]/g, function (c)
         {
             var r = Math.random() * 16 | 0,
-                v = c == "x" ? r : (r & 0x3 | 0x8);
+                v = c == "x" ? r
+                /*
+                 * What we're doing here is bitwise operations :
+                 * 0x3.toString(2) => 11
+                 * 0x8.toString(2) => 1000
+                 * first a and with 11 at the bit level (truncating to only the two last bits, that is doing %4),
+                 * then a or with 1000 (setting one bit, adding 8).
+                 */
+                : (r & 0x3 | 0x8);
             return v.toString(16);
         });
 
         return returnMe;
+    },
+
+    /*
+     * Generates an id for an HTML element based on the guid generator, 
+     * it removes the dashes because the DOM doesn't like them.
+     * @return {string}
+     */
+    generateHTMLElementId: function ()
+    {
+        return "id" + this.generateGuid().split("-").join("");
     },
 
     //from viewrfq.js
@@ -631,18 +650,22 @@ var Helper =
     /**
     * Sets up infinite scrolling on the target,
     * using the callback
-    * @param {string} target is the selector that identifies the div that has scrolling enabled
+    * @param {object} scope is an object or a selector that constrains the find function.  
+    * I added this to deal with shadow DOM.
+    * @param {string} selector identifies the element that has scrolling enabled
     * @param {number} buffer a number of pixels in which the scroll bar can trigger the effect
     * @param {number} offset a number of pixels to use to account for margins
     * @param {function} callback is executed while the scroll position is within the buffer
     */
-    setupInfiniteScroll: function (target, buffer, offset, callback)
+    setupInfiniteScroll: function (scope, selector, buffer, offset, callback)
     {
-        $(target).parent().scroll(
+        if (!scope) { scope = document; }
+
+        $(scope).find(selector).parent().scroll(
             //Helper.debounce(
             function ()
             {
-                if ($(target).parent().scrollTop() >= $(target).height() - 200 + offset)
+                if ($(scope).find(selector).parent().scrollTop() >= $(scope).find(selector).height() - 200 + offset)
                 {
                     callback();
                 }
@@ -788,11 +811,10 @@ var Helper =
 
     webStorage: {
         /*
-        Determine which data store to access based on browser support
-        */
-        /**
+        * Determine which data store to access based on browser support
         *
-        * @param {object} sender
+        * @param {string} key - the index of WebStorage
+        * @param {function(data)} callback - executes logic on the returned data
         */
         getDataFromStore: function (key, callback)
         {
@@ -803,7 +825,6 @@ var Helper =
                 if (!WebStorage.local[key])
                 {
                     WebStorage.local[key] = [];
-                    callback(WebStorage.local[key]);
                 }
                 callback(WebStorage.local[key]);
             }
@@ -814,12 +835,11 @@ var Helper =
         },
 
         /*
-        fold the items in the parameter into the data store
-        data is an object or an array of objects
-        */
-        /**
+        * fold the items in the parameter into the data store
+        * data is an object or an array of objects
         *
-        * @param {object} sender
+        * @param {object} saveMe - the data to save
+        * @param {string} key - the index in WebStorage to save into
         */
         saveDataToStore: function (saveMe, key)
         {
