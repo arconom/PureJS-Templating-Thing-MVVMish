@@ -67,8 +67,8 @@ function DataTablesHelper()
         function addDatePickerFilter(column)
         {
             console.log("AddDatePickerFilter", title, column);
-            var markup = '<input type="text" class="datepicker"/>';
-            var changeEvent = function ()
+            var markup = '<input type="text" class="datepicker"/>',
+            changeEvent = function ()
             {
                 var val = $.fn.dataTable.util.escapeRegex(
                     $(this).val()
@@ -77,8 +77,8 @@ function DataTablesHelper()
                 column
                     .search(val ? "^" + val + "$" : "", true, false)
                     .draw();
-            };
-            var clickEvent = function (e)
+            },
+            clickEvent = function (e)
             {
                 e.stopPropagation();
             };
@@ -94,18 +94,10 @@ function DataTablesHelper()
         function addDateRangeFilter(column)
         {
             console.log("AddDateRangeFilter", column);
-            var beginDate = '<div><label>Min</label><input type="text" class="datepicker" data-key="beginDate" placeholder="Start Date mm/dd/yyyy"/></div>';
-            var endDate = '<div><label>Max</label><input type="text" class="datepicker" data-key="endDate" placeholder="End Date mm/dd/yyyy"/></div>';
-            var markup = beginDate + endDate;
-
-            //don't want to push a bunch of the same function into the dataTables prototype,
-            //so we gate it with a switch
-            if (!dateRangeFiltering)
-            {
-                setupDateRangeFiltering();
-            }
-
-            var changeEvent = function ()
+            var beginDate = '<div><label>Min</label><input type="text" class="datepicker" data-key="beginDate" placeholder="Start Date mm/dd/yyyy"/></div>',
+            endDate = '<div><label>Max</label><input type="text" class="datepicker" data-key="endDate" placeholder="End Date mm/dd/yyyy"/></div>',
+            markup = beginDate + endDate,
+            changeEvent = function ()
             {
                 //var beginDateValue = $(this).parent().children('[data-key="beginDate"]').val();
                 //var endDateValue = $(this).parent().children('[data-key="endDate"]').val();
@@ -116,11 +108,19 @@ function DataTablesHelper()
                 column
                 //    .search($.fn.dataTable.util.escapeRegex(Helper.GetDateRangeRegex(beginDateValue, endDateValue)), true, false)
                     .draw();
-            };
-            var clickEvent = function (e)
+            },
+            clickEvent = function (e)
             {
                 e.stopPropagation();
             };
+
+            //don't want to push a bunch of the same function into the dataTables prototype,
+            //so we gate it with a switch
+            if (!dateRangeFiltering)
+            {
+                setupDateRangeFiltering();
+            }
+
 
             return addFilter(column, markup, changeEvent, function () { }, clickEvent);
         }
@@ -133,9 +133,17 @@ function DataTablesHelper()
         function addNumberRangeFilter(column)
         {
             console.log("addNumberRangeFilter", column);
-            var minValue = '<div><label>Min</label><input type="text" class="minRange" data-key="minValue" placeholder="Type to filter.  Press enter to query."/></div>';
-            var maxValue = '<div><label>Max</label><input type="text" class="maxRange" data-key="maxValue" placeholder="Type to filter.  Press enter to query."/></div>';
-            var markup = minValue + maxValue;
+            var minValue = '<div><label>Min</label><input type="text" class="minRange" data-key="minValue" placeholder="Type to filter.  Press enter to query."/></div>',
+            maxValue = '<div><label>Max</label><input type="text" class="maxRange" data-key="maxValue" placeholder="Type to filter.  Press enter to query."/></div>',
+            markup = minValue + maxValue,
+            changeEvent = function ()
+            {
+                column.draw();
+            },
+            clickEvent = function (e)
+            {
+                e.stopPropagation();
+            };
 
             //don't want to push a bunch of the same function into the dataTables prototype,
             //so we gate it with a switch
@@ -143,15 +151,6 @@ function DataTablesHelper()
             {
                 setupNumberRangeFiltering();
             }
-
-            var changeEvent = function ()
-            {
-                column.draw();
-            };
-            var clickEvent = function (e)
-            {
-                e.stopPropagation();
-            };
 
             return addFilter(column, markup, changeEvent, function () { }, clickEvent);
         }
@@ -161,25 +160,57 @@ function DataTablesHelper()
         * @param {string} column identifies the column in which to create the date pickers
         * @returns {object} a select control
         */
-        function addSelectFilter(column)
+        function addSelectFilter(column, multi)
         {
             console.log("addSelectFilter", column);
-            var markup = '<select><option value=""></option></select>';
-            var keyupEvent = function () { };
-            var changeEvent = function ()
+
+            var multiAttribute = multi ? ' multiple' : '',
+            markup = '<select' + multiAttribute + '><option value=""></option></select>',
+            keyupEvent = function () { },
+            changeEvent = function ()
             {
-                var val = $.fn.dataTable.util.escapeRegex(
-                    $(this).val()
-                );
+                let value = $(this).val();
+
+                console.log("value", value);
+                console.log("$(this)", $(this));
+                console.log("this", this);
+
+                if ((typeof value === "object") && (value.length > 0))
+                {
+                    value = value.join("|")
+                }
+
+                if (typeof value !== "string")
+                {
+                    value = "";
+                }
 
                 column
-                    .search(val ? "^" + val + "$" : "", true, false)
+                    .search(value ? "^" + value + "$" : "", true, false)
                     .draw();
-            };
-            var clickEvent = function (e)
+            },
+            clickEvent = function (e)
             {
                 e.stopPropagation();
             };
+
+            function getSelectedOptions(scope)
+            {
+                var returnMe = [],
+                  opt;
+
+                for (var i = 0; i < scope.options.length; i++)
+                {
+                    opt = scope.options[i];
+
+                    if (opt.selected)
+                    {
+                        opts.push(opt);
+                    }
+                }
+
+                return returnMe;
+            }
 
             return addFilter(column, markup, changeEvent, keyupEvent, clickEvent);
         }
@@ -193,8 +224,8 @@ function DataTablesHelper()
         function addTextFilter(title, column)
         {
             console.log("addTextFilter", title, column);
-            var markup = '<input type="text" placeholder="Type to filter.  Press enter to query. ' + title + '" />';
-            var keyupEvent = function ()
+            var markup = '<input type="text" placeholder="Type to filter.  Press enter to query. ' + title + '" />',
+            keyupEvent = function ()
             {
                 if (column.search() !== this.value)
                 {
@@ -202,8 +233,8 @@ function DataTablesHelper()
                         .search(this.value)
                         .draw();
                 }
-            };
-            var clickEvent = function (e)
+            },
+            clickEvent = function (e)
             {
                 e.stopPropagation();
             };
@@ -264,8 +295,8 @@ function DataTablesHelper()
         function getColumnIndex(query, columns)
         {
             console.log("GetColumnIndex(query, columns)", query, columns);
-            var matches = columns.filter(function (x) { return x.filter === query; });
-            var returnMe = [];
+            var matches = columns.filter(function (x) { return x.filter === query; }),
+            returnMe = [];
 
             matches.forEach(function (x)
             {
@@ -289,9 +320,9 @@ function DataTablesHelper()
                     {
                         if (column.filter === "numberRange")
                         {
-                            var minValue = parseFloat($(column.nTh).find('[data-key="minValue"]').val()) || "";
-                            var maxValue = parseFloat($(column.nTh).find('[data-key="maxValue"]').val()) || "";
-                            var currentValue = parseFloat(aData[column.idx]);
+                            var minValue = parseFloat($(column.nTh).find('[data-key="minValue"]').val()) || "",
+                            maxValue = parseFloat($(column.nTh).find('[data-key="maxValue"]').val()) || "",
+                            currentValue = parseFloat(aData[column.idx]);
 
                             if (!Helper.sorting.between(minValue, maxValue, currentValue))
                             {
@@ -327,24 +358,26 @@ function DataTablesHelper()
                         {
                             //need to find the input fields for the dates.
                             //they are in the header, so nTh should point there
-                            var beginDateValue = $(column.nTh).find('[data-key="beginDate"]').val() || "";
-                            var endDateValue = $(column.nTh).find('[data-key="endDate"]').val() || "";
+                            var beginDateValue = $(column.nTh).find('[data-key="beginDate"]').val() || "",
+                            endDateValue = $(column.nTh).find('[data-key="endDate"]').val() || "",
+                            date = [],
+                            temp,
+                            a;
 
                             beginDateValue = beginDateValue.substring(6, 10) + beginDateValue.substring(0, 2) + beginDateValue.substring(3, 5);
                             endDateValue = endDateValue.substring(6, 10) + endDateValue.substring(0, 2) + endDateValue.substring(3, 5);
 
                             //formatter yyyymmdd
-                            var temp = aData[column.idx].toString()
+                            temp = aData[column.idx].toString()
                                 //truncate the time
                                 .split(" ")[0]
                                 .split("T")[0]
                                 .split("/")
-                                .reverse();
-                            var a = temp[2];
+                                .reverse(),
+                            a = temp[2];
                             temp[2] = temp[1];
                             temp[1] = a;
 
-                            var date = [];
 
                             temp.forEach(function (datePart)
                             {
@@ -372,6 +405,8 @@ function DataTablesHelper()
             );
             dateRangeFiltering = true;
         }
+
+
 
         /*
          * Defines the custom control for jQueryDataTables
@@ -565,14 +600,15 @@ function DataTablesHelper()
                     //I use the columns data to determine what kind of controls to use for filtering
                     var textIndexes = getColumnIndex("text", columns),
                     dropdownIndexes = getColumnIndex("dropdown", columns),
+                    multiSelectIndexes = getColumnIndex("multiSelect", columns),
                     datePickerIndexes = getColumnIndex("datePicker", columns),
                     dateRangeIndexes = getColumnIndex("dateRange", columns),
                     numberRangeIndexes = getColumnIndex("numberRange", columns);
 
                     this.api().columns().every(function ()
                     {
-                        var column = this;
-                        var title = $(this).text();
+                        let column = this,
+                        title = $(this).text();
 
                         if (textIndexes.indexOf(column[0][0]) !== -1)
                         {
@@ -581,7 +617,17 @@ function DataTablesHelper()
 
                         if (dropdownIndexes.indexOf(column[0][0]) !== -1)
                         {
-                            var select = addSelectFilter(column);
+                            let select = addSelectFilter(column, false);
+
+                            column.data().unique().sort().each(function (d, j)
+                            {
+                                select.append('<option data-id="' + j + '" value="' + d + '">' + d + '</option>');
+                            });
+                        }
+
+                        if (multiSelectIndexes.indexOf(column[0][0]) !== -1)
+                        {
+                            let select = addSelectFilter(column, true);
 
                             column.data().unique().sort().each(function (d, j)
                             {
@@ -821,9 +867,9 @@ function DataTablesHelper()
                     init: function ()
                     {
                         console.log("vm.init");
-                        var promises = [];
-                        var printMe = "";
-                        var self = this;
+                        var promises = [],
+                        printMe = "",
+                        self = this;
 
                         self.ui.bind();
 
