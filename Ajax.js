@@ -1,4 +1,4 @@
-function ajax()
+function Ajax()
 {
     var instance;
 
