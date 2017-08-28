@@ -69,7 +69,7 @@ function Ajax()
                     query.push(encodeURIComponent(key) + '=' + encodeURIComponent(data[key]));
                 }
 
-                ajax.send(url + (query.length ? '?' + query.join('&') : ''), callback, 'GET', null, async)
+                this.send(url + (query.length ? '?' + query.join('&') : ''), callback, 'GET', null, async)
             }
 
             , post: function (url, data, callback, async)
@@ -81,7 +81,7 @@ function Ajax()
                     query.push(encodeURIComponent(key) + '=' + encodeURIComponent(data[key]));
                 }
 
-                ajax.send(url, callback, 'POST', query.join('&'), async)
+                this.send(url, callback, 'POST', query.join('&'), async)
             }
         };
 
