@@ -66,7 +66,7 @@ function DataTablesHelper()
         */
         function addDatePickerFilter(column)
         {
-            console.log("AddDatePickerFilter", title, column);
+            //console.log("AddDatePickerFilter", title, column);
             var markup = '<input type="text" class="datepicker"/>',
             changeEvent = function ()
             {
@@ -93,7 +93,7 @@ function DataTablesHelper()
         */
         function addDateRangeFilter(column)
         {
-            console.log("AddDateRangeFilter", column);
+            //console.log("AddDateRangeFilter", column);
             var beginDate = '<div><label>Min</label><input type="text" class="datepicker" data-key="beginDate" placeholder="Start Date mm/dd/yyyy"/></div>',
             endDate = '<div><label>Max</label><input type="text" class="datepicker" data-key="endDate" placeholder="End Date mm/dd/yyyy"/></div>',
             markup = beginDate + endDate,
@@ -132,7 +132,7 @@ function DataTablesHelper()
         */
         function addNumberRangeFilter(column)
         {
-            console.log("addNumberRangeFilter", column);
+            //console.log("addNumberRangeFilter", column);
             var minValue = '<div><label>Min</label><input type="text" class="minRange" data-key="minValue" placeholder="Type to filter.  Press enter to query."/></div>',
             maxValue = '<div><label>Max</label><input type="text" class="maxRange" data-key="maxValue" placeholder="Type to filter.  Press enter to query."/></div>',
             markup = minValue + maxValue,
@@ -162,7 +162,7 @@ function DataTablesHelper()
         */
         function addSelectFilter(column, multi)
         {
-            console.log("addSelectFilter", column);
+            //console.log("addSelectFilter", column);
 
             var multiAttribute = multi ? ' multiple' : '',
             markup = '<select' + multiAttribute + '><option value=""></option></select>',
@@ -171,9 +171,9 @@ function DataTablesHelper()
             {
                 let value = $(this).val();
 
-                console.log("value", value);
-                console.log("$(this)", $(this));
-                console.log("this", this);
+                //console.log("value", value);
+                //console.log("$(this)", $(this));
+                //console.log("this", this);
 
                 if ((typeof value === "object") && (value.length > 0))
                 {
@@ -223,7 +223,7 @@ function DataTablesHelper()
         */
         function addTextFilter(title, column)
         {
-            console.log("addTextFilter", title, column);
+            //console.log("addTextFilter", title, column);
             var markup = '<input type="text" placeholder="Type to filter.  Press enter to query. ' + title + '" />',
             keyupEvent = function ()
             {
@@ -253,7 +253,7 @@ function DataTablesHelper()
         */
         function addFilter(column, markup, changeEvent, keyupEvent, clickEvent)
         {
-            console.log("addFilter");//, column, markup, changeEvent, keyupEvent, clickEvent);
+            //console.log("addFilter");//, column, markup, changeEvent, keyupEvent, clickEvent);
             var control = $(markup)
                 .appendTo($(column.header()))
                 .on("change", changeEvent)
@@ -271,7 +271,7 @@ function DataTablesHelper()
         */
         function addFooter(selector, numColumns)
         {
-            console.log("addFooter", selector, numColumns);
+            //console.log("addFooter", selector, numColumns);
             var footStr = "<tfoot>" +
                 "<tr>";
 
@@ -294,8 +294,8 @@ function DataTablesHelper()
         */
         function getColumnIndex(query, columns)
         {
-            console.log("GetColumnIndex(query, columns)", query, columns);
-            var matches = columns.filter(function (x) { return x.filter === query; }),
+            //console.log("GetColumnIndex(query, columns)", query, columns);
+            var matches = columns.filter(query),
             returnMe = [];
 
             matches.forEach(function (x)
@@ -344,7 +344,7 @@ function DataTablesHelper()
         */
         function setupDateRangeFiltering()
         {
-            console.log("setupDateRangeFiltering");
+            //console.log("setupDateRangeFiltering");
             //this function will run every time the table is rendered, once per row I believe,
             //sending table info into oSettings and row data into aData
             $.fn.dataTableExt.afnFiltering.push(
@@ -406,7 +406,98 @@ function DataTablesHelper()
             dateRangeFiltering = true;
         }
 
+        /**
+         * Bind event handlers to the row details controls.
+         * Build a template for each row.
+         * Keep track of expanded row indexes.
+         * Execute $.DataTable() on each table displayed every redraw.  Inefficient.
+         */
+        function setupRowDetails(columns, context)
+        {
+            console.log("setupRowDetails");
 
+            var detailsColumns = getColumnIndex(function (x) { return !!x.getColumns; }, columns);
+
+            context.api().columns().every(function ()
+            {
+                let column = this,
+                title = $(this).text();
+
+                var index = detailsColumns.indexOf(column[0][0]);
+
+                if (index !== -1)
+                {
+                    bindEvents(column, context, columns[index]);
+                }
+
+            });
+
+            /*
+             * Bind the click event to the detail toggler.
+             * Bind the detail toggler clicker event to the table Draw function.
+             */
+            function bindEvents(column, context, details)
+            {
+                console.log("bindEvents", column, context);
+                // Array to track the ids of the details displayed rows
+                var detailRows = [];
+
+                $(context).on('click', 'td.details-control', function ()
+                {
+                    console.log("details clicked");
+
+                    var tr = $(this).closest('tr')
+                    , row = context.api().row(tr)
+                    , idx = $.inArray(tr.attr('id'), detailRows);
+
+                    if (row.child.isShown())
+                    {
+                        // This row is already open - close it
+                        row.child.hide();
+                        tr.removeClass('shown');
+
+                        // Remove from the 'open' array
+                        detailRows.splice(idx, 1);
+                    }
+                    else
+                    {
+                        // Open this row
+                        var tableId = Helper.generateHTMLElementId()
+                        , rowId = Helper.generateHTMLElementId()
+                        , promise = new Promise(function (resolve, reject)
+                        {
+                            var data = row.data().sub;
+                            resolve(data);
+                            return data;
+                        })
+                        , func = function (callback)
+                        {
+                            callback(row.data().sub);
+                        };
+
+                        row.child("<div id=\"" + rowId + "\" class=\"sub-table-container\"><table id=\"" + tableId + "\" class=\"display\"></table></div>").show();
+                        tr.addClass('shown');
+
+                        var dt = setupViewModel(document, "#" + tableId, "", promise, details.getColumns, true, true, "100%");
+
+                        // Add to the 'open' array
+                        if (idx === -1)
+                        {
+                            detailRows.push(tr.attr('id'));
+                        }
+                    }
+                });
+
+                // On each draw, loop over the `detailRows` array and show any child rows
+                $(context).on('draw', "", function ()
+                {
+                    $.each(detailRows, function (i, id)
+                    {
+                        $('#' + id + ' td.details-control').trigger('click');
+                    });
+                });
+            }
+        }
 
         /*
          * Defines the custom control for jQueryDataTables
@@ -425,10 +516,10 @@ function DataTablesHelper()
             {
                 constructor()
                 {
-                    console.log("jQueryDataTable constructor");
+                    //console.log("jQueryDataTable constructor");
                     // always call super() first in the ctor.
                     super();
-            
+
                     //todo probably need to move this into a library and pass in the context to make it reusable
                     //setup shadow DOM
                     //let shadowRoot = this.attachShadow({ mode: "open" });
@@ -438,24 +529,24 @@ function DataTablesHelper()
                     //shadowRoot.appendChild(instance);
                     this.appendChild(instance);
                 }
-            
+
                 static get observedAttributes()
                 {
                     return ["width", "height"];
                 }
-            
+
                 connectedCallback()
                 {
-                    console.log("connectedCallback");
+                    //console.log("connectedCallback");
                 }
                 disconnectedCallback()
                 {
-                    console.log("disconnectedCallback");
+                    //console.log("disconnectedCallback");
                 }
                 attributeChangedCallback(attrName, oldVal, newVal)
                 {
-                    console.log("attributeChangedCallback");
-            
+                    //console.log("attributeChangedCallback");
+
                     //height changed
                     if (attrName == "height")
                     {
@@ -465,7 +556,7 @@ function DataTablesHelper()
                 }
                 adoptedCallback()
                 {
-                    console.log("adoptedCallback");
+                    //console.log("adoptedCallback");
                 }
             }
 
@@ -474,11 +565,258 @@ function DataTablesHelper()
         }
 
         /*
+            This sets up the rendering and the subscriptions for a basic data table.
+
+            @param {function} renderCallback - runs at render time
+            @param {string} targetSelector - references the html element to contain the data table
+            @param {string} queryUrl - contains a reference to a controller that will return data
+            @param {Promise} query - will execute on a successful query
+            @param {array(object)} columns - is used to configure the data table
+
+                [
+                    {
+                        // the value of "data" corresponds to an object key
+                        "data": "cell0",
+
+                        // the value of "title" determines the column header
+                        "title": "Pri",
+
+                        // the render function should return some markup to render the value of "data"
+                        render: $.fn.dataTable.render.text() ||
+                        render: function (data, type, row)
+                        {
+                            return "<a href=\"" + encodeURI("ipeWorkloadStatusDisplay.asp?wonum=" + data) + "\" class=\"link\">" + data + "</a>";
+                        },
+
+                        // filter is a string which indicates what kind of control to render in the column header for filtering
+                        "filter": "datePicker" || "dateRange" || "dropdown" || "numberRange" || "text"
+                    }
+                ];
+
+        */
+        function setupViewModel(scope, targetSelector, queryUrl, query, columns, columnReorderEnabled, pagingEnabled, height)
+        {
+            console.log("setupViewModel", scope, targetSelector, queryUrl, query, columns, columnReorderEnabled, pagingEnabled, height);
+
+            var viewModel = {
+                //data defines the CRUD for the view
+                data: (function ()
+                {
+                    var _all = [];
+
+                    return {
+                        get: function ()
+                        {
+                            return _all;
+                        },
+                        set: function (value)
+                        {
+                            //console.log("data.set", value);
+                            _all = value;
+                            PubSub.publish("data" + targetSelector + ".change", this);
+                        },
+                        add: function (value)
+                        {
+                            _all.push(value);
+                            PubSub.publish("data" + targetSelector + ".change", this);
+                        },
+                        /**
+                         * accessor
+                         * @returns {array}
+                         */
+                        get subset()
+                        {
+                            return _all.filter(function (x)
+                            {
+                                //a predicate goes here
+                                return false;
+                            });
+                        },
+                        /**
+                         * make an ajax request for the data at the given url
+                         *
+                         * @param {string} url
+                         * @param {function} successCallback - logic to be performed upon success
+                         *     function(object data, string textStatus, jqXHR jqXHR)
+                         * @param {string || object} data - to be sent to the server with the request
+                         *
+                         * @returns {array} a collection of records that should have
+                         * the appropriate columns to fit into the table
+                         */
+                        search: function (queryUrl, data, successCallback)
+                        {
+                            //console.log("search", callback, data);
+                            queryCallback(queryUrl, data, successCallback);
+                        },
+                        /**
+                         * Generate test data
+                         * @returns {object} with all keys containing randomly generated values
+                         */
+                        generateRow: function ()
+                        {
+                            //console.log("generateRow");
+
+                            var returnMe = {};
+
+                            columns.forEach(function (columns)
+                            {
+                                returnMe[column.data] = Helper.generateGuid();
+                            });
+
+                            return returnMe;
+                        }
+                    };
+                })(),
+                // ui level data goes here. and functions too.
+                ui:
+                {
+                    //selectors: { tableSelector: "#jqdt" },
+                    //references to DataTables, needed for redrawing
+                    table: null,
+                    /**
+                     * Sets up subscriptions
+                     */
+                    bind: function ()
+                    {
+                        PubSub.subscribe("data" + targetSelector + ".change", this.redraw, this);
+                    },
+                    events: {},
+                    /**
+                     * Hides the tabs that contain the tables
+                     */
+                    hide: function ()
+                    {
+                        $(scope).find(targetSelector).hide();
+                    },
+                    /**
+                    * redraws a dataTable, saving the current scroll position and maintaining focus
+                    */
+                    redraw: function ()
+                    {
+                        console.log("ui.redraw");
+                        redrawTable(viewModel.data.get(), this.table, scope, targetSelector);
+
+                        /*
+                        * @param {array} data is an array with each index representing a row of data
+                        * @param {object} table is a jQuery DataTable to be redrawn
+                        * @param {string} selector identifies the html table that corresponds to the jQuery DataTable
+                        */
+                        function redrawTable(data, table, scope, selector)
+                        {
+                            if (table)
+                            {
+
+                                debugger;
+
+                                var scroll = $(scope).find(selector).parent().scrollTop();
+                                table
+                                    .clear()
+                                    .rows
+                                    .add(data)
+                                    .draw(false);
+                                $(scope).find(selector).focus();
+                                $(scope).find(selector).parent().scrollTop(scroll).focus();
+                            }
+                        }
+                    },
+                    /**
+                     * Sets up the DataTable and populates it with data
+                     * @param {object}
+                     */
+                    render: function (data)
+                    {
+                        console.log("ui.render");
+                        var that = this;
+
+                        this.show();
+                        load(viewModel.data.get());
+
+                        function load(data)
+                        {
+                            console.log("ui.load", data);
+
+                            if (data.length > 0)
+                            {
+                                that.table = loadFromObjectArray(scope, targetSelector, data, columns, function () { }, function () { }, columnReorderEnabled, pagingEnabled, height);
+                            }
+
+                            Helper.setupInfiniteScroll(scope, targetSelector, 200, -400, function ()
+                            {
+                                //query for more data
+                                //data.add(data.generate());
+                            });
+                        }
+                    },
+                    /**
+                     * Displays the tab and the tables it contains
+                     */
+                    show: function ()
+                    {
+                        console.log("ui.show");
+                        $(scope).find(targetSelector).show().height("auto").addClass("display");
+                    }
+                },
+                /**
+                * Sets up bindings,
+                * Gets data,
+                * Renders table
+                */
+                init: function ()
+                {
+                    console.log("vm.init");
+                    var promises = [],
+                    printMe = "",
+                    self = this;
+
+                    self.ui.bind();
+
+                    if (!!query)
+                    {
+                        if (typeof (query) === "function")
+                        {
+                            //this is a function that takes a callback
+                            //put all the promises from the ajax into an array for processing
+                            promises.push(query(function (data)
+                            {
+                                self.data.set(Helper.json.tryParse(data));
+                            }));
+                        }
+                        else if ((typeof (query) === "object") && (!!query.then))
+                        {
+                            promises.push(query.then(function (data)
+                            {
+                                self.data.set(Helper.json.tryParse(data));
+                            }));
+                        }
+
+                        //process the promises
+                        $.when.apply($, promises).then(function ()
+                        {
+                            // returned data is in arguments[0][0], arguments[1][0], ... arguments[9][0]
+                            // setup the tables
+                            self.ui.render(self.data);
+                        }, function ()
+                        {
+                            console.log("Error during rendering");
+                            throw "Error during rendering";
+                        });
+                    }
+                    else
+                    {
+                        console.log("no data query");
+                    }
+                }
+            };
+            viewModel.init();
+            return viewModel;
+        }
+
+        /*
          * This returns the HTML template for the data table
          */
         function getJQueryDataTableTemplate()
         {
-            console.log("getJQueryDataTableTemplate");
+            //console.log("getJQueryDataTableTemplate");
 
             return "<template id=\"jQuery-DataTable-Template\">"
             + "<style>"
@@ -496,6 +834,66 @@ function DataTablesHelper()
         }
 
         /*
+         * Setup Filters
+         */
+        function setupFilters(columns, context)
+        {
+            //I use the columns data to determine what kind of controls to use for filtering
+            var textIndexes = getColumnIndex(function (x) { return x.filter === "text"; }, columns),
+            dropdownIndexes = getColumnIndex(function (x) { return x.filter === "dropdown"; }, columns),
+            multiSelectIndexes = getColumnIndex(function (x) { return x.filter === "multiSelect"; }, columns),
+            datePickerIndexes = getColumnIndex(function (x) { return x.filter === "datePicker"; }, columns),
+            dateRangeIndexes = getColumnIndex(function (x) { return x.filter === "dateRange"; }, columns),
+            numberRangeIndexes = getColumnIndex(function (x) { return x.filter === "numberRange"; }, columns);
+
+            context.api().columns().every(function ()
+            {
+                let column = this,
+                title = $(this).text();
+
+                if (textIndexes.indexOf(column[0][0]) !== -1)
+                {
+                    addTextFilter(title, column);
+                }
+
+                if (dropdownIndexes.indexOf(column[0][0]) !== -1)
+                {
+                    let select = addSelectFilter(column, false);
+
+                    column.data().unique().sort().each(function (d, j)
+                    {
+                        select.append('<option data-id="' + j + '" value="' + d + '">' + d + '</option>');
+                    });
+                }
+
+                if (multiSelectIndexes.indexOf(column[0][0]) !== -1)
+                {
+                    let select = addSelectFilter(column, true);
+
+                    column.data().unique().sort().each(function (d, j)
+                    {
+                        select.append('<option data-id="' + j + '" value="' + d + '">' + d + '</option>');
+                    });
+                }
+
+                if (datePickerIndexes.indexOf(column[0][0]) !== -1)
+                {
+                    addDatePickerFilter(column);
+                }
+
+                if (dateRangeIndexes.indexOf(column[0][0]) !== -1)
+                {
+                    addDateRangeFilter(column);
+                }
+
+                if (numberRangeIndexes.indexOf(column[0][0]) !== -1)
+                {
+                    addNumberRangeFilter(column);
+                }
+            });
+        }
+
+        /*
         this is not ready for use yet.  It probably needs to take a function for the ajax parameter
         selector gets the table
         dataSource is the result of an ajax request
@@ -506,7 +904,7 @@ function DataTablesHelper()
         */
         function loadFromAjax(selector, dataSource, columns)
         {
-            console.log("loadFromAjax", selector, dataSource, columns);
+            //console.log("loadFromAjax", selector, dataSource, columns);
             throw "loadFromAjax is not implemented";
 
             //$(selector).DataTable({
@@ -541,7 +939,7 @@ function DataTablesHelper()
         */
         function loadFromArray(selector, dataSource, columns)
         {
-            console.log("loadFromArray", selector, dataSource, columns);
+            //console.log("loadFromArray", selector, dataSource, columns);
             throw "loadFromArray is not implemented";
 
             //$(selector).DataTable({
@@ -574,84 +972,44 @@ function DataTablesHelper()
         */
         function loadFromObjectArray(scope, selector, dataSource, columns, dataSrcCallback, renderCallback, columnReorderEnabled, pagingEnabled, height)
         {
-            console.log("loadFromObjectArray", scope, selector, dataSource, columns, dataSrcCallback, renderCallback);
+            console.log("loadFromObjectArray", "scope", scope, "selector", selector, "dataSource", dataSource, "columns", columns, "dataSrcCallback", dataSrcCallback, "renderCallback", renderCallback);
 
             if (!scope) { scope = document; }
 
-            console.log("target tables", $(scope).find(selector));
+            try
+            {
+                var returnMe = $(scope).find(selector).DataTable({
+                    "data": dataSource,
+                    //"" makes this point to the root of the object rather than the data property
+                    "dataSrc": "",//dataSrcCallback === undefined ? "" : dataSrcCallback,
+                    "columns": columns,
+                    "colReorder": columnReorderEnabled,
+                    //"render": renderCallback === undefined ? null : renderCallback
+                    //for some reason this causes column alignment issues
+                    scrollCollapse: true,
+                    paging: pagingEnabled,
 
-            return $(scope).find(selector).DataTable({
-                "data": dataSource,
-                //"" makes this point to the root of the object rather than the data property
-                "dataSrc": "",//dataSrcCallback === undefined ? "" : dataSrcCallback,
-                "columns": columns,
-                "colReorder": columnReorderEnabled,
-                //"render": renderCallback === undefined ? null : renderCallback
-                //for some reason this causes column alignment issues
-                scrollCollapse: true,
-                paging: pagingEnabled,
-
-                //im not sure why the extra s needs to be there.  the documentation wasn't clear
-                //scrollY: 'calc(50vh - 3em)',
-                "sScrollY": height,
-                //"fnDrawCallback": adjust(selector)
-                initComplete: function ()
-                {
-                    //I use the columns data to determine what kind of controls to use for filtering
-                    var textIndexes = getColumnIndex("text", columns),
-                    dropdownIndexes = getColumnIndex("dropdown", columns),
-                    multiSelectIndexes = getColumnIndex("multiSelect", columns),
-                    datePickerIndexes = getColumnIndex("datePicker", columns),
-                    dateRangeIndexes = getColumnIndex("dateRange", columns),
-                    numberRangeIndexes = getColumnIndex("numberRange", columns);
-
-                    this.api().columns().every(function ()
+                    //im not sure why the extra s needs to be there.  the documentation wasn't clear
+                    "sScrollY": height,
+                    //"fnDrawCallback": adjust(selector)
+                    initComplete: function ()
                     {
-                        let column = this,
-                        title = $(this).text();
+                        var self = this;
+                        setupFilters(columns, self);
+                        setupRowDetails(columns, self)
+                    }
+                });
 
-                        if (textIndexes.indexOf(column[0][0]) !== -1)
-                        {
-                            addTextFilter(title, column);
-                        }
+                console.log("loadFromObjectArray returning", returnMe);
 
-                        if (dropdownIndexes.indexOf(column[0][0]) !== -1)
-                        {
-                            let select = addSelectFilter(column, false);
+                return returnMe;
+            }
+            catch (e)
+            {
+                console.log(e);
+                throw e;
+            }
 
-                            column.data().unique().sort().each(function (d, j)
-                            {
-                                select.append('<option data-id="' + j + '" value="' + d + '">' + d + '</option>');
-                            });
-                        }
-
-                        if (multiSelectIndexes.indexOf(column[0][0]) !== -1)
-                        {
-                            let select = addSelectFilter(column, true);
-
-                            column.data().unique().sort().each(function (d, j)
-                            {
-                                select.append('<option data-id="' + j + '" value="' + d + '">' + d + '</option>');
-                            });
-                        }
-
-                        if (datePickerIndexes.indexOf(column[0][0]) !== -1)
-                        {
-                            addDatePickerFilter(column);
-                        }
-
-                        if (dateRangeIndexes.indexOf(column[0][0]) !== -1)
-                        {
-                            addDateRangeFilter(column);
-                        }
-
-                        if (numberRangeIndexes.indexOf(column[0][0]) !== -1)
-                        {
-                            addNumberRangeFilter(column);
-                        }
-                    });
-                }
-            });
         }
 
         return {
@@ -708,191 +1066,7 @@ function DataTablesHelper()
             */
             setupViewModel: function (scope, targetSelector, queryUrl, query, columns, columnReorderEnabled, pagingEnabled, height)
             {
-                var viewModel = {
-                    //data defines the CRUD for the view
-                    data: (function ()
-                    {
-                        var _all = [];
-
-                        return {
-                            get: function ()
-                            {
-                                return _all;
-                            },
-                            set: function (value)
-                            {
-                                console.log("data.set", value);
-                                _all = value;
-                                PubSub.publish("data" + scope + ".change", this);
-                            },
-                            add: function (value)
-                            {
-                                _all.push(value);
-                                PubSub.publish("data" + scope + ".change", this);
-                            },
-                            /**
-                             * accessor
-                             * @returns {array}
-                             */
-                            get subset()
-                            {
-                                return _all.filter(function (x)
-                                {
-                                    // a predicate goes here
-                                    return false;
-                                });
-                            },
-                            /**
-                             * make an ajax request for the data at the given url
-                             *
-                             * @param {string} url
-                             * @param {function} successCallback - logic to be performed upon success
-                             *     function(object data, string textStatus, jqXHR jqXHR)
-                             * @param {string || object} data - to be sent to the server with the request
-                             *
-                             * @returns {array} a collection of records that should have
-                             * the appropriate columns to fit into the table
-                             */
-                            search: function (queryUrl, data, successCallback)
-                            {
-                                console.log("search", callback, data);
-                                queryCallback(queryUrl, data, successCallback);
-                            },
-                            /**
-                             * Generate test data
-                             * @returns {object} with all keys containing randomly generated values
-                             */
-                            generateRow: function ()
-                            {
-                                console.log("generateRow");
-
-                                var returnMe = {};
-
-                                columns.forEach(function (columns)
-                                {
-                                    returnMe[column.data] = Helper.generateGuid();
-                                });
-
-                                return returnMe;
-                            }
-                        };
-                    })(),
-                    // ui level data goes here. and functions too.
-                    ui:
-                    {
-                        //selectors: { tableSelector: "#jqdt" },
-                        //references to DataTables, needed for redrawing
-                        table: null,
-                        /**
-                         * Sets up subscriptions
-                         */
-                        bind: function ()
-                        {
-                            PubSub.subscribe("data" + scope + ".change", this.redraw, this);
-                        },
-                        events: {},
-                        /**
-                         * Hides the tabs that contain the tables
-                         */
-                        hide: function ()
-                        {
-                            $(scope).find(targetSelector).hide();
-                        },
-                        /**
-                        * redraws a dataTable, saving the current scroll position and maintaining focus
-                        */
-                        redraw: function ()
-                        {
-                            console.log("ui.redraw");
-                            redrawTable(viewModel.data.get(), this.table, scope, targetSelector);
-
-                            /*
-                            * @param {array} data is an array with each index representing a row of data
-                            * @param {object} table is a jQuery DataTable to be redrawn
-                            * @param {string} selector identifies the html table that corresponds to the jQuery DataTable
-                            */
-                            function redrawTable(data, table, scope, selector)
-                            {
-                                if (table)
-                                {
-                                    var scroll = $(scope).find(selector).parent().scrollTop();
-                                    table.clear().rows.add(data).draw(false);
-                                    $(scope).find(selector).focus();
-                                    $(scope).find(selector).parent().scrollTop(scroll).focus();
-                                }
-                            }
-                        },
-                        /**
-                         * Sets up the DataTable and populates it with data
-                         * @param {object}
-                         */
-                        render: function (data)
-                        {
-                            console.log("ui.render");
-                            var that = this;
-
-                            this.show();
-                            load(viewModel.data.get());
-
-                            function load(data)
-                            {
-                                console.log("ui.load", data);
-
-                                if (data.length > 0)
-                                {
-                                    that.table = loadFromObjectArray(scope, targetSelector, data, columns, function () { }, function () { }, columnReorderEnabled, pagingEnabled, height);
-                                }
-
-                                Helper.setupInfiniteScroll(scope, targetSelector, 200, -400, function ()
-                                {
-                                    //query for more data
-                                    //data.add(data.generate());
-                                });
-                            }
-                        },
-                        /**
-                         * Displays the tab and the tables it contains
-                         */
-                        show: function ()
-                        {
-                            console.log("ui.show");
-                            $(scope).find(targetSelector).show().height("auto").addClass("display");
-                        }
-                    },
-                    /**
-                    * Sets up bindings,
-                    * Gets data,
-                    * Renders table
-                    */
-                    init: function ()
-                    {
-                        console.log("vm.init");
-                        var promises = [],
-                        printMe = "",
-                        self = this;
-
-                        self.ui.bind();
-
-                        //put all the promises from the ajax into an array for processing
-                        promises.push(query(function (data)
-                        {
-                            self.data.set(Helper.json.tryParse(data));
-                        }));
-
-                        //process the promises
-                        $.when.apply($, promises).then(function ()
-                        {
-                            // returned data is in arguments[0][0], arguments[1][0], ... arguments[9][0]
-                            // setup the tables
-                            self.ui.render(self.data);
-                        }, function ()
-                        {
-                            console.log("Error during rendering");
-                        });
-                    }
-                };
-                viewModel.init();
-                return viewModel;
+                setupViewModel(scope, targetSelector, queryUrl, query, columns, columnReorderEnabled, pagingEnabled, height);
             }
         };
     }
