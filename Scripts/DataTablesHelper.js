@@ -224,7 +224,7 @@ function DataTablesHelper()
         function addTextFilter(title, column)
         {
             //console.log("addTextFilter", title, column);
-            var markup = '<input type="text" placeholder="Type to filter.  Press enter to query. ' + title + '" />',
+            var markup = '<input type="text" alt="Type to filter.  Press enter to query. ' + title + '" placeholder="Type to filter.  Press enter to query. ' + title + '" />',
             keyupEvent = function ()
             {
                 if (column.search() !== this.value)
@@ -1060,6 +1060,43 @@ function DataTablesHelper()
 
                         // filter is a string which indicates what kind of control to render in the column header for filtering
                         "filter": "datePicker" || "dateRange" || "dropdown" || "numberRange" || "text"
+						
+				        "className": 'details-control'
+						"orderable": false
+						"data": "sub"
+						"defaultContent": ''
+						"getColumns":
+							[
+								{
+									"data": "id",
+									"title": "Id",
+									render: function (data, type, row)
+									{
+										return "<a href=\"" + encodeURI("url.asp?id=" + data) + "\" class=\"link\">" + data + "</a>";
+									},
+									"filter": "text"
+								},
+								{
+									"data": "name",
+									"title": "Name",
+									render: $.fn.dataTable.render.text(),
+									"filter": "text"
+								},
+								{
+									"data": "description",
+									"title": "Description",
+									render: $.fn.dataTable.render.text(),
+									"filter": "text"
+								},
+								{
+									"data": "date",
+									"title": "Date",
+									"filter": "dateRange"
+								},
+							]
+
+		    },
+
                     }
                 ];
 
