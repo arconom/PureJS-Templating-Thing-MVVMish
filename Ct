@@ -1,0 +1,4207 @@
+ Menu
+Log In Sign Up
+GameFAQs
+ANSWERS	BOARDS	
+Super NintendoRole-PlayingJapanese-Style
+Chrono Trigger
+FAQs
+Answers
+Board
+More
+Recommend this FAQ? Yes No
+ Back to Top
+Low-Level FAQ/Walkthrough by big_kake
+Version: 2.2 | Updated: 08/19/12 | Search | Bookmark
+
+Crono Trigger Perfect Low-level Game FAQ version 2.2 19/08/2012
+
+Disclaimer: This is a not-for-profit and unaffiliated guide for Chrono Trigger
+
+Table Of Contents:
+
+Utilise  the  FIND  option  on your  browser/notepad/wordpad.  search  for  
+the relevant number with the outer brackets to find the section of your 
+interest.
+
+				Contents:
+>-1-< About
+>-2-< Introduction
+>-3-< Hints & Tips, basic LLG strategy 101 
+>-4.1-< Exp Mechanics 
+>-4.2-< Battle Mechanics 
+>-5.1-< Stat Boosting Tabs Discussion 
+>-5.2-< Missable Tabs List Walkthrough: 
+>-6-< 1000 A.D - Crono's Home 
+>-7-< 600 AD -  Cathedral 
+>-8-< 1000 AD - Guardia Prison 
+>-9.1-< 2300 AD - Bangor Dome 
+>-9.2-<  2300 AD - Proto Dome
+>-10-< End of Time & 1000 AD - Heckran Cave 
+>-11-< 600 AD - Zenan Bridge & Denadoro Mtns 
+>-12-< 65000000 BC - Reptite Lair 
+>-13-<  600 AD - Magus' Castle 
+>-14-< 65000000 CB - Tyrano Lair 
+>-15-< 12000 BC - Magic Kingdom + Pendant Treasures 
+>-16-< 600 & 1000 AD - Sunken Desert Side-Quest 
+>-17-< 12000 BC - Mt Woe 
+>-18-< 12000 BC - Ocean Palace 
+>-19-< 12000 BC - Blackbird 
+>-20-< 23000 BC - Death Peak 
+>-21-< 600 & 1000 AD Rainbow Shell Side-Quest 
+>-22-< 2300 AD - Sunstone Side-Quest 
+>-23-< 2300 AD - Geno Done Side-Quest 
+>-23-< 600 & 1000 AD - Northern Ruins Side-Quest 
+>-24-< 600 AD - Ozzie's Fort Side-Quest 
+>-25-< 1000 AD - Black Omen 
+>-27-< 1999 AD - Lavos Preparation & The Final Battle 
+>-28-< Pink Nu 
+>-29-< Ocean Palace Lavos 
+>-30-< Low Levels - The Boring Theory 
+>-31-< Videos 
+>-32-< Author's Notes 
+>-33-< Credits
+>-34-< Final Notes
+>-34-< Version History
+>-36-< Contact Details
+
+>-1-< 
+About
+
+This FAQ is not just my work. It  has  been   a  collection  of  many  years  
+of   player's  experiences  and discoveries other than  my own. And whilst  
+much of the information  in this FAQ is indeed  my own  original work, people  
+who contributed to  this FAQ  will be credited.
+
+It's been a long time  since I have worked on this FAQ,  and whilst I have 
+been active in  the community it  has taken this long  to bring myself  to 
+literally rewrite this FAQ.  In fact it was only  when I first played  the 
+iPhone version that I decided  so, where this new format  will be used in a  
+dedicated FAQ for that platform.
+
+Enjoy your playthrough, and best of luck on your challenge!
+ 
+>-2-<
+Introduction
+
+A low-level  game (LLG),  as self-explanatory as  it is,  is a  playthrough 
+at very low  levels. In fact  this FAQ will  detail currently the  lowest 
+reported levels possible  in this  game. As  of now  I am  calling out  to 
+computer/macro programmers, see  section  >-30-<, to help  me  work on find  
+even  lower still paths  for finishing  this game,  or  even people  who  can 
+give  me advice  on manipulating excel sufficiently. Many Thanks.
+
+This guide will detail  how to complete all areas and  side quests, and even 
+all the optional bosses.
+
+As of now the lowest levels currently possible are:
+
+Crono: 1
+Marle: 4
+Lucca: 15
+Frog : 15
+Robo : 16
+Ayla : 20
+Magus: 37
+
+And this FAQ will explain how to achieve this.
+
+As a  rule for  sake of  maximizing the  difficulty of  this challenge  and 
+for certain  sentiment.  Magus should  be  excluded  from  any fighting  
+party  and Chrono included wherever possible.
+
+It  is recommended  you  play at  least  one regular  playthrough  of the  
+game before attempting  this. The reasons  are because it  takes about that  
+long to become sufficiently  adept with  the mechanics  and controls  of the  
+game, and also  this  FAQ  will  not  go  into  detail  with  storyline  
+elements  unless necessary. To  finish this  FAQ you  will inevitably need  
+to become  even more skilled at  the game, factors such as  timing, memory 
+and  precise movement are crucial to  the challenge. Don't be intimidated  
+however, this is  far from the hardest low-level  RPG challenge, after  this 
+you might  want to try  FF-XII or FF-III/VI, good luck with those, good luck!
+
+>-3-<
+Hints & Tips, basic LLG strategy 101
+
+-Game Settings
+
+Maximize the amount  of time you have  to press buttons and  minimize time 
+lose by scrolling  the menu by  setting the battle speed  to 8 (slowest)  and 
+cursor to memory. Also, of  course set your battle mode to Wait. We  will 
+need to play around with  the battle speed  later to manipulate  some 
+mechanics, but  I will explicitly tell you when that's the case, keep these 
+setting as default.
+
+-Saving
+
+This  guide will  not mention  it  as much,  but save  wherever possible.  
+Save before entering  new areas and  after completing  them. Keep multiple  
+saves so that any  late mistakes (not  buying enough revives before  65 
+Million BC  is a common mistake of mine) can be corrected.
+
+-Avoiding encounters
+
+All but one  of Chrono Triggers encounters  are not random, they  all happen 
+in preset  locations  with  preset  triggers  and monsters,  part  of  why  
+Chrono Trigger  is  such  an  amazing  game. As  a  result  many  of  the  
+encounters, including inescapable ones  can be avoided by simply avoiding  
+the trigger. All inescapable battles  which can  be avoided  will be 
+detailed  in the  FAQ, but many others  can be  avoided by simply  not 
+touching said  monster or  just not getting  too close,  take looping  paths  
+away from  monsters you  can see  and you'll avoid 60% of encounters, just 
+like that.
+
+-Running from encounters
+
+If the  battle can  be run  from, you can  do so  just by  holding the  L&R, 
+if using an  emulator you  can also  set both these  buttons to  a single  
+key for convenience sake
+
+-Treasure Hunting
+
+There is a LOT of treasure in Chrono  Trigger, so much so that  you will 
+never really need to  buy a single piece of  equipment to win the game,  and 
+doing so anyway is probably  a waste of money.  Your ability to earn  money 
+from battles before  the  Wallet  is  limited  to   just  those  forced  
+encounters  and  so scavenging as much  as possible is essential to being  
+successful in this game. You will  need a huge number  of Mid-Tonics &  
+Revives for Magus' fort  and for Reptite Palace,  and like it  or not, 
+you're  going to have  to pay for  all of them!
+
+-Referring to other FAQ's GameFAQ's is full  of great  FAQ's  by other  
+authors, and  I would  recommend using them  for information  if you  ever 
+become  lost at  any point.  This FAQ will attempt to keep  you on track as 
+much as possible  without you doing this, but there is no shame in doing so. 
+Some particularly useful FAQ's include:
+
+Tabs Location FAQ by vbvieira http://www.gamefaqs.com/snes/563538-chrono-
+trigger/faqs/19651
+
+Mechanics Guide by DragonKnight Zero & G*Paladin 
+http://www.gamefaqs.com/snes/563538-chrono-trigger/faqs/14148
+
+General Walkthrough by Phoenix http://www.gamefaqs.com/snes/563538-chrono-
+trigger/faqs/17035
+
+-Stat-Boosting Tabs
+
+Tabs are as  far as I am aware  crucial to your ultimate success  in this 
+game. So far all  battles including all sidequests  except for all of  the 
+Black Omen and  Lavos have been  completed  without any tabs.  But  as far 
+as  I  am aware Lavos himself  is impossible without at  least boosting your  
+character's speed or using Magus. More on this in section 5.1
+
+>-4.1-< 
+Game Mechanics:
+
+While  I  will  not  attempt  to  replicate  DragonKnight  Zero  &  
+G*Paladin's brilliant  FAQ,  I  will  detail  some   of  the  most  crucial  
+mechanics  for completing a LLG.
+
+-Experience Mechanics
+Your  characters  join  the  party  at   predetermined  levels,  they  are  
+not influenced at all by the current party member's levels.
+
+Crono: 1
+Marle: 1
+Lucca: 2
+Frog : 5
+Robo : 10
+Ayla : 18
+Magus: 37
+
+On top  of that  the characters  will also  require the  maximal exp  reach 
+the next level.
+
+Experience is not  divided across party members like most  RPG's. That is, 
+form your  experience if  an  enemy  earns  1000 experience  and  you have  
+2  party members alive the  experience is divided and both characters  would 
+receive 500 each. This  is not the  case for Chrono  Trigger, for  if an 
+enemy  yields 1000 experience, then  all characters  alive will receive  that 
+much,  regardless of how many  are dead.  So to minimize  experience gain, 
+only  1 character  can be alive at the end of each battle.
+
+Party members  outside the  party receive  75% of  the experience  those 
+inside the  party  do.   And  experience  'spillover'  is  written   off,  
+hence  it's impossible for a  character to level up  twice outside the main  
+party. This is a crucial  mechanic and will  affect how  experience is 
+shuffled  between party members to  abuse this  as much as  possible. This 
+means  that if  for example, Lucca requires just  5 exp to gain a  level, and 
+she is outside  the main party and  you  fight a  battle  which  yields  1000 
+exp.  If  you  do the  math  she potentially should gain  750 experience, but 
+will actually only  gain the 5 exp for the next  level. That's a whole 745  
+exp written off. Just  like that. 
+
+Also, on  a more subtle  note, the game rounds  down any experience  gained 
+and does not count  fractions as far as I  have tested. Hard to  actually 
+abuse but again calling help aforementioned.
+
+>-5.1-<
+Tabs Discussion
+
+I  have seen  this topic  debated  with varying  degrees of  vigour, and  
+almost always stemming  from the  question 'How  come you’re  characters are  
+hitting so much damage  at such low  levels?'. Part of the  answer to this  
+question comes down to  the  damage calculation mechanics,  which  you can 
+refer  to  the game mechanics FAQ  to understand. The  other part is  usually 
+that we  have boosted our  characters  with  various  boosting  Tabs. For  
+those  purists  out  there though, I  can confirm,  this challenge  is 
+possible  all the  way up  till the second and third  forms of Lavos without 
+the  use of a single tab,  and the use of such  will only be pushed  upon 
+entering the Black  Omen. So far I  have had success completing  the game  by 
+giving  Robo just five  Speed Tabs  and nobody anything else. This FAQ  will 
+not show you exactly how to do  it this way, but if you are determined you  
+should be able to work it out  on your own the hints I give along the way.
+
+Now, very importantly,  if you plan on  tackling Ocean Palace Lavos  (as I 
+will expect given the  massive interest seen in QHovrik's excellent  LP on 
+Something Awful), then  you will need use,  a lot, of tabs  whether you like 
+it  or not, and hence I suggest  you pick up at least all the Speed  Tabs you 
+possibly can, in order to be able to max our Crono, Marle, Robo & Ayla's 
+Speed.
+
+For the  purposes of this guide,  you will be  Maxing out Marle &  Ayla's 
+speed at first chance and  bringing Crono & Robo up to 15, the  latter two 
+because of major timing issues with the Lavos forms.
+
+>-5.2-<
+Missable Tabs list
+
+I have pulled this  list from the Tabs FAQ and left  the ones directly 
+relevant to a  LLQ (missable ones which  we can't get  because we don't have  
+charm yet, for example, I  have left out. I suggest  you check this list  
+before you enter each new  area, so  you know where  to look.  For a 
+complete  tab list  see the dedicated FAQ,  which will include all the  non-
+missable tabs. You  do NOT need to  collect every single  tab  on the way,  
+you  can live without  a  couple of power,  and without  a  single  magic  
+tab for  that  instance, so  don't  kill yourself trying to get 1500 points 
+in the bike race, for instance.
+
+The areas  with missable  tabs are few  and far between,  also cross  check 
+all the areas  you enter  with the  original FAQ to  save yourself  time 
+revisiting these areas later.
+
+600 AD - Magus' Castle
+After Defeating Flea - 1 Magic Tab South East of the hole that Ozzie makes - 
+1 Magic Tab
+
+12000 BC
+Enhasa’s  Water,Wind,Fire;  Defeat   the  6  Nus  -  1  Speed   and  Magic  
+Tab Kajar, northeast room - 1 Speed Tab Scratch the Nu at Zeal Castle - 1 
+Magic Tab
+
+12000 BC
+South of the beast's nest - 1 Power Tab Beast's Nest, charm Mud Imp - 1 Speed 
+Tab Mount of Woe, before the Giga Gaia - 1 Magic Tab Mount of Woe, charm Giga 
+Gaia - 1 Speed Tab Ocean Palace, in the elevator, go down then up - 1 Magic 
+Tab Ocean Palace, charm Golem Twins - 2 Magic Tabs Northeast of Blackbird, 
+after getting everyone's equipment back - 1 Magic Tab
+
+2300 AD
+Death Peak, right of the first tree - 1 Power Tab Geno Dome, behind the red 
+laser - 1 Magic Tab Geno Dome, southeast of the long passage - 1 Power Tab 
+Geno Dome, in the "switch" of the secret passage - 1 Magic Tab Geno Dome, 
+near the last Poyozo Doll - 1 Speed Tab
+
+600 AD
+37. Sunken Desert, charm the Retinite’s core - 1 Speed Tab 38. Defeat 
+Retinite, then come back to the first room - 1 Power Tab
+
+So with all this aside, and without further ado, on to the main challenge!
+
+**>-6-<***
+1000 A.D Crono's Home
+**********
+
+Get everything from Crono's  Mum & Mayors Manor. Also there is  a Power Tab 
+in Guardia Forest.  After meeting  Marle make  sure you  return the  girls 
+kitten, refuse to sell the  pendant, don't eat the old man's lunch  and wait 
+for Marle. This will ensure  you get 7 innocent votes  and a handsome reward  
+as a result. There is  nothing else  to do here,  you can't fight  anything 
+either.  So just continue to the teleporter and you'll be transported to 600 
+AD.
+
+*********
+600 A.D Truce Canyon
+*********
+
+Here you'll face your first forced encounter.
+
+**********
+Imp x 3
+6 Exp
+**********
+
+A straightforward  fight, these are  the only exp  Crono will absorb  this 
+game and aren't enough to level him up.
+
+encounters collect the Powerglove & Tonic then head into the Market, buy 
+about  20  Tonics (more  than  enough  for  the  next  section) now  head  
+into Guardia Forest.
+
+Besides the Power  Tab here, there's also a  bush here with a  monster who 
+will drop a shelter  when you go up to  it. Leaving and re-entering  the 
+forest will yield a shelter  each time. So take  this opportunity and farm  
+about 15. While you  could potentially  sell these  you really  don't need  
+to, there's  enough money  elsewhere. Just  keep these  for personal  use. 
+In  future whenever  you pass through this area,  it's convenient to visit 
+the bush  for a free shelter :-).
+
+Ransack the  castle for all  its treasure  and after the  subsequent 
+storyline scenes you'll  gain Lucca  (Level 2).  Time for the  cathedral! 
+Give  Lucca the Bandana and Crono the Power Glove.
+
+**>-7-<***
+Cathedral
+**********
+
+Enter, find the hairpin and you'll face a forced encounter
+
+**********
+Nagette x 4 
+32 Exp
+**********
+
+These will  likely require 1  or 2 Tonics,  but have Crono  & Lucca kill  the 
+2 Nagettes closest to  Lucca first then focus on  the other 2, let  Crono die 
+and Lucca finishes  this, healing  as necessary.  Their slow  spell is  
+annoying so don't cut it too close with Tonics. After Frog joins you save 
+outside.
+
+The cathedral has  only one encounter that  you can avoid but  cannot run 
+from, and  that  encounter  is on  the  stairs  with  the  red carpet, and  
+it is only triggered if  you try to run on  the red carpet  without touch-
+encountering the diablos before it.  So to be safe,  encounter all monsters 
+on  the walkways and the diablos before (running  from all of them) before 
+trying to  run up the red carpet.  Get all  the  treasures  except  the ones  
+in  Magus' shrine  and  the Nagette Bromide  including the Steel Sabre  and 
+Power Tab. The  other treasures you  can  get  later.  The  area  after  the  
+stairs  contains  no  inescapable encounters  except the  one in  the organ  
+room which  is forced.  Get all  the treasures,  optimize your equipment  
+and  heal your characters  with  slurp and you will face..
+
+*********
+Hench x3 + Diablos x2 
+53 Exp
+*********
+
+Just attack  and use Frog's slurp on  himself to conserve  resources, have 
+Frog absorb this by having  Crono and Lucca killed off near the  end. Now 
+proceed to Yakra,   picking  up   everything   on  the   way.   Optimize  
+your   equipment Pick up  the IronSword (Frog)  play the organ  and head 
+straight  towards Yakra (avoiding  the  monsters),  heal  with a  shelter.  
+Optimize  your  characters, learning  frog  with   his  original  armour  and  
+accessory.   Give  Crono  the Powerglove and Lucca the Bandana.
+
+*********
+Yakra  
+50 Exp  
+920 Hp
+*********
+
+Yakra, a  very straightforward boss once  you discipline yourself  with 
+healing yourself appropriately with  Tonics/Slurps. In this case, heal  only 
+Chrono and Frog,  as Yakra  only  does his  counter  attack when  there  are 
+3  characters alive.  When Yakra gets  low,  say below 200  Hp,  let Crono 
+die  off  and Frog solo. Keep Frog above  70 Hp at all times and there is  
+nothing to worry about. Frog will absorb this 50 exp.
+
+After the  following scenes you'll be  back at the  castle, but now you  can 
+go back to the Cathedral  here and pick up all the items you  missed out on 
+before now that  the place is  void of monsters.  The most  important of 
+which  is the Speed Belt! Before  you go back to 1000 A.D.  Make sure you buy 
+so  you have 30 Tonics, this  should  be enough for  the  next few sections,  
+there  is nothing worse than running out of tonics when fighting the dragon 
+tank!
+
+**>-8-<***
+1000 A.D - Guardia Prison
+**********
+
+Head  straight for  Guardia Castle,  there  is nothing  else to  do here.  
+When asked who  initiated contact, admit  that you did  and deny being  
+attracted by Marle's  wealth. Once you  are  in jail you  should  have 6 
+ethers  for  you if everything went  well, otherwise don’t  worry about it,  
+save and heal  and wait out the 3 days.  Every encounter in this jail you 
+cannot run  from, but you can avoid all of them.  After Lucca saves you grab 
+the Bronzemail  and head out, al. the  fallen guards  outside  this room  
+will  have  a mid-tonic  for you  when prompted, make  sure you do  so! 
+Speaking of  Mid-Tonics, SAVE Fritz!  Doing so will  net you  10 Mid-Tonics  
+later  head up  and  around (do  not take  bottom corridor as  this leads to 
+inescapable  encounters), go across bridge  and head straight  through to  
+the  next  room which  has  2  inescapable but  avoidable shield monsters 
+then go left into the next room, grab the shelter then head back into the 
+room with the 2 monsters.
+
+
+Now  to avoid  these  2 line  yourself  up right in between  the  two and  
+run through, you  will avoid this  encounter, head left  and head through  
+the hold and eventually reach a  room with a Lode Sword!! (Crono) and  1500 
+G, come back up now  head right  & upstairs.  Pick up  the 5  Mid Tonics  off 
+the  guard and save,  if your  using an  emulator save  state too,  now 
+equip  Crono with  the Speed Belt  or Power  Glove and  Lucca with the  Speed 
+Belt  or Bandana  - make sure Crono has his Lode Sword equipped.
+
+**********
+Dragon Tank 
+40 Exp
+Head - 600 Hp
+Grinder - 208 HP
+Body - 266 Hp
+**********
+
+Crono should be able to  do 80 damage, Lucca 35, open out  all out on the 
+HEAD, now the battle begins.
+
+The head  is Capable  of healing  each part  of the  body 70  damage 
+(sometimes faster than you can  damage it), so that must go down first,  the 
+head and body can also attack, the head does a fire  based attack & the body 
+fires missiles - (which I found was  usually Crono), so after initial blitz  
+have Lucca focus on healing  herself &  Crono  with  tonics  and Crono  
+attacks  head. Do  NOT  use Cyclone. AFTER  the Tank  released its  energy  
+(running you  over..) have  both Crono &  Lucca heal themselves  with a Tonic 
+or  two & continue  attacking till head gone (40 or less Hp - not safe BTW). 
+Do same with Grinder, keep Crono alive for the body. When the  Head &  
+Grinder are  gone the  body will  counterattack with  a laser (30 damage),  
+keep Crono  on decent  health until you’re  sure you've  taken most of its 
+600  
+Hp, then let Crono  die from its counter-attacks  and finish things up with 
+Lucca - who will absorb the Exp & Grow to level 3. Escape the castle, Collect 
+Marle and escape to 2300 AD.
+
+**>-9.1-<***
+2300 A.D
+***********
+
+You arrive in Bangor  Done, in the room you arrive in is  a sealed door, 
+behind it is the Wallet, but.. We got another half  of a game to play before 
+we can go through this,  so this  means you  still got  lots of  monsters to  
+avoid etc.. hehe.
+
+Head straight to  Lab 16 and go through  it, make sure you  grab the 
+Berserker, Lode  Sword and  Lode Bow  along with  all the  other chests  and 
+running  from every encounter (including  the Mutants), there are no  forced 
+encounters here, don't worry!
+
+Anyways, you CAN go to  the Sewer Access, head right and grab  the 600 G in 
+the Chest (the  fight is  escapable), this  isn’t necessary but  every bit  
+of cash helps, return back to Arris Dome. You should be nearly  empty on 
+Tonics right now, go buy  about 20-30, this will be plenty for now, save and 
+then head downstairs. Head  towards the  food storage,  stop  before you  
+reach the  room before  the storage (the one with the boss encounter).
+
+Give Lucca the Iron Helm, Speed Belt  & Madain Suit, Marle the best of 
+whatever you  got left  (with the  Bandana) and  Crono the  Bronze Mail  & 
+Power  Glove. Now run straight through  the room and you’ll encounter a Boss  
+(if you wait in the room a bit you’ll encounter an Inescapable battle.. Hence 
+run through)
+
+*********
+Guardian & Bits x2
+300 Exp
+Guardian - 1200 Hp
+Bits - 200 Hp
+*********
+
+This is the  first & last battle Marle  does exactly the same  damage as 
+Crono, both of which do 40-43 damage each. If you  attack the  body while  
+both bits  are alive,  they counter  with Delta Attack on  all 3, which will  
+probably ruin you,  attack the body with  one bit alive  and  they’ll use  
+amplifire  on  the  attacking character  (45  Damage), amplifire  is  also  
+used  as  a  normal attack  with  only  1  bit  is  alive. To beat this boss, 
+I took an all-out approach and attacked each bit with all 3 (and  healing 
+with  first available  character is  health fell  below 45)  then blitzing 
+the body. If  you’re playing on emulator save state  after you kill both bits, 
+have  attacked the body  as much as  you can  and has just  revived both, 
+because you need both  Marle & Crono dead so Lucca can finish  off the body, 
+if not keep CAREFUL track of his Hp (use a piece of paper). Keep attacking  
+and healing if Crono or  Marle dies don’t  bother reviving them (if you  have 
+any revives  at this point),  if both die  and your about  300 or more short 
+of killing the body you should restart. Make sure Crono &  Marle die then the 
+Main Body is at  about 100 Hp (preferably by attacking  the body when  there’
+s only 1  bit left to  deliberately activate the counter-attack)  then 
+finish  off  the remaining  bit then  the  body off  with Lucca, who will 
+absorb the full 300 Exp.
+
+Anyway after this  battle, Lucca will level  up twice to level  5, your 
+current levels should be:
+
+
+Crono: Level 1
+Marle: Level 3
+Lucca: level 5
+
+Run  through, after  the  scenes  grab  the Mid-Ether  now  go catch  the  
+rat, activate the console  & head  through, grab  the Mid-Ether and  watch 
+Lavos  Destroy the world. Head out  and REST IN THE  ENERTON, this will be  
+your last chance to  heal for free  until  you  reach the  end  of  time,  
+save  and  head over  to  Lab  32. Grab the Mid Tonic & race Johnny & head to 
+Proto Dome, SAVE OUTSIDE.
+
+You’ll enter another inescapable battle
+
+**********
+Buggers x3
+54 Exp
+100 Hp each
+**********
+
+Take out  the bugger closest to  Lucca and weaken  the two near Marle  & 
+Crono, let Crono &  Marle get  killed (if you’re  on emulator press  the 
+turbo  
+button) then finish up with Lucca who will gain another level. Now I 
+recommend if your using normal  game to save outside again then re-enter, if 
+emulator save state.
+
+Ahead of you are 4 inescapable but  avoidable buggers, walk (don’t run) 
+towards and hug the wall in  front of them (bottom end of the screen) and ‘
+slide’ across holding down and right, then up then right to  get to the 
+stairs then down and right to go down them. Do not dash at any point of this 
+process, or the encounter will trigger.
+
+Phew, now go up and meet one of your best characters ROBO!
+
+Take Robo, Crono and Lucca with you, you will need to dodge this irritating 
+encounter once again, and a few more timed after this too, but this encounter 
+is cake compared with some we'll need to deal with later.
+
+**>-9.2-<***
+2400 AD - Factory
+**********
+
+As  you enter  and  when  Robo  activates the  console  you’ll be  thrown  
+into another forced encounter.
+
+**********
+Acid x1
+33 Exp
+**********
+
+You're going  to have to  wait for this  Acid to  hack through Robo's  200+ 
+Hp, use Cure Beams/Auras  on Marle to save  on Tonics. Marle will  absorb 
+this, the experience from  this battle is  essentially written off  by the 
+next  2 forced encounters.
+
+Now  most of  this factory  is  optional, and  you're  going to  need to  
+skip virtually  all of  it  the part  of  the  factory from  the  right 
+elevator  is littered with  inescapable encounters.  You can  grab the  Robin 
+Bow  from that room, but do  not try for anything else.  Now go through the  
+left elevator and save your game. Run from the next  encounter at the console 
+and head  downstairs, around and to the  next console.  Now, activating  the  
+console triggers  a forced  encounter with a random number  of Acids and 
+Alkalines with anywhere  between 0-5 of each with a  total of  5 monsters.  
+Now after scrutinizing  the experience  gains by calculations,  you can  
+afford  to have  at  most 3  Alkalines  in this  battle (Alkalines give  45 
+exp each,  and Acids 33) without  any effect on  your final levels. If you  
+encounter 4 or 5, you  must reset and try again.  It should not take too  
+many attempts to  accomplish this, and  the previous version  of this guide 
+required you  to exclusively encounter 5 acids  only (!) which was  a 1 in 32 
+shot!
+
+**********
+Acids & Alkalines
+165 -201 exp
+**********
+
+Pretty straightforward and  they should have no problems killing  off Crono 
+and Marle. Robo will learn Laser Spin after this :-).
+
+After this  pick up the Titan  Arm & Vest. Now  you must leave the  factory 
+and switch Marle  for Lucca, and make  sure you save  outside the dome as  
+you will need to weave around the forced encounter with those 4 buggers, 
+twice, again.
+
+Now optimize  Lucca with the best  gear you have  sans the weapon and  give 
+her the Speed  Belt. Give Crono  the best of what's  left and very  
+importantly the Berserker, de-equip Robo  if you need in order to  accomplish 
+this. Now continue on to  the switch,  saving on the  way. Lucca's  best 
+weapon so  far is  in the chest besides  the  panel where you  must  input 
+the password,  equip  it right away and the password is  X A B Y, the fight 
+with the R-Series is tough.
+
+**********
+R-Series x6
+480 Exp
+150 Hp each
+**********
+
+You probably remember  having a heyday with Crono's Cyclone,  Lucca's Fire 
+Line and even  their first dual tech  Fire Whirl. This is  not going to work  
+for us though, our characters are  just too weak to heal fast  enough without 
+dying if they  manually attack.  This  is  where the  Berserker  comes  in. 
+The  berserker grants Crono  Auto-Protect status, and effectively  reduces the 
+damage  he takes as  well as  putting him  in auto-pilot.  Now this  battle 
+just  comes down  to healing constantly  with Lucca  and letting  Crono hack  
+away at  the R- Series. After  3-4 are  down stop  healing  Crono. You  
+should  be able  to have  Crono killed  off with  maybe  2  heavily damaged  
+R-Series  left,  which Lucca  can, barely, finish  off herself. It may  well 
+take a  few resets to get  the timing right  here, but  you get  it  
+eventually. Lucca  absorbs an  obscene 480  exp, eurgh.
+
+Eventually you'll find yourself at the end of time.
+
+**>-10-<***
+End of Time & 1000 AD - Medina
+**********
+Meso Mail, Speed Tab, Magic Tab
+
+Now speak to Gaspar, and learn to  use magic, you can even have your 
+characters learn their  dual techs, although  their usefulness  is rather 
+limited  at this stage. You  can heal  for free  here, now  take this  good 
+opportunity  to have Crono and Marle K.O'd, to make the next forced encounter 
+much faster.
+
+Now before you go  straight to 1000 AD, take the 65000000  BC gate, exit 
+Mystic Mountain and  enter the Dactyl Nest. Run  from every encounter  as 
+usual (there are none that  cannot be run from) and here  you can grab a Mid  
+Ether but also more importantly  an early Meso  Mail! :-)   Return to  the 
+gate and  head down the gate to Medina Village.
+
+When you  arrive here you should  head into the  Elders House and grab  the 
+two tabs there  table, this is useful, go upstairs  and you can also  grab a 
+Magic Tab. Also raid the blue pyramid for an Ether.*** Head back  out and 
+speak  to Melchior, from  him buy  until you have  99 Tonics (because they're 
+that cheap)  & 20  Mid Tonics (because  they’re not  so cheap, but 
+necessary). When you enter Heckran's cave, you'll be thrown into another 
+forced encounter.
+
+**********
+Hench x2
+22 Exp
+**********
+
+Wait for Crono & Marle to be killed, finish with Robo.
+
+Items: 2x Ether, Mid Ether, Magicscarf
+
+There  are  no  more  forced  encounters  in   this  cave,  you  can  run  
+from everything, so  sack  this place for  what  it's worth. At  the  
+save point swap Robo for Lucca to have a party of Crono, Marle & Lucca, heal 
+with a Shelter.
+
+Equip them:
+
+Lucca: Best Helm, Meso Mail & Speed Belt 
+Marle: 2nd Best Helm, Titan Vest & Magic Scarf 
+Crono: Anything
+
+With this setup both Marle and Lucca should have a modest 8 speed.
+
+You're going  to need  to keep  reasonable track  of this  bosses' HP  here, 
+as Lucca cannot  1 on 1 against  Heckran for very long,  yet she must be  the 
+lone Exp Absorber.
+
+**********
+Heckran
+250 Exp
+2100 Hp
+**********
+
+This fight is pretty tough, just remember that only Magic deals any damage.
+
+Heckran starts out with the following attack pattern:
+
+Bubble (40-45 damage)
+Bubble (40-45 damage)
+Cyclone (80 Damage to Marle, 95-100 To Lucca) Counter Attacking Phase (a few 
+turns worth) Repeat
+
+Only use  Mid Tonics  when you  need to  in order  to conserve  resources, 
+just ensure that Marle  Hp is always full,  Lucca’s is above 90  before 
+Heckran uses Cyclone here,  by having  the most  immediate character  heal. 
+Contraire  to the last edition,  there is no  point in using Antipode  here, 
+as the  2 individual Fire and  Ice  spells do identical  damage,  do just 
+damage  Heckran  with both Marle  and Lucca  with  their magic  spells.  
+Chrono can  help  too while  he's alive, but don't bother reviving him when 
+he does die.
+
+When he enters his  Counter-Attack phase heal up to full  HP with Tonics, 
+don't bother with Ethers
+
+Before long he’ll enter a VERY deadly cycle
+
+Cyclone (80 Damage to Marle, 95-100 To Lucca) Cyclone (80 Damage to Marle, 95-
+100 To Lucca) Yes Indeed! Attack (75-77 to Marle 67-70 Lucca) Counter Attack 
+Phase (a few turns worth) Repeat
+
+You must  play very  defensively here,  as Heckran is  fast enough  to get  in 
+2 moves to your 1  here, and as you can calculate, not even  Lucca with her 
+early Meso Mail  can survive  2 hits in  a row.  From full MP,  both Marle  
+and Lucca should  be  able  to  do  barely  enough  damage  to  kill  
+Heckran,  literally finishing with  the last spell,  or at most  1 or 2  
+spells more than  that. So you can use this as your rough guide to finishing 
+the battle.
+
+First exhaust Marle's remaining MP left with the following attack pattern:
+
+"Brief Counter-Attack Break" Marle immediately uses Ice, Lucca waits with her 
+turn ready. Cyclone 1 If it  hits Marle, have Lucca  immediately use a  Mid-
+Tonic on her, if  it hits Lucca, immediately have her use a normal Tonic on 
+herself. Cyclone 2 You should get  Marle’s turn now, cast Ice,  if this 
+Cyclone hit  Lucca and had already hit  her before as well,  use a Mid-
+Tonic,  if not use a  Normal Tonic. If it hits Marle Use a Mid-Tonic. Yes 
+Indeed! If  you  manage  it,  you  may  just   be  able  to  squeeze  a  
+Fire  in  here "Go Ahead Try & Attack" Heal fully with Tonics and wait with 
+turns available
+
+After Marle  runs out  of MP, repeat  the above attack  pattern but  with 
+Marle and  Lucca  switching  roles,  their  speed is  identical  so  this  
+should  be straightforward. The only difference is Marle will not get an 
+attack in,  just have  her heal with  a Tonic. Heckran  should fall  on 
+Lucca's last  spell before  running out  of MP,  a  good time  to finish  
+this is  just before he enters  his counterattack phase, have Lucca ethered  
+once before this (so she  has 12  MP), have Marle  die off  and Lucca cast  
+Fire just  after the 'Yes Indeed!'  attack,  if this isn’t  enough  to finish 
+him  then  another Fire spell whilst  he is  in his  counterattack phase  
+should most  certainly finish the job.
+
+**>-11-<***
+600 AD - Zenan Bridge + Denadoro Mt’s
+***********
+
+After the  following scenes,  grab the Taban  Vest, which will  not be  of 
+very much  use  but,   meh.  Also  collect  your  10  Mid-tonics     off  
+Fritz  for saving him. the proceed to 600AD, healing at the EOT along the way.
+
+At the  market in  600 AD, get  10 Revives  and buy as  many Mid-Tonics  as 
+you can afford without selling anything off.
+
+Head  to Zenan  Bridge,  talk to  the  people  there then  head  to the  
+castle (collecting your  free shelters too), collect your  Jerky & Power  
+Tab, head to the bridge again, save.
+
+On this  bridge are  a Series of  3 forced encounters,  enter Zenan  bridge 
+and talk to the Commander, then talk to him again for a Gold Helm.
+
+Have in your party Robo, Marle & Crono
+
+**********
+Deceased x2 - 106 exp
+**********
+
+Wait until  Crono  and Robo are  knocked  out after both  attacking  Ozzie 
+once (healing Marle  when necessary, now have Marle  attack Ozzie for  the 
+3rd time to break his spell and end the fight.
+
+Marle absorbs all 106 Exp, which will not be enough to Level her up.
+
+A/N: Thanks CyberSarkany for telling me this strategy.
+
+Heal Robo with his Cure Beam.
+
+**********
+Deceased x3 - 144 Exp
+**********
+
+Same strategy as before, except Robo absorbs instead.
+
+Leave the bridge, save and heal. Set up your characters accordingly.
+
+Crono: Iron Helm, Titan Vest, Power Glove, Best Weap 
+Marle: Iron Helm, Titan Vest, Best Weap 
+Robo : Gold Helm, Meso mail, Speed Belt, Best Weap
+
+**********
+Zombor
+Top - 1000
+Bottom - 800
+350 Exp
+**********
+
+This battle  isn’t very  difficult at all,  you will want  to track  the 
+bottom half of Zombor's HP.
+
+To begin:
+Have  Crono attack  or use  Cyclone  (tracking the  bottoms  HP if  you do  
+so) Marle use Ice on top Robo use Rocket punch on top
+
+The top should fall before it gets a  chance to use its Doom, Doom, Doom 
+attack (if it  does don’t  bother reviving  or healing, just  keep attacking  
+top with Robo  (the   other  2  should   die),  don’t  bother   
+healing/reviving  fallen characters, heal Robo with a Mid Ether if MP busted.
+
+Blitz the bottom until  it says 'Doom Doom Doom Doom', keeping  track of its 
+HP as you  go along. Now  Zombor tends to glitch  here, which can  be 
+(grudgingly) solved by  healing one of  the characters with a  Tonic. Doom 
+Doom  Doom always targets the player with  most HP, which will usually be 
+Robo,  and will one hit K.O. him, so  make sure another player is  alive when 
+it does  so. It's attacks are very  weak, dealing  less than 30  Hp, do 
+healing  should be  minimal. When Zombor gets close  to dying (<240HP, or  3 
+hits from Robo),  have the remaining characters die  off whilst healing  Robo 
+and finish  it off, absorbing  all 350 Exp. No Problem.
+
+Items: Mid Tonic, Shelter, Magic Scarf Now you  have access  to the  bottom 
+half of  your continent  of 600  AD, don't bother  healing anyone  except  
+Robo,  not even  for  MP.  After the  following scenes  with  Frog  
+(ransacking  the  places as  per  usual,  nothing  here  is inescapable). 
+
+Head into Cursed Woods,  grab the Mid Tonic, Shelter and  your 2nd Magic 
+Scarf, talk to  Frog then leave.  Keep Robo in  the party, put  him at 
+position  3 and enter Denadoro mountains.
+
+Grab the  300G and  continue up towards  the ladder and  you’ll enter  2 
+forced battles.
+
+**********
+Goblin
+32 Exp
+**********
+
+It's a pain  to actually have your  characters killed off, that’s  why we 
+didn't heal  from before,  but you  know  the drill,  Robo absorbs  this, 
+after  which you'll be knocked into another forced battle.
+
+**********
+Ogan
+32 Exp
+**********
+
+You'll probably need to  heal here, but just keep attacking  him for <20 
+damage with Robo, he's no problem.  1 screen up to the right (not  up the 
+ladder) is a weapon for Robo,  grab this and leave  the mountains and save  
+your game again, now you can resume.
+
+This area  is a minefield of forced  encounters, many are  on invisible 
+trigger squares for which paths  to avoid them will be detailed here.  It's 
+a long way to the next save point,  so my advice is not to rush  this next 
+section, you do NOT want to be avoiding all these encounters over and over 
+again. Really.
+
+Now head through, running from every encounter, grab the Revive and 500 G.
+
+When  you  meet the  Ogan  (with  the Wooden  Hammer)  that  jumps out  &  
+back repetitively,  dodge him  and run  up  the ladder,  then the  next 
+ladder  then there should be a turning to the right to reach the next screen.
+
+On  this screen  there  are no  inescapable encounters,  grab  the Revive,  
+Mid Ether, Gold Helm & Mid Tonic and head left onto your next screen.
+
+This screen also has no inescapable  encounters, just a rock throwing monster 
+& a chest with a Mid Ether, head up and right onto your next screen.
+
+Now,  walking,  hug  the top  wall  until  you  meet  the ladder  to  avoid  
+an inescapable  encounter with  a Free  Lancer  & Ogan.  Head up  the ladder  
+and, still walking, hug the  right wall, grab the chest with 600 G,  hug the 
+wall on your left down then up to the next path then head up into your next 
+screen.
+
+You  should  be on  a  cliff-edge  field, hug  the  outmost  edge, as  you  
+can sometimes  hit   an  inescapable  encounter   here.  Thanks   
+CyberSarkany  for identifying this.
+
+Here you  should be  near a waterfall,  here fall down  the left  waterfall 
+and grab the Silver Stud  & Silver Erng, 2 of the best accessories in the 
+game!
+
+Head up to reach  the next screen, then up again to reach  the cliff again, 
+hug the top side  as before and head left  onto the waterfall again.  Now 
+head left past the Free Lancer to grab the chest.
+
+Now  as you  go  down the  ladder,  hug the  left wall,  walking  to avoid  
+the inescapable battle with 2 Free Lancers, and to get to your next screen.
+
+Hug  the bottom  wall to  the bridge  to avoid  the inescapable  battle with  
+3 Bellbirds,  once  on the  bridge  you  may  safely  talk  to the  White  
+Monkey repetitively for a Magic Tab, head down to your next screen.
+
+Head down and hold off  saving for just a second, grab the  chest and bash A 
+in the very bottom  left of  the screen  for  your second  speed  tab this  
+game, now  head through to the  next screen to grab the  Gold Suit, now come 
+back  to the Save Point and equip your characters:
+
+Robo : Gold Helm, Meso Mail, Speed Belt 
+Crono: Next Best Helm, Gold Suit, Silver Erng 
+Marle: Doesn’t Matter
+
+Now you have my permission to save.
+
+This next screen  has a fairly tough to avoid  forced encounter, while 
+touching the Hetakes  themselves are triggers, attempting  to climb the 
+ladder  with the Freelancer above it  is too close will have  his knock you 
+back  down into that said battle.  So  my advice is  to  completely ignore 
+the  treasure  chest here (it's just  a Shelter)  and simply run  as fast  as 
+you can  around and  up the ladder. There is a  good chance that the 
+Freelancer will be  far away enough to run over  to  the other side  when  
+you climb the  ladder,  effectively avoiding that forced  encounter. I'm  sure 
+there is  a more precise  method to  this but this blunt  approach seems  to 
+work  around 30%  of the  time, which  is plenty enough!
+
+A/N: Thanks to CyberSarkany for reminding me of the Gold Suit
+
+Fortunately  for  you,  that's  the  end of  your  encounter-dodging  for  
+this section, and now you will face Masa & Mune, best of luck!
+
+**********
+Masa
+Mune
+400 Exp
+1000 Hp each
+**********
+
+Very  straightforward, just  attack  the one  with the  purple  collar, on  
+the left, you shouldn’t need  to heal, if you need Crono and Marle  to die 
+just have them attack  the other one to  be K.O'd by  their counter attack 
+so  that only Robo absorbs this.
+
+Now for the big boss..
+
+**********
+Masa & Mune (fused)
+500 Exp
+3500 Hp
+**********
+
+Masa & Mune’s initial attack pattern is
+
+Attack (33 - 36 Damage) Attack (33 - 36 Damage) Wind (65 - 70 Damage) Store 
+Tornado Energy (with slash counterattack) Tornado (165 Damage) Repeat
+
+Crono should  be able to survive  all of his  attacks in this stage,  just 
+have him heal  himself  and Robo with  Tonics,  and when he  begins  storing 
+tornado energy, have Crono use  his Slash to negate it and  restart the 
+attack pattern. This should help  you conserve resources and so  a good chunk 
+of  his HP before he changes his attack pattern..
+
+Attack (70 - 76 Damage) Attack (70 - 76 Damage) Store Tornado Energy Tornado 
+(165 Damage)
+
+You don't  get any warning  when he changes his  attack pattern, but  is 
+easily judges  in the  doubling  in his  attack  power, now  Crono  can't 
+survive  for anything, so just let  him die, Robo will take things alone  
+from here. Use the following move pattern:
+
+Tornado (Robo has 100 Hp left) Robo immediately Rocket punch Masa & Mune 
+Attacks Robo uses Mid Tonic Masa & Mune attacks Again Robo uses Rocket punch 
+Masa & Mune stores energy Robo uses Cure Beams to heal Repeat.
+
+Use a  Mid Ether when needed, adhering  to this protocol  strictly simply 
+makes this a case  of how many Mid Tonics  can you save. Masa &  Mune will 
+eventually fall and Robo will absorb all 500 Exp.
+
+Now do not heal  any of your characters except Robo, which  you'll want to 
+heal to max and  also make sure he has at  least 6 MP so he can  cast 2 laser 
+spins. Use an Ether if needed.
+
+Continue with the  necessary storyline and eventually you'll need  to go to 
+65M BC for  your dreamstone.  But wait! If  you remember, you  will lose  
+your gate key here  with no way  to get back  to the previous  eras to 
+purchase  what you need. So first you must make sure your inventory is 
+stocked up like so:
+
+Crono, Marle & Robo in party 20 Revives 20 Mid Tonics
+
+Sell your  old equipment to  make ends meet  if you must  (the Lode Bows  are 
+a good place to begin), just make sure you have these.
+
+Now we must  take a little  detour, all the way forth  to 2300 AD.  This is 
+one of the  main updates  for this  FAQ and this  is one  of the  few 
+opportunities that the EXP  mechanics allow for this following sequence.  
+Head to the Sewers, you want  to grab the Rage  Band just before  Sir 
+Crawlie, but before  that you must  fight a  forced encounter  near  the 
+entrance  to the  sewers. Have  Robo Marle and Crono in your party.
+
+**********
+2x Nereides
+44 Exp
+**********
+Robo  can absorb  this, this  experience is  virtually all  written off  
+later, don't worry about it at all as it will not affect the party levels.
+
+Now  avoid  the forced  encounters  by  refraining  from touching  the  
+'sound' triggers (cheese,  the can & trash  can and the  save point) and 
+grab  the Rage Band  just before Sir  Crawlie.  Go no further  and  come 
+back. Time  to  go to 65000000 BC.
+
+**>-12-<***
+65000000 BC - Reptite Lair
+***********
+
+You fall straight into a forced battle.
+
+**********
+Reptite x5
+360 Exp
+**********
+
+Yep,  Chrono and Marle  bite  the dust and  Robo  uses a single  laser  spin 
+to finish this off,  and now with albeit some  help from Ayla, you  face your 
+next forced encounter.
+
+**********
+Reptite x 4
+288 Exp
+**********
+
+Same drill as before.
+
+After the following  scenes including meeting Ayla & the  party you should 
+have your precious gate  Key stolen, now for your  party of Crono Marle  and 
+Ayla to begin the  forest maze. None  of the encounters  here are 
+inescapable,  so make sure you  sack this place  for everything, there  are 
+plenty of  resources here to find. Now  make sure Ayla's health is full  and 
+Crono and Marle are  at 1 Hp to make  the following forced encounters  
+easier. Save outside  before entering the Reptite Lair.
+
+After entering  the Reptite Lair,  before long you’ll enter  a room with  a 
+few Evilweevils which  you  can't escape from  if  you encounter them,  wait  
+a few seconds and each Evilweevil  will  dig  a hole,  you  must  use  one  
+of these  holes  to  reach downstairs,  each  hole  forces  you  into   a  
+different  set  of  inescapable encounters.
+
+You should see 5 Holes spaced like this after a few seconds.
+
+###1######
+##########
+2#########
+####4#####
+#########5
+##3#######
+
+There will be  some randomness to the  positioning, and if you  should meet 
+the wrong set of monsters, try again
+
+Hole 1 gives you
+Evilweevil x2 - 162 Exp and Megasaur x1 (830 Hp) - 147 Exp
+
+No treasure - 309 Exp total
+
+Hole 2 gives you
+Evilweevil x2 - 162 Exp and Megasaur x1 (830 Hp) - 147 Exp
+
+No treasure - 309 Exp total
+
+Hole 3 gives you
+Fly Trap + Evilweevil - 167 Exp and Fly Trap + Evilweevil - 167 Exp 
+
+There is a Mid Ether & Mid Tonic in the chests, total of 334 Exp.
+
+Hole 4 gives you
+Evilweevil x2 - 162 Exp and Megasaur x1 (830 Hp) - 147 Exp
+
+No treasure - 309 Exp total
+
+Hole 5 gives you
+Evilweevil x2 - 162 Exp and Fly Trap + Evilweevil x2 - 248 Exp 
+
+There is a Ruby Vest in the chest, total of 410 Exp.
+
+Just take any of hole  1,2 or 4... The treasures are not worth  the Exp for 3 
+& 5.
+
+In  the next room  there  are tonnes of  Reptites  and also 2  chests  behind 
+2 repites,  one  with  a  Rock  Helm  and the  other  with  a  Full  Ether  
+(both behind  a  Reptite), it  can  be  pretty  tough  getting these  chests  
+without triggering  an encounter,  so  you may  want  to skip  these  if 
+you're  having trouble. The previous  save point is not  far behind so I'll  
+leave that choice to you, but the Full Ether does sell for very handsome G.
+
+Run from  the next  few encounters,  save & use  a shelter  at the  save 
+point. Now equip Crono with the Rock Helm,  Meso Mail and Silver Stud, equip 
+Ayla with the Bandana and the  worst armours you have, after this  battle 
+Ayla will leave (for quite a while) taking what you equipped on her with her.
+ 
+As you enter  the next room you’ll face  Nizbel. You will need  to keep 
+precise track of  his Hp.  I'd recommend a  jot pad, a calculator  and 
+massive  abuse of the pause button.
+
+**********
+Nizbel
+500 Exp
+4200 Hp
+**********
+
+Basically  fight  him  how  you  would   in  a  normal  game,  except  Nizbel’
+ s electrocution attack  will kill Crono and  hurt Ayla. Have Crono  use 
+Lightning and have Ayla attack non-stop, have Crono heal  Ayla so she has at 
+least 200 Hp before  Nizbel’s  electrocution  attack (Tonics/Mid  Tonics).  
+You'll  need  to revive Crono  every time the electrocute  attack kills  him 
+and have  Crono cast lightning ASAP.  With the  Rock Helm  & Meso Mail  Crono 
+should  easily survive the Earthquake, although  the normal attack will kill 
+Crono  - revive him again if this happens 
+
+Now, hopefully you  have been keeping careful track of  his Hp (definitely 
+abuse pause to give yourself  time to keep track of Hp), use  Crono's attack 
+to bring Nizbel's atk down to  a reasonably low level (>50 Hp is  great), now 
+have Crono killed off  by electrocute and Ayla finish  off with her  normal 
+attacks, which will deal  negligible damage  without reviving  Crono. Time  
+this well  as it's easy to waste excessive resources with this.
+
+Now that  you are finished  with this section,  after the following  scenes 
+you must prepare for Magus's  castle. You can grab the Taban Helm  while you 
+are at it, but make sure you have at least the following:
+
+80 Mid Tonics
+20 Revives
+15 Heals
+
+If you have G  to spare, max out on Mid-Tonics 1st  before buying more 
+revives. Trust me you're going  to need them. And if you can't make  the ends 
+meet, then sell your old equipment, starting with your old weapons. 
+
+**>-13-<***
+600 AD - Magus’s Castle
+***********
+Pick Frog  up and have  him learn his  magic and Marle  and Frog learn  the 
+Ice Water dual tech  from Spekkio. Heal your team  too. Now go to  Magus's 
+Lair and save, the castle was probably tough in your LLG, it's no less down 
+here =-(.
+
+After the  following storyline  and stepping  on the  false save  point, 
+you'll find your first forced encounter.
+
+**********
+Hench x4 + Vamp x2
+488 Exp
+**********
+
+You should know what to do, Crono &  Marle dies & Frog lives. However make 
+sure you take out a  few enemies before letting them die because  the 6 
+enemies will easily overwhelm a lone Frog.
+
+First head down the  left passage head past the monsters and  talk to the 
+group of 5 people.. Which will knock you into yet another inescapable 
+encounter.
+
+**********
+Decendant x5
+60 Exp
+**********
+
+Same drill as the last fight, and most the others too.
+
+Do not speak to  Slash just yet, you will most certainly want  to save and 
+heal outside first, because this fight with Slash is very tough. Best of luck!
+
+Before talking to Slash equip yourself as follows:
+
+Frog : Rock Helm, Meso Mail, SilverErng 
+Marle: Rock Helm, Ruby Vest, Ribbon 
+Crono: Berserker
+
+**********
+Slash
+500 exp
+5200 Hp
+**********
+
+Open the  battle by  just attacking  with everyone (Use  Slurp cut  with 
+Frog), Slash does  little damage to  your characters (he  will however take  
+out Crono in one hit), when  Crono and Marle dies do not bother  reviving 
+them. When Frog exhausts his  MP use a Mid  Ether, you should have  a decent 
+stock of  these (I had 20) which should  comfortably last you for the 
+remainder  of the game. Keep Frog reasonably buffed with Hp and this first 
+part should be simple.
+
+A Fire  2 spell signals  the transition to  his 'equipped phase',  and 
+spamming Slash (75  dmg to frog)  at your party. again  don't bother 
+reviving  Crono and Marle  and attack  and healing  with  Mid-Tonics as  
+necessary. Frog  shouldn't have a problem keeping  up with Slash 1 on 1  
+whilst dealing respectable damage himself. After  about 8  hits watch  Slash 
+carefully,  he’s about  to transition into  his  3rd,  much  more  deadly  
+phase. You  can  tell  when  he  has  just transitioned  when his  body 
+movements  become  very erratic  (jumpy). When  he does  this,  immediately 
+heal  with  Mid  Tonics.  This  is where  the  fight's difficulty increases 
+tenfold.
+
+In Slash’s 3rd phase Slash will use Leap Slash (120-135 Damage), 'Yes 
+Indeed!' attack (100-110 Damage), Regular Attack (60-70 Damage) Slash (75 
+Damage) 
+
+On top  of that,  Slash's speed has  almost doubled, and  is likely  to 
+double- turn  Frog on  occasion.  Fortunately his  attacks follow  a  set 
+specific  and predictable pattern:
+
+Leap Slash
+Leap Slash
+'Yes Indeed!' Attack
+Slash
+Leap Slash
+Normal Attack
+Slash
+Normal Attack
+
+There is a  relatively long time delay between the  2 consecutive leap 
+slashes, and the end  of the pattern with the Normal->Slash->Normal  is where 
+the damage mounts up  slowest. Remember  this as  these are your  2 best  
+opportunities to attack.
+
+So as before concentrate on keeping  Frog healed with Mid-Tonics, and only 
+Mid- Tonics as  the damage  racks up  just far  too quickly.  Now after  the 
+Normal- >Slash->Normal  combo ensure  Frog  is at  full health.  After  the 
+first  Leap Slash,  immediately Slurp  Cut  Slash, and  Frog  will be  fast  
+enough to  get another turn in to  heal before the next Leap Slash.  
+Furthermore after the 3rd Leap Slash you should be able to safely get another 
+Slurp Cut in.
+
+You will  need to  stay on the  ball in  this fight right  till the  very 
+end, Slash does  have a fourth  phase which begins when  Slash is at  critical 
+health (~<800), which  is  exactly the same  as  the third except  he  
+counter attacks every  attack with  'Yes  Indeed!'.  Damage will  most  
+certainly  rack up  too quickly to safely  attempt attacking between the 2 
+Leap  Slashes, so limit your attacks  to  just the  Normal->Slash->Normal  
+combo  and  you should  be,  just about, fine.
+
+After  you win  you gain  probably  the most  useful  weapon in  the game,  
+the Slasher!  A brilliant  weapon  that  gives  Crono a  +2  speed bonus  
+for  zip, coupled with a Speed  Belt and you have a ** Speed  capable 
+Character. Not bad, at  all. The  Slasher also  has  decent attack  strength 
+although  it pales  in comparison to the Frog & Ayla.
+
+Now head  down the right  corridor and talk to  the children around  the 
+chest, run from this encounter  and you must collect the Barrier  from the 
+chest. Your success on this challenge depends on you not forgetting this item! 
+
+Carry on  down the right  corridor and before  you talk  to ‘Flea’ set  up 
+your characters as follows:
+
+Crono: Berserker
+Frog : Ruby Vest, Rock Helm, Speed belt 
+Marle: Magic Scarf
+
+And optimize the rest of the equipment on Marle first then Crono.
+
+**********
+‘Flea’
+0 exp
+**********
+
+Crono attacks & gets Mp Busted (don’t  worry about having Marle or Crono KO‘ 
+d), now the real flea appears.
+
+**********
+Flea
+500 Exp
+4100 Hp
+**********
+
+Flea is  REALLY  weak compared to  the  other bosses you  have  encounters.. 
+he doesn’t do over 60 damage so my advice  is just Slurp Cut & Mid-Tonic 
+away, use a  heal when  blinded/poisoned and  a Mid  Ether  when out  of MP.  
+On Crono  & Marle's part,  Crono attacks  till he dies  & Marle Ice’s  till 
+she  dies. Frog faces  off  against  Flea  alone  eventually.. And  
+eventually  he  will  fall, leaving Frog to collect the 500 exp (and a level).
+
+Collect the Magic  Tab that’s dropped and head  back out of the  lair. Save 
+and heal outside before  progressing further. You also need to  check your 
+itinery, you most likely  used about 40 Mid-Tonics about  now, you need at  
+least 50 for the next section, go back and purchase some more if you need to.
+
+Run through  and run from every encounter.  Grab the Mist  Robe and, 
+critically the Dark  Mail. The  next room  contains lots of  monsters.. All  
+avoidable but inescapable.  The only  ‘triggers’  in  this  room are  being  
+hit by  a  Green Rollie, just use the ladders to avoid these head through 
+onto the next room.
+
+Now you enter a room.. Where Ozzie will  drop you through the floor if you 
+step wrong. Now  dropping down  the said  holes does  indeed drop  is into  a 
+forced encounter, but this  is a necessary evil, as  the room we are dropped  
+in has a critical second barrier  that we will need in order  to defeat 
+Magus. According to mathematic  however, this doesn’t affect our  final 
+levels, do  not worry. So without further ado:
+
+**********
+Decendant x6
+72 exp
+**********
+
+Crono & Marle dies - Frog lives and absorbs the 72 exp.
+
+Ransack this room,  and try and find the  save point at least once  and save 
+in this room  (there's a Tab  here too along  with the  barrier), you have  a 
+very very  tough  couple rooms  ahead  of  you  in  terms  of dodging  and  
+surviving encounters. When you are  at the save point, do not heal  anyone, 
+and only heal Frog with  Tonics, we need  the other 2  to die  quickly. The 
+battle  with the 'save points' is escapable, don't worry.
+
+After you have  done all that head up and  around to Ozzie then up  to the 
+next room. In  this room  are loads  of inescapable  but avoidable  
+encounters.. And will take several tries  on a SNES. In fact, I recommend  
+you fight the battles in your  first few attempts and  just try and get  a 
+feel for this  room, enter and exit  it  and keep trying  and  trying, 
+fighting and  winning  the battles, once you  are  comfortable enough 
+dodging  these  in a single  run,  reset your game and try for real.
+
+There are 2 triggers
+
+Touching (or nearly touching) an Outlaw Touching a Grey Rollie.
+
+I will guide  you through the Outlaws 1  at a time, for the  Rollies just 
+avoid them by 1. Going to the ‘corners’ at the end of the stairs
+
+Like this
+#
+ #
+  #
+   #
+    ####1
+   #
+  #
+ #
+#
+
+This is a 2d diagram looking at the side, stand at 1 and you should be fine.
+
+Now for  the first Outlaw,  this outlaw is moving  towards you, so  run 
+towards him hugging  (hold Up & Left  buttons) the top wall,  as soon as you  
+reach the stairs  release the left  button  and run up  (effectively  ‘
+squeezing’ between the Outlaw & Stairs)
+
+A Rollie should be  coming down the stairs so go into the  upper left corner 
+of this  box you dodged  the  outlaw in and  wait  for the Rollie  to  pass 
+before continuing  up (the  outlaw  can  follow you  once  you  pass him  
+horizontally, strangely enough).
+
+Here’s a diagram
+
+
+F~~~~~~~~~
+#########~
+#######O#~~~~~~~~~~~~~~~~~   EEEEEE
+                 ########~~~~~~~~~~
+                 ##################
+
+EEEEEE = Entrance
+0 = Outlaw 
+~ = Route to take.
+F = Finish point (to wait for Rollie to pass).
+
+The next Outlaw is the  save as the first, hug the top  edge but when you 
+reach the  end of  the stairs  release  the right  button  and you  squeeze 
+past  the outlaw  similarly  to  how  you  did  the  first  one.  Do  that  
+you’ll  avoid the 2nd Outlaw.
+
+The Third Outlaw is easier he’s walking  towards you like the first was but 
+not we have ladders  underneath the bit he walks across,  although the Outlaw 
+might seem to  be following Crono,  he is actually following  the 3rd person  
+in your party  (Marle)   as  she’s  following   Frog  who’s  Following  
+Crono   in  the standard ‘walking trio’.
+
+Now we  can abuse this, walk  into the ladder with  Crono then walk up  off 
+the ladder but  stand just  above it. The  Outlaw will inch  his way  towards 
+Crono (go  back  onto the  ladder  when  a Rollie  goes  past).  When the  
+Outlaw  is uncomfortable close have  Crono walk to the  right, so far as  
+that Marle who’ s at the back of the  Trio will also walk off the ladder.  
+Walk to the right just far enough  so Marle  is the  only person on  the 
+ladder,  now the  Outlaw will walk onto  the ladder and  down it to  follow 
+Marle.. You  can now safely   by- pass the Outlaw.
+
+############O##F##C#####
+              M
+O = Outlaw
+F = frog
+C = Crono
+M = Marle.
+
+The 4th and  final Outlaw is the easiest  to bypass, just hold UP  to climb 
+the stairs and you’ll walk right past him, you don’t even have to run.
+
+After that give yourself a pat on the back.
+
+In the  next room are  2 inescapable encounters.  Do *not* take any  risks in 
+these  fights, you  definitely don't  want to  be repeating  the previous  
+room over and over.
+
+**********
+Outlaw x2
+Groupie x2
+462 Exp
+**********
+
+Have everyone attack the  Groupies and kill them first, then  let Crono & 
+Marle die.  Use Mid  Tonics  if necessary..  If  you  conserve you  run  the 
+risk  of dying..  Have Frog finish the Outlaws alone & will grow to level 13.
+
+The second  set of  monsters you can  actually escape from,  some good  news 
+at last!
+
+For the next battle give Frog the Ruby Vest and Silver Stud.
+
+**********
+Juggler x4
+512 Exp
+**********
+
+Crono &  Marle uses Magic  on the Jugglers,  Frog uses  Slurp Cut on  the one’
+ s who’s defence mode  is MAGIC (from Crono  & Marle’s magic). Crono  & Marle 
+will eventually get KO’d, in which case have  Frog to the Magicing & 
+Attacking. Frog will absorb all  the exp. The Ruby Vest  halves the damage 
+you  take form their Fire attack, making them much more manageable. Frog 
+absorbs all 512 exp.
+
+Head up  & grab a second  Speed Belt, head up  & run from every  encounter, 
+now you face Ozzie. 
+
+**********
+Ozzie
+0 Exp
+**********
+
+Attack  the chains  as normal..  don’t worry  this battle  gives no  exp so  
+no worries about Crono & Marle not being killed off.
+
+Grab a 2nd Mist Robe  & a 3rd Magicscarf in this room,  SAVE and use a 
+Shelter. Now you must face Magus, first however you  must know a bit about 
+him to defeat him.
+
+**********
+Magus
+1500 Exp
+6666 Hp
+**********
+
+Set Up your Characters:
+
+Crono: Slasher, Meso Mail, Speed Belt 
+Frog : Masamune, Rock Helm, Dark Mail, Speed Belt 
+Marle: Mist Robe, Magic Scarf
+
+Optimize the remaining helmets on Crono 1st then Marle
+
+Frog does not  need the SilverErng because it makes  no difference, Dark 
+Matter is survivable with Barrier  & 230 Hp and the Speed Belt  really is 
+necessary to get moves off fast enough.
+
+Magus  is probably  the  most  technically  challenging boss  in  a LLG,  by  
+a country mile.  He combines the need  for accurate timing, abundant  healing 
+and some luck.
+
+Magus’s Attack Patterns: Magus actually only has 2 attack patterns..
+
+First phase >4500 Hp
+Alternates between these 2 attacks Geyser / Hp Down, 35-40 damage & Hp Down 
+Status Normal Attack, 65-70 Damage
+
+And Magus will  counter every magical attack or every  2nd physical attack 
+with one of these spells, and also change his weakness to it.
+
+Shadow (150-160 Damage to Frog) 
+Lightning 2 (110-120 Damage to Frog) 
+Ice 2 ( 90-95 Damage to Frog) 
+Fire 2 (110-120 Damage to Frog)
+
+Frog  should, hopefully,  survive any  2 attacks  from full  health, except  
+an unlucky Shadow  Counter & Normal attack  combo. Just pray that  doesn't 
+happen. Now the  only magical damage  you're really going  to be  able to 
+deal  here is with Frog's  Water spell which  after 1 normal  attack from 
+Frog's  Masamune to lower Magus's defence,  will deal 240. You're  going to 
+need some  luck here in order  not to  exhaust  yourself of  Mid  Tonics, 
+hopefully  up  have an  ample supply at  this point. But  before I speak 
+more  about strategy in  this phase, you should be aware of his last phase.
+
+Second phase <4500 Hp
+Magus risks casting a spell (1-2 damage to all) 
+Dark Matter (305 damage to Frog)
+
+In case you haven't yet  done the math, 305 Hp is more  Frog has at maximum 
+Hp, even with  the SilverErng  equipped. He's  already maximally  set up  for 
+magic defence. But,  we have those 2  barriers! Ah yes  2 items that will  
+grace Frog with the ability  to nullify 1/3 of the  magical damage he 
+receives  for all of 60 battle  seconds. 2 minutes, that's all  Frog's got 
+to  survive the necessary Dark Matters in order to finish off that remaining 
+4500 Hp.
+
+So in order to get past this battle have with you a few things.
+
+Pen & Paper
+Calculator
+Your fastest fingers
+Your battle speed set to 1
+
+The  last point  is probably  the  most important  one, as  raising the  
+battle speed  will  allow  more  turns  to  be   performed  in  a  certain  
+amount  of battle time, it  also means  you get a  bigger window for  the 
+Barrier  to last, you need one barrier  to protect you from 3 Dark Matters  
+at this battle speed, and you'll  need to time  the use of  the barrier  very 
+precisely to  make this happen on  the  faster speeds. But  this  also, of 
+course  makes  the necessary micromanagement that much tougher too.
+
+So for  a start to finish  battle strategy, allow  Marle and Crono to  die 
+off, they're completely  useless at the beginning,  and attack Magus to  
+trigger his barrier change, if  he changes to Water,  good job, attack Magus  
+once to lower his defence  with Frog and  then cast water, if  he changes to  
+something else, you will  need to attack him  twice in order  for his barrier 
+to  chance again. All the  while with keeping  track of his  Hp, and  of 
+course keeping  track of your own Hp,  Frog isn't going to  last very long 
+without  healing, you'll have to  play very  defensively keeping  on  top of  
+healing with  Mid Tonics.  Don't bother using anything less, you'll only 
+waste time for yourself later.
+
+Now most importantly, once  Magus is one Magic hit away from  going to his 
+next phase, after  attacking Magus once,  revive Crono and  Marle. You need  
+all the turns you can  get while Magus is in  his second, lethal phase.  Have 
+Crono and Marle heal Frog  to his maximum Hp and  Mp and remove his Hp  Down 
+status, also you need  to have hit Magus,  to lower his  Magic defence, of 
+course.  You will probably need  to revive  your characters  a few times  to 
+accomplish  this but it's necessary, now  is probably a good time  to use 
+that Lapis.  Once you have Frog at  Full HP with  his status cured,  and 
+Crono  and Marle alive,  with all their turns available, you are all set.
+
+Cast the  dual tech Ice Water  to hit him hard  into his second phase,  now 
+you must act quickly.  Have Crono attack Magus,  Marle cast Ice and  Frog use 
+Slurp Cut repeatedly.  Do not even  bother trying to use  his normal attack,  
+time is too far against us.  Before Magus's 1st Darkmatter have Crono  use a 
+barrier on Frog.  Crono is  your fastest  character and  his turns  the most  
+dispensable. Dark Matter  will do  barely over 200,  healable with a  single 
+Mid  Tonic. But Frog simply doesn't have  time for this. Have Frog revive  
+Crono with his first available  turn, and  relentlessly attack  with Slurp  
+Cut. Use  Crono to  heal Frog  and then  attack  Magus  too.  These small  
+attacks  of Crono’s  may  seem insignificant,  but they make  all  that much 
+difference.  Repeat  this process after every  Dark Matter, reviving  Crono 
+and  attacking with Frog.  Crono will need to use  a second Barrier on Frog  
+after Magus has used  three Dark Matters (It  can  actually sometimes  last  
+4  Dark  Matters),  wait for  the  existing barrier to  wear out  before 
+using  the next, keep  a close  eye on  Frog. Also Crono will need to heal 
+Frog's MP with a Mid Ether
+
+After Magus's fifth  Dark Matter do not  revive Crono, as you  should have 
+done enough damage  to  finish things with  Frog  alone, have him  heal  
+himself and assault, you should have enough time to get in the remaining 
+damage.
+
+If you  are really, really  struggling to make the  damage count, you  can 
+give Frog some Power Tabs to help make ends meet.
+
+*Thanks Moogleboss for suggesting and testing the idea
+
+Once  you win,  congrats, you  just  beat one  of  the hardest  bosses in  
+this challenge, victory is sweet!
+
+Frog  will absorb  an obscene  quantity  of exp  and  we will  be propelled  
+to 65000000 BC.
+
+**********
+65000000 BC - Tyrano Lair
+**********
+
+Your levels as of now should be: 
+Crono: Level 1 
+Marle: Level 4 
+Lucca: Level 14
+Frog : level 14
+Robo : level 15
+Ayla : Level 19
+
+**>-14-<***
+65000000 BC - Tyrano Lair
+***********
+
+You  awaken in  65000000 BC,  proceed through  the following  scenes until  
+you attain the  Dactyl, now don’t go  to the Tyrano  Lair just yet. First  
+thing of course is to save but to head back to 600 AD, we need supplies.
+
+You need:
+50 Mid Tonics
+20 Revives
+5 Ethers and Mid Ethers
+
+Head into  Tyrano Lair, there are  no unavoidable inescapable  encounters 
+here, however  avoiding these,  especially  on  a  SNES will  be  a doozey,  
+it's  as tedious  as the room in  Magus'  lair and  as  tricky 
+as  Denadoro Mountains! But  fortunately this is the  last of the encounter-
+dodging  we need to do.
+
+When you’re in  the Tyrano lair take  the right passage, run  from everything 
+and release Kino. Follow Kino up & around and into the left skull.
+
+Step  on both  switches &  head  through the  left  passage, hug  the top  
+wall outside, the  Reptites are easy  to avoid (just don’t  touch them) and  
+up into the next room. This room will consist of lots of teleporters. Hug the 
+left wall  & move up until you reach a one  square long ‘bridge’. Cross it  
+and then  hug  the  wall to  your  right &  go  straight  up. Don’t  bother 
+collecting the  egg on  the top wall,  hug the  top wall to  the stairs  and 
+go down.
+
+This next  balcony is very  tough, huge the top  wall tightly and  you’ll 
+avoid the random encounters here,  stop hutting the top wall when  you reach 
+the door that’s sealed.  There is  a path  approximately ‘one  square’ above  
+the bottom wall which  is about ‘one square  thick’ then you  can take which 
+allow  you to evade the random encounters.
+
+Diagram of the balcony:
+
+*S**            XXXX            TTTT #PPPPPPPPPPPPPPPPP###############P## 
+#################P###############P## #################P###############P## 
+#################PPPPPPPPPPPPPPPPP## #################################### 
+####            ####            #### ####            #G##            #### 
+
+S = Starting position on screen P= Path to take XXXX = Grated door TTTT = 
+Target door
+G = Running Point (read on..)
+
+Inside the next room is no save point,  press the right switch only and head 
+up and flick the  switch in there, head out  and follow the path you  took. 
+Now if you are  on an emulator,  save state, if  on a  SNES, go outside  
+Tyrano's Lair and Save.
+
+Now go to  point G, line yourself so that  just under half of Crono  is in 
+line of the  front of  the pillar and  half is  in front of  the opening.  
+Now start with Crono facing  the door, hold B and  dash towards it, as you  
+each the door Crono should  ‘bump off’  the corner  of the  pillar and  enter 
+the  next room. This door  is programmed  to be  a forced  encounter by  any 
+normal  means, but running at  the door  this way  triggers the screen  
+transition at  exactly the same  time as  the battle  (you will  see your  
+characters run  back to  enter battle  stance  as the  screen  fades  out).  
+This  will probably  take  several attempts,  but it  is  definitely 
+entirely  possible  without killing  yourself over it, I  have run at the 
+door form  the same save state at the  same time in the same way and  gotten 
+different results, so there is a  large degree of luck involved in this. May  
+you only have the best of it! I  have even completed this section  on   the  
+iPhone   version  of  Crono   Trigger,  where   movement  is substantially 
+more  laborious and  less responsive, so  I'm sure  it's possible for anyone 
+to achieve even on a SNES!
+
+Now save in this room and prepare yourself for...
+
+**********
+Nizbel II
+880 Exp
+6500 Hp
+**********
+
+To  those of  you  who  defeated  Nizbel II  with  the original  guide,  
+please forgive me.  What used to be  one of the toughest,  and by a country  
+mile, the most  annoying is  all  but  trivialized  by the  Rage  Band. The  
+strategy  is simple, just have the following checklist prepared:
+
+Ayla: Fist, Rock Helm, Mist Robe, Rage Band, full 40 MP 
+Crono: Slasher, Speed Belt 
+Battle Speed: Fastest
+
+All you must  do is have Chrono cast  2 Lightings on Nizbel,  which will 
+bring his  defence to  its minimum,  cast  no more  than  that as  that will  
+trigger Nizbel's painful  lightning counter. You should have  ample time to  
+do this at the  start as  you have  2 other  party members  to distract  fire 
+from  Crono, reset if you fail first time.
+
+After  that  it  simply  becomes  a   waiting  game,  have  Ayla  heal  
+herself constantly  with  Kisses,  and  she  will randomly  counterattack  
+50%  of  the attacks coming her  way for 225 damage, 440  if a critical hit.  
+Have Marle and Crono  do nothing  but  the  2 aforementioned  lightings,  
+they  will die  off quickly enough, and remain dead.
+
+Now,  because  you  are  damaging  via counter  attacks  instead  of  
+directly, Nizbel's  (ANNOYING) defence  boosting counter  doesn't come  into 
+effect,  and thus so long  as you never directly attack  him, it will remain  
+at its lowest throughout the fight!
+
+~25 Counterattacks later and the former pain in the ass will fall, good job!
+
+Don't  forget to  save, this  next  section is  very, very  tricky to  
+navigate without triggering any  forced encounters. Now continue on through  
+to the next room, which  is the balcony  depicted in the diagram  below, make 
+sure  you are walking, and not running through this section.
+
+Hug the bottom  ledge until you are  exactly halfway between the  entry 
+and central door  (you can  use the  5 bricks as  a marker  too, and  go up  
+on the third  one) before  going up  and hugging  the top  ledge until  you 
+reach  the middle of  the big  balcony. You  can safely move  to the  bottom 
+of  the ledge without triggering anything Now on  the next part  hug the 
+BOTTOM  edge of the  balcony until you’re  in line with the right  half of the 
+right pillar  door, then you can safely  go upwards & inside the room.
+
+Again, as  depicted with  Magus's lair and  balcony before Nizbel  II, if  on 
+a SNES it is  definitely a good idea to  just practice this section  a few 
+times, fighting the  battles and gaining  the levels, just  to feel exactly  
+where the trigger spots  are if you  keep tripping them, then  reset and try  
+the balcony for real,  the previous save point is very  close in comparison  
+to the previous section.
+
+*S**             XXXX             TTTT 
+#p####          ######           ###p## 
+#p####          ######           ###p## 
+#p####          ######           ###p##                                
+#p########pppppppppp################p## 
+#p########p########p################p## 
+#p########p########p################p## 
+#pppppppppp########pppppppppppppppppp## 
+#####           ######            ##### 
+#####           ####CC            #####
+
+P = Path to take
+XXXX = Grated Door
+TTTT = Target Door
+*S* = Start
+CC = Crono's start position
+
+
+Once you  enter the  room step  on the  top-most switch,  before you  save 
+make sure  your  party  is  fully  healed  and  you  have  them  equipped  
+like  so: 
+Crono: Slasher, Speed Belt 
+Ayla: Ruby Vest, Speed Belt 
+Marle: Silver Stud
+
+And prioritize your  remaining armours to Ayla  1st, Marle 2nd &  Crono 3rd, 
+now you can  trip the  left switch  and save, we  have 1  more tricky  
+encounter to dodge now.
+
+Retrace your steps to  the Middle Door (previously grated), all  but one of 
+the tiles  in  a line  towards  the  doorway  trigger  a  forced encounter  
+with  a gigasaur, there  is a  *very* narrow path  on the right  hand side  
+that avoids this and  will let you  through to the next  room without any  
+unnecessary exp. Align Crono  so the left  half of his  body is in  line with 
+the  right pillar, and the right half  is in line with, of course, the wall.  
+Walk through and you should avoid the  encounter. This will likely require 
+some  trial and error and several resets, but the window is most definitely 
+there.
+
+Now you must fight  Azala, if you required a large number  of attempts to 
+avoid those forced  encounters,  you definitely do  not  want to be  taking  
+too many risks in this right, but it's generally quite straightforward.
+
+**********
+Azala & Black Tyrano
+1800 Exp
+Azala - 2500 Hp
+Black Tyrano - 10500 Hp
+**********
+
+Azala's Moves:
+Rock Teleport: Almost kills, or barely kills Marle 
+Sleep: Can cure with Kiss/Heal 
+Telekenesis: ~70 Damage
+
+Tyrano's Moves:
+Single Target Flame: ~20 Damage to Ayla, 50 to Marle 
+Countdown: Hp Down Status 
+Chew: Absorbs 200 Hp from Ayla, 50 from Marle 
+Charged Flame Attack: ~160 to Ayla, kills Marle
+
+Don't  be intimidated  in the  least  by their  moveset however,  as they  
+make their moves are generally very slow.
+
+For the first  half of the fight you  want to concentrate on  Azala, have 
+Crono use Lightning on Azala (and he will die shortly)  Ayla heals Marle & 
+Herself with  Kisses/Mid Tonics and Marle concentrates on using  Ice on  
+Azala for  85 damage a  hit. Use  a Mid  Ether on  Marle when necessary.
+
+Just make  sure you always  have Ayla’s turn available  to heal and  you 
+should be perfectly fine,  you should only need to  revive Marle 4-5 times  
+if you are careful. When Tyrano’s  Countdown is   over make sure Ayla  has 
+full health  and she’ll survive no problem (Tyrano's attack does 150 
+damage), revive Marle after and continue.  The only thing to worry about is  
+having Ayla put to sleep immediately  after Tyrano's countdown, but  this 
+should not be  a problem if you heal with reasonable liberality. Don't take 
+any  more risks then you have  to, you don't want  to keep repeating that 
+forced encounter dodge earlier.
+
+When Azala falls he’ll  use Break, Hp Down. Now you face  Black Tyrano, and 
+all of 10500  Hp, but do not  worry, Tyrano is so  slow with its actions  
+that Ayla is always  fast enough to  get at least  1 turn in  before Tyrano 
+follows  up a previous move.  Use a Mid Tonic immediately  after each 
+Charged  Flame and Bite attack  and Ayla  is  in absolutely  no  damage  of 
+dying,  just  hack your  way through each  and every  one of  those 10500  
+Hp's with  Ayla's attacks  and he will fall, leaving Ayla with 1800 juicy Exp.
+
+Ayla will  absorb all  1800 Exp,  after the following  scenes you’ll  arrive 
+in 12000 BC.
+
+Congratulations! You have achieved your party's final levels!
+
+Crono: Level 1
+Next Level 14 Exp.
+
+Marle: Level 4
+Next Level 4 Exp.
+
+Lucca: Level 15
+Next Level 1450 Exp.
+
+Frog : Level 15
+Next Level 100 Exp.
+
+Robo : Level 16
+Next Level 290 Exp.
+
+Ayla : Level 20
+Next Level 581 Exp.
+
+However  this is  not -quite-  the end  of your  encounter-dodging antics,  
+and also we have yet to collect Magus
+
+**>-15-<***
+12000 BC - The Wallet
+**********
+
+Head through the gate and you’ll reach 12000 BC. Go through this  place till 
+you reach Zeal  Palace (don’t do the  Fire, Water & Wind books just yet..  We’
+ll come back to these shortly  enough). Tell the lady in the Castle  with the 
+plant  for her to plant it,  not burn it.  This opens a very important side-
+quest to  us later on. Scratch the Nu’s  back on the bridge now head back  to 
+Kajar, enter the top-right  room & scratch the  Nu in there’ s back for  a 
+Magic tab. More importantly  however you can  search the right- side of the 
+bottom wall in the very same room for a Speed tab!
+
+Now  head back  to Zeal  palace and  charge your  pendant after  a few  
+scenes. Great! This  now grants you access to  tonnes of really  useful items 
+including the Wallet!  However two Nu’s block  your path so  you must head 
+into  the room above and experience the scenes there.
+
+Sadly it's  impossible to  absorb the  1000 exp this  next fight  yields 
+without level gain.  It is optional  however and losing  will still continue  
+the game. But that's not to stop you beating him up for fun no less!
+
+**********
+Golem
+7000 Hp
+**********
+
+Crono: Slasher, Speed Belt 
+Marle: Speed Belt 
+Ayla : Ceratopper, Mist Robe, Beserker
+
+This has  got to  be one of  the most  ironic switches of  tactics I  have 
+ever made,  as the  most well-accepted  strategies  for defeating  the 
+Golems  avoid allowing the Golems  to Copy Physics, due to its  powerful 
+physical attack that will wipe  out any  character in a  single hit. But,  
+it's exactly  that, Golem can only attack  a single character at a  time in 
+this form,  and he alternates between this and Iron  orb, which deals 50% of 
+a  target's current health. With this in hand, the strategy to defeat the 
+Golem becomes ridiculously simple!
+
+1. Have your Berserked Ayla your sole source of damage 2. Only  use Crono  
+and Marle's turns  to use a  revive fallen  characters from Golem's physical 
+attacks 3. If Ayla  is killed/hit with Iron Orb,  ensure you use a Mid-Tonic  
+on her to make sure she survives Golem's final attack (which does 150 damage 
+to Ayla)
+
+That's really all there  is to it, Crono and Marle can  easily move fast 
+enough to revive and  heal faster than the Physical Attack  strikes, it 
+simply becomes a case of waiting for Ayla to automatically hack through 
+Golem's 7000 Hp.
+
+Sadly,  we simply  cannot afford  to absorb  this exp  the fight,  so you  
+must replay and lose this fight on purpose when you do win.
+
+Afterwards you  will be booted back  to 65000000 BC,  and now with access  to 
+a plethora  of awesome equipments  courtesy  of the Pendant!  Ransack  the 
+Chrono Trigger  world  for what  it's  worth,  the  relevant treasures  
+available  are listed below:
+
+2300 AD:
+
+Arris Dome -
+Hit Ring
+Gold Erng (!)
+Lumin Robe
+Elixir
+Power Tab
+
+Banjor Dome -
+Charm top
+Full Ether
+Wallet (!!)
+
+Give the Wallet to Crono for now.
+
+Trann Dome -
+Magic Tab
+Full Ether
+Gold Stud (!)
+
+1000 AD:
+Guardia & Truce - Red, Blue, Black and White Mails 
+Heckran's Cave - Dash Ring 
+
+Medina  Village -  By default  you  would choose  the  Safe Helm,  and all  
+the strategies discusses later are  built with this in hand. But  if you are 
+trying a minimum-tabs  run you will  need the Swallow, for  the Speed Bonus  
+vs Lavos. You *should* be able  to work the existing strategies by  swapping 
+the safe helm for the  next best  thing, and  then using  a shield  except 
+the  Lavos Spawns. Expect an  update in  the next version  covering those 
+with  the Swallow,  as I have yet to play-test them.
+
+600 AD:
+Guardia & Truce - Red, Blue, Black and White Vests 
+Guardia Forest  - Speed Tab
+	
+The  coloured mails  & vests  are  along with  the Wallet  the most  
+critically important items  to gather, to  get the coloured mails  you need 
+to  touch each of the  chests in 600  AD at Guardia  Castle, Truce  Inn and 
+Mayor's  Manor and decline  to remove  the items  inside. Then  you may  open 
+the  same chests  in 1000AD for  the powered up  Items before getting  the 
+originals in  600AD. Here now you have 2  copies of element absorbing armour 
+for  each element, and these alone improve our survivability tenfold for our 
+upcoming battles!
+
+There are other items  besides the ones mentioned here, but  these are the 
+only relevant ones to the challenge at hand.
+
+Now we  are finally  free to  learn techs to  our hearts'  content! For  now 
+we only need  Ayla's Charm ability,  form a party of  Crono, Robo and  Ayla, 
+there are 2 good  places to gain the needed  tech points. One is in  the 
+mountains in 65000000BC where the  gate is, the Runners and  Kilwalas there 
+give 8  and 4 TP respectively per  fight.  Also there is  the  Nu in the  
+hunting  grounds, which gives 30  TP a  pop. The first  option I  believe is 
+a  little faster,  but the second  option gets  you all  the tradables  
+conveniently, which  will be  our source of money for equipment later. 
+
+A  recommended  equipment  setup  for  Nu  slaying  would  be  something  
+like: 
+Crono: Wallet 
+Ayla: Berserker
+Robo: Dash Ring
+
+Only train  as far  as getting  Ayla charm,  there are  faster tech  sources 
+of tech points available later.
+
+And you  can upgrade your  weapons for Crono and  Robo quickly by  trading 
+said items.
+
+Now  if you  opted to  plant the  seed  in 12000  AD ,  we have  the option  
+of completing the Sunken  Desert quest early! It's a very  tough challenge at 
+this stage and without  the weapon upgrades, but definitely  possible and 
+infinitely rewarding! If  you forgot to  plant the seed,  or just do  not 
+want to  do this early then do not worry, we will come back to this later.
+
+**>-16-<***
+600AD - Sunken Desert
+***********
+
+You will need:
+30 Mid Tonics
+10 Revives
+3-4 Lapis
+1-2 Mid Ethers
+
+This is  a critical  side quest to  completing the challenge  as it  yields 
+the much-needed Green Dream  (more on that later). Form  a party of  Crono, 
+Frog and Ayla, and equip them like so:
+
+Completing quest before returning to 12000 AD: 
+Crono: Aeon Blade, Elemental Mail, Wallet 
+Frog: Masamune, Elemental Mail, Dash Ring 
+Ayla: Safe Helm, Elemental Mail, Gold Erng
+
+Completing quest after attaining Crono: 
+Crono: Vedic Blade, Rainbow Helm, Ruby Armor, Wallet 
+Frog: Bravesword, Safe Helm, Ruby Armor, Dash Ring 
+Ayla: Rainbow Helm, Ruby Armor, Gold Erng
+
+Proceed through as normal and heal your characters before Retinite.
+
+**********
+Retinite
+Top - 5000 Hp
+Core - 1000 Hp
+Bottom - 4000 Hp
+**********
+
+This is another one  of those bosses where strategy guides  make me wince 
+with their suggestions,  contraire to anything you may  have read before  DO 
+NOT KILL THE CORE! If  you do then perhaps the  message it gives you  will 
+indicate your mistake:
+
+"Runs away without the core"
+
+If the  core dies,  Retinite basically  goes insane  and splashes  attack 
+after attack at  you which is  extremely difficult to manage  with even with  
+all the equipments  from all  the side  quests, furthermore  you'll need  to 
+use  water each and every time you attack. Do. Not. Kill. The. Core!
+
+Now if you leave  the core alive, Retinite isn’t so bad,  the fact it's 
+actually 2 bosses  means the  attacks it does  so happen very  rapidly, for  
+this reason designate Crono's  primary role as a healer,  using Lapis' Mid  
+Tonics and Mid Ethers when needed,  and designate Frog the secondary healer.  
+Crono will die a few times in  this fight, and sometimes  Frog too, revive 
+them  at the earliest opportunity.
+
+Now, the core  has 1000 Hp, and the top  and bottom absorb for just  over 200 
+a go, so 5  absorptions and the core is  dead, and so are you.  The core 
+actually absorbs lightning, so you  can effectively 'heal' the core for 700  
+Hp a go with Volt  Bite, and  if  you are  desperate,  with  Spire.   
+Whenever  the core  is absorbed 3  times, make it your  priority to heal  it, 
+because if it  dies then you may as well reset.
+
+Okay start by  Charming a Speed Tab from  the Core, have Frog use  Water on 
+the Bottom to soften it.  Now go all out on the Bottom with,  if you are 
+completing this  quest  early,  Ayla's  Cat  Attack and  Frog's  Slurp  Cut.  
+If  you  are completing  this quest  after gaining  Crono then  you have  
+better options  at your disposal, Triple Kick and Leap Slash, (and their Dual 
+Tech, Drop Kick)
+
+Once  you chew  down those  4000 Hp  the fight  becomes very  easy, repeat  
+the previous process for the top and it will not last very long at all.
+
+Now head over to  Fiona, drop off Robo, collect him in 1000  AD, go through 
+the following  scenes,  and you'll  come  out  the  other  side with  our  
+precious Green Dream!
+
+**>-17-<***
+12000 BC - Mt Woe
+***********
+
+Take your party into the Terra Cave, buy  30 Mid Tonics and 10 Revives and 
+save downstairs. Now, we  need to purchase a new  weapon for Lucca at  the 
+shop here too, we will need it for Rubble-slaying later.
+
+Now equip your party members  :
+
+Crono: Slasher & Wallet 
+Robo : Gold Erng 
+Ayla : Safe Helm, Dash Ring
+
+I gave them  my best helms &  some element absorbing armour  (they’re still 
+the best defensive armours available so far..)
+
+When  you head  through downstairs  you’ll  face 2  beasts, have  Ayla Charm  
+a Rainbow Helm form each  of them while Crono uses Spincut,  Frog Leap Slash 
+then finally Ayla  Rock Throwing (very effective).  Don’t be surprised if  
+you die.. These beasts are tough  in a LLG. Also in the bottom right  corner 
+in this room is a Power Tab.
+
+Give the 2 Rainbow  Helms to Frog & Crono these give very  decent defence and 
+a very fancy but yet nearly useless 50% Lightning resistance.
+
+Now heal up with  tonics (use an Ether on each character  too) and head 
+through to face 2 more beasts, Charm them if you wish but kill them either 
+way.
+
+Now heal  everyone with Tonics,  use Mid ethers  on Ayla &  Frog & an  Ether 
+on Crono, the next fight is pretty tough. Prepare your characters like so. 
+
+Crono: Slasher, Rbow Helm, Element Mail, Wallet 
+Frog : Masamune, Rbow Helm, Element Mail, Dash ring 
+Ayla : Safe Helm, Element Mail, Gold Erng
+
+When you try to head further you’ll face a boss fight.
+
+**********
+Mud Imp
+Red Beast - 5000 Hp
+Blue Beast - 5000 Hp
+**********
+
+The Blue Imp  holds a Mermaid  Cap, and the Mud Imp  hold a Speed  Tab, both 
+of which you  REALLY want.  Begin by  Charming both  off the  2 Beasts  and 
+having Crono and Frog heal. If Crono falls don’t revive.
+
+Now have Frog  be the healer using Mid  Tonics and Ayla just  attack with 
+Beast Tosses on the Red Beast. If Frog Falls  asleep have Ayla heal Frog with 
+a Kiss, if the other way round have Frog heal  Ayla with Mid Tonics, if both 
+asleep you may be  pretty much screwed.  Repeat the process  and eventually 
+the  Red Beast will fall,  repeat the process  on the Blue  Beast (who will  
+now counterattack every move against  him) then just wait  out the Imp, who  
+will run eventually. Use a Mid Ether is necessary.
+
+Do NOT be  surprised if you  get killed in this fight.  In total I  used 17 
+Mid Tonics and 2 Mid Ethers on this fight.
+
+Proceed  up  &  through the  mountain,  when  you  see  a rubble  set  up  
+your characters as follows.
+
+Crono: Wallet
+Frog : Berserker
+Ayla : Hit Ring
+
+Button bash  A and  hope you  make the kill.  Rubbles earn  a Massive  100 
+tech points and  a decent  1000 G, later  there is one  Rubble that  
+respawns.. This Rubble will  be used to teach  all your characters  all your 
+techs so  you must pay attention.
+
+On this  mountain are  several monsters  which you  can charm  a LOT  of 
+useful items from, when you’re  not fighting rubbles equip Ayla with  the Gold 
+Stud, use Frog to  heal in between fights  or Marle/Robo is  Frog runs out 
+of  MP (switch Ayla for  Robo/Marle, heal,  reswitch, heal)  and use Mid  
+Ethers on  Ayla when she’s  out of  MP. Keeping  the  Berserker on  Frog is  
+not  a bad  idea as  the monsters here give decent Tech Points, Crono should 
+hang onto the Wallet.
+
+Here’s the Charm List for the Mountain.
+
+Buntan Imp’s : Alloy Blade (Crono) 
+Gargoyle : Big Hand (Robo) 
+Stone Imp - Mid Ether 
+Man Eater - Pearl Edge (Frog)
+
+The respawning  Rubble is  on the second  screen on the  mountain, go  past 
+the Save Point and it’s  on your right on a ‘Mini Island’ linked  by a chain 
+(which you can walk  over). Now is your chance  to really grind some  tech 
+points. The rubbles here give  100 Tech Points a go,  although it's a fair  
+distance to the previous screen  in order to  make it respawn. The  evasion 
+stat on  the rubble is insane  and even  Ayla, who has  lethal accuracy 
+against  every boss  in the game struggles.  For Rubble  training you want  
+to keep Ayla  in your  party at all  times and  either Robo,  Frog  or Lucca  
+with  your party,  equip them  as follows:
+
+Crono: Wallet
+Spare Character: Hit Ring 
+Ayla: Berserker
+
+Crono's  Accuracy  is abysmal  even  with  the  hit  ring,  you want  to  
+begin training with Robo 1st,  Frog 2nd and Lucca last (we  purchased her 
+weapon from the shop specifically for this task)
+
+Now you don’t  actually have to teach  your characters every single  one of 
+the techs they  will need *now*, because they’ll  be earning plenty  of Tech 
+Points available in  subsequent fights. Marle  doesn't need  any techs until  
+the very end  of the  game, and  there's  a very  convenient  source for  
+all her  Tech Points at the black omen, so tech her nothing for now.
+
+Here's the checklist of techs you need to learn here and now:
+
+Crono - Confuse
+Marle - Nothing
+Robo - Uzzi Punch
+Frog - Leap Slash
+Lucca - Fire 2
+Ayla - Dino Tail
+
+It's pretty  tedious, and soul-destroying  process, you  really do not  want 
+to spend  any more  time doing  this  then you  have to,  progressing 
+through  the story will net a decent number of TP, and push Robo and Ayla to 
+their finals.
+
+Eventually you will want the following Techs:
+
+Crono - Confuse
+Marle - Life 2
+Lucca - Fire 2
+Frog - Water 2
+Robo - Shock
+Ayla - Triple Kick
+
+Head  the rest  of the  way through  the mountain  with all  your lovely  
+techs learnt, charming the enemies here, don’t hesitate  to get more than one 
+of each item because they sell for excellent G. 
+
+Just before  you reach  Giga Gaia  you’ll get a  Time hat  then you’ll  reach 
+a chain  bridge  which will  take  you  to Giga  Gaia,  on  the bottom  
+right  of this screen is a Magic Tab, be sure to grab it and save.
+
+Now you face probably the easiest boss ever, Giga Gaia.
+
+***********
+Giga Gaia
+10000 Hp
+***********
+
+All you need to do is set up your characters like so... 
+Crono: Black Mail & Wallet 
+Robo : Red Vest & Hit Ring 
+Ayla : Red Mail & Gold Stud
+
+With both hands Giga Gaia only does 2 attacks 
+2 Handed Attack : Double Fire Blaster 
+2 Handed Attack : Double Shadow Blaster
+
+Both of  these attacks do about  the same damage  but Giga Always uses  them 
+in the following sequence: 
+Shadow 
+Fire 
+Fire
+Repeat
+
+He uses the fire one 2x as much as his Shadow.. Hence with your brilliant 
+Fire- Absorbing gear you  got earlier this battle is  a piece of cake.  Robo 
+has some natural resistance to Shadow hence he gets away with using a Red 
+Vest.
+
+When the  battle starts have  Ayla Charm the  main body  for a Speed  tab, 
+have Robo  Uzzi punch  the  main body  until  out of  MP, have  Crono  start 
+with  a Spincut, then  soon after wiped  out by the Fire  Blaster (don’t 
+revive  him of course), have  Ayla Triple  Kick till  out of MP,  then just  
+have Robo  & Ayla attack until the Main Body dies (don’t attack the arms).
+
+This is  one of  the most  annoyingly overlooked tactical  exploits for  one 
+of the  most troublesome  bosses  players  have found,  who  needs  Falcon 
+Hit  or Luminaire when you have the elemental mails!
+
+After this easy  battle Mt Woe will fall  - hopefully you’ve got  all the 
+items and Tech Points you needed before then.
+
+Now  head up the  Skyway  to Enhasa, open  the  3 Books here  in  correct 
+order (Water - Wind  - Fire), this will open  a separate room where there  
+are 6 Nu's which will  yield 2  Tabs if you  can win.  Falcon Hit and  Dino 
+Tail  are good techs  to use  here,  but  try to  focus  on  1 Nu  as  a  
+time otherwise,  and designate Crono  as the healer  here. Don't be 
+surprised  if you lose,  keep at it!
+
+Eventually you  reach Zeal Castle,  return to the  chamber you faced  Golem 
+in, you’ll face Dalton.
+
+**********
+Dalton
+4000 Hp
+**********
+
+Let's put  our hard  earned techs to  use! In particular,  learn to  love 
+Beast Toss, it  combines  the damage from  Robo's  Uzzi Punch and  Ayla's  
+Rock Throw with  a  healthy multiplier  bonus.  The  result  is,  as  you 
+can  see,  quite spectacular, 3 of them and Dalton is dead.
+
+Now let me list the advantages of using Dual Techs
+
+1.  100%   accuracy,   ignoring  enemies  evade   on   enemies  they  work   
+on 2.  Enemies that  counterattack will  only  counter once,  and usually  
+against the character issuing the command 3. Damage Bonus 4. Elemental 
+addition to physical attacks
+
+The  first advantage  is  what  really  makes Dalton  cake  here, as  his  
+high evasion  is all  for nawt.  Dalton only  attacks and  counterattacks 
+with  Iron Orb, the  only thing  that can  kill you  is his  death-counter, 
+but  then just make sure you have  one character with above 200 Hp before  
+the third and final beast toss and they will survive just fine
+
+Now you proceed to Ocean Palace
+
+**>-18-<***
+12000 BC
+Ocean Palace
+***********
+
+The Elemental  Mails  again will be  your  best friend here.  I  suggest 
+giving making  a  Party  of  Ayla,  Frog  & Crono.  Give  each  of  them  a  
+different Elemental  Mail  except Black  Mail,  give  Crono  the  Wallet, 
+Ayla  the  Gold Stud & Frog the  Hit Ring. In here are several  elemental ‘
+Scouts’ who’s spells can be painful or not.
+
+Here’s the Charm List of the area.
+
+Yellow Scouts - Lapis
+Red Scouts - Barrier 
+Blue Scouts - Shield
+Mage - Barrier
+Barghest - Shield
+
+We'll actually be  needing a good number  of barriers and shields  for the 
+rest of the game, and  this is the best opportunity to charm them.  You will 
+need 20 Barriers  and 20  Shields. If  you  are intending  on taking  on 
+Ocean  Palaces Lavos (in  a New Game  +) you need  a total of 50  Shields, 
+you can  split that load between 3 run-throughs however, but it's a job that 
+does need doing.
+
+I don’t suggest fighting  to the finish on any of the scouts,  I do suggest 
+you keep  switching your  Elemental Mail’s  with respect  to the  scouts. 
+Use  Leap Slash & Rock throw as attacking techniques, with Mid Ethers for MP.
+
+Collect every Chest, you  should obtain the hidden Demon Hit  which is not 
+only now Frog’s strongest weapon  but gives him a huge 2x  damage for magic 
+enemies, keep this on  Frog for now. You should  also pick up a few  very 
+decent weapons for your other characters.
+
+Now  you will  head  down some  stairs,  run  from every  fight  you see  
+here. Eventually you’ll meet  Masa who will show you the  cut-scene with 
+Schala, head down  the stairs  after  this. Now  save  & use  a shelter,  
+then  set up  your characters as follows..
+
+Crono: Star Sword, MermaidCap, White Mail, Wallet 
+Frog : Demon Hit, R’bow Helm, Blue Mail, Hit Ring 
+Ayla : R’bow Helm, Red Mail, Gold Stud.
+
+Now you’ll reach  the elevator.. Where you’ll fight 3  consecutive & very 
+tough fights.
+
+First you’ll  Face 2 Blue scouts,  2 Yellow Scouts  & a Mage. Which..  you 
+can run from.
+
+As you starts descending the elevator you’ll face
+
+3 Thrashers & Jinn/Barghest combo: Use  a Rock  Throw  on  each  Thrasher to  
+one-hit-kill  & avoid  the  powerful counter,  have Frog  normally attack  
+the Jinn/Barghest  combo, heal  everybody with Mid Tonics & Mid Ethers is 
+necessary just before finishing this.
+
+2 Thrashers, 2 Mages & a Yellow Scout: Quickly take  out both Mages  by using 
+one  Rock throw  or Leap Slash  on each, then  take out  the  Thrashers 
+using  Ayla’s Rock  Throws  while Frog  normally attacks the Yellow Scout, 
+Heal with Mid Tonics just before finishing off. 
+
+2 Red Scouts, 2 Yellow, 2 Blue: These scouts  are lethal.  Take out  2 Scouts 
+of  the same  type. Use  the Drop Kick Duel Tech (Frog &  Ayla) to take each 
+of them out in  one hit, now you can reduce the pace  and take out the other  
+4 normally. The reason  why these need to be removed quickly  is because with 
+3 Scouts of the  same element alive they can use  the Triple  Tech Delta  
+Attack. Which  will lay  waste to  your feebly levelled party.
+
+After this  fight heal  up with Mid  Tonics &  Give Mid Ethers  to both  Ayla 
+& Frog. Now I  do suggest giving  the Black Mail & Vests  to Frog &  Ayla (I 
+also Suggest giving Frog the  Mermaid cap & Ayla a Rainbow Helm).  Now you 
+will need to  flick 2  switches, each  initiating  a battle  with  a set  of 
+3  different scouts which  also can use  Delta Attack, the Black  Mail should 
+save  you from dying in one round, you can escape from these.
+
+After the second fight swap Frog out for Lucca & set them up accordingly.
+
+Crono: Wallet
+Lucca: Red Vest & Silver Stud 
+Ayla : Safe Helm, Red Mail & Gold Stud
+
+Soon you will face Golem Twins, which is another trivial battle.
+
+**********
+Golem x2
+7000 Hp each
+**********
+
+Immediately  open out  this  fight with  Fire  2, this  will  make both  
+Golems telecopy Fire magic.  This means the only 2  attacks they can hit  you 
+with are Fire &  Fire  2..and because of  your  fire absorbing gear  these  
+attacks won’t hurt you one bit.
+
+Now if  you are  having trouble  getting in  that first  Fire 2,  try 
+shuffling Ayla's  and Lucca's  positions in  the party  list, which  
+hopefully will  stop Lucca being targeted at the start.
+
+Once you do  get that Fire 2 in, the  battle is as good as won,  Ayla & Lucca’
+ s Dual Tech Fire Whirl deals  1000 damage to each and is a  great lazy way 
+to win the fight. Before you  do that though make sure you charm a  Magic tab 
+off each Golem. Using  Charm on the  Golem makes him  telecopy Physics 
+however,  so make sure Lucca  *immediately* uses a  Fire after on the  Golem 
+you charmed  from to change him back to Telecopy Fire before he gets an 
+attack in.
+
+After 7  Fire Whirls  both Golems  will pull  their Death  Counter at  the 
+same time, Ayla will  survive this with about 100  Hp to spare, now you  
+should be 2 Magic Tabs up :).
+
+This  is  another   one  of  those  battles  that  the  general   FAQs  get  
+so irritatingly  wrong, and  this battle  has  more quirky  and ambitious  
+tactics discussed for  it than  any other,  ignore all of  them, this  is 
+the  best and easiest way to defeat them, PERIOD.
+
+Now, before  continuing make  sure to  de-equip Crono  of everything,  and 
+most especially the Wallet!! We're  about to lose him for a short  while and 
+we have many battles to face before we get him back.
+
+Continue on through the following scenes and you will face...
+
+**********
+Lavos
+30000 Hp
+**********
+
+This  Lavos is  very different  to the  forms you  will have  defeated on  
+your previous gameplays, as  the Lavos at Ocean Palace boasts  triple the 
+health and double (!)  the speed and  hitting power. It's  a complete joke  
+how impossible he is  for a LLG  at this stage,  even with your  early 
+Green Dream and  all the tabs in  the world. But  not to worry,  you will get  
+your chance! For  now, we and Crono  must  part ways due  to  our 
+incompetence at  defeating  said planet parasite.
+
+Eventually you’ll  reach solid ground,  if your low on  any items, go  buy 
+them from the Nu in the shop (be sure to Grab the Magic Tab behind him).
+
+Now  before  you  progress  farther,  we  must  prepare  our  party  
+carefully: 
+Slot 1 - Frog: Safe Helm, Wallet 
+Slot 2 - Ayla: Gold Erng 
+Slot 3 - Robo: Gold Stud
+
+Optimise your other equipment, to Frog 1st and Robo 2nd, Ayla last.
+
+Having the Wallet holder  in the lead is critical, as  we'll gain Exp 
+otherwise in the next section,  Ayla can still fight without her  equipment, 
+so make sure she's not in Slot 1.
+
+**>-19-<***
+12000 AD
+Blackbird
+***********
+
+Now progress through  as normal, getting Frog's equipment from  the chest 
+with the sleeping  guard next to  it, now you are  safe to plough  head-first 
+through the section and  grab everything. Damage does  rack up very quickly  
+if you are not  careful, especially  on  Ayla if  she  hasn't got  her  
+armour back.  Heal copiously and proceed cautiously.
+
+Upstairs  on the  roof are  a few  turrets.  These give  great AP  but they  
+do painfully attack  with Shadow Lasers. I  suggest setting up your  
+characters as goes.
+
+Frog: Demon Hit, Black Mail, Hit Ring 
+Ayla: Black Vest, Berserker 
+Robo: Best Weap, Dark Mail, Wallet
+
+Fight all the  turrets one at a time, if  you’re lucky you’ll kill one  or two 
+of them.. Don’t get too hopeful however.  Eventually in the bottom-left tip 
+of the wing you’ll face Golem Boss.
+
+**********
+Golem Boss
+15000 Hp
+**********
+
+Seeing as how the  original Golem was torn to shreds by  our new strategy, 
+what better way to celebrate  then by beating on his bigger  cousin! This 
+like Golem is also  an optional  boss, in  fact it's simply  just a  race to  
+hack through 15000 Hp before he automatically runs away. He has no attacks of 
+his own so equip your characters as follows:
+
+Frog: Demon Edge, Wallet 
+Ayla: Gold Stud 
+Robo: Silver Stud
+
+Ayla is fast  enough to get  in almost 2 turns for  every 1 of  Robo's, so 
+with each of Ayla's  'free' turns have her  triple kick, and when  their 
+their turns coincide use a  Beast Toss, with the battle  speed set to 
+slowest  it should be straightforward to  get a  good sync. Have  Frog Leap 
+Slash  over and  over and you should  take down Golem Boss  just before he  
+runs away, and just  when you run out  of MP on all  3 characters (if  you 
+do, use  a Mid Ether on  Ayla with Frog and switch to  just Triple Kicks and 
+attacks). If you  manage to kill him, well  done! Have  40  TP for  your  
+troubles,  if not,  no  problem, take  your frustrations out on Dalton, who 
+is next.
+
+**********
+Dalton Plus
+3000 Hp
+**********
+
+Dalton Plus  has no Death-Counter like before,  just whack him  with your 
+techs and he  won’t last 20 seconds,  you shouldn’t even need  to heal if you  
+began at full.
+
+Now you will gain  control of the Epoch. Now you must enter  North Cape to 
+meet Magus, now let me put a few notes down here.
+
+Another major  point I  have changed in  this FAQ is  the insistence  on 
+taking Magus, albeit not  using him.  Magus is  an incredibly strong  
+character at  level 37. He's a  full 17  levels stronger  then Ayla,  who is  
+already a  formidable and useful tank against  almost every boss in the  
+game. So strong is  he that much of the  challenge of the rest  of the game  
+is moot if  you opt to use  him. So for  the purposes  of  this FAQ,  we  will 
+not  be using  Magus  for any  future fights, and whether  you take him or  
+not I will leave  to personal preference, his  effect on  the  party  
+average  really had  no  bearing whatsoever  on  the challenge but  I will 
+leave  you each to your  own philosophies whether  or not to take him.
+
+Now if you  do intend on  taking Magus on, what better  way to do  it than 
+with Frog alone! 
+
+Now hopefully  you have  been busy  charming at  Ocean Palace,  as you  will 
+be needing those Barriers now, and just 2 isn't going to cut it this time!
+
+You're  also going  to need  30 Mid  Tonics  and a  few Mid  Ethers, which  
+you should have already have plenty of.
+
+Also now  you are aware  you will be  using, and  needing your Barriers,  it 
+is wise  to speed  up your  battle speed  gauge  in order  to allow  them to  
+last longer. However  we aren't  critically rationed  on these items  as we  
+were in our first fight,  so setting to fastest  isn't necessary, but I  
+suggest you do as you will have fewer periods in which you are fully exposed 
+to his attacks.
+
+There are 2 good equipment setups for Frog, I recommend this one:
+
+Set A:
+Demon Hit
+Mermaid Cap
+White Mail
+Wallet
+
+If you're having a lot of trouble with Magus then try this one
+
+Set B:
+Demon Hit
+Lightning Cap
+Red Mail
+Wallet
+
+The differences will be explained shortly
+
+**********
+Magus
+6666 Hp
+**********
+
+Now the first  phase is straightforward, Magus moves very  slowly and only 
+uses his scythe, must  like out last fight  with Magus we need  to prepare 
+carefully before knocking  him into his second phase.  Exactly 12 Slurp  Cuts 
+(they can't miss) at  270 damage each will  bring Magus down  to ~3400, you 
+can  keep track of the number  of times you have done  this by monitoring 
+Frog's  MP, when Frog has  used  24  MP  (he  begins  with  37  MP)  then  
+you  are  ready  to  begin preparations for his next phase.
+
+Heal Frog's MP with a  Mid Ether and then use a Barrier,  wait for Magus to 
+hit Frog and  then immediately  use a  Mid Tonic,  and before  Magus gets  
+his next turn in, use Frog's  leap slash for 450 damage to knock him  hard 
+into his next phase,  if you  did everything  right  you should  be  at full  
+health when  he counters you, now you  have to be careful, as Magus will  now 
+attack with level 2 elementals,  along with his scythe, with  much greater 
+speed  then his first phase. Furthermore  he will counter attack  anything 
+against him with  a random level 2 elemental, this is where your equipment 
+setup comes in.
+
+With Set A Magus's spells will deal the following Lightning 2: ~150 Hp of 
+Healing Ice 2:  ~60 Dmg Fire 2: ~150 Dmg
+
+With Set B:
+Lightning 2: ~70 Dmg
+Ice 2: ~ 133 Dmg
+Fire 2: ~160 Hp of Healing
+
+Heal Frog  whenever he falls  below 160 Hp,  now the  reason why I  suggest 
+you try  Set A  first is  because from  my  tests against  him, he  appears 
+to  use Lightning 2 far  more than Fire 2,  and gave more opportunities  to 
+attack, but Set A carries  a greater risk as Fire 2  with Set A deals more  
+damage than Set B (because  of Frog's small  inherent Water resistance),  but 
+see how  it works out.
+
+Now  Frog has  258  Health,  which  quite frankly  means  he cannot  survive  
+2 consecutive  Fire 2's (or  Ice  2's with Set  B),  Magus will always  get  
+in 2 spells in  for every  time you  attack (1  from his  counterattack, 1  
+from his turn move),  so if you  see these 2  spells in a row,  bad luck, 
+try  again. We have to  roll the dice  a few times  in this fight to  get the 
+result  we want. Furthermore you must watch  Frog carefully at all times, 
+and  as soon as Frog's barrier goes down, it  must be replaced, as without it 
+you will  not be able to cope for long against Magus's onslaught.
+
+For  this phase  you need  to play  very defensively,  do not  even think  
+about attacking him  and hoping  for the best!  The only time  you can  
+safely attack Magus is immediately  after Magus uses a Lightning  2 (or Fire 
+2 w/  Kit B), at which point  you now have a  chance to attack with  a Leap 
+Slash and  heal from the 2  attacks you will  be hit with,  always keep  Frog 
+above 160  Hp, healing copiously with  Mid Tonics and waiting.  7 Successful 
+Leap Slashes  will bring Magus down once for all, good luck!
+
+Now once you win, you can decide for yourself whether or not to recruit Magus.
+
+Now we must  rescue Crono, but before you  do that make a  detour to 
+65000000BC and obtain  3 Ruby Armors  (you should have plenty  of trading 
+items  left from the Nu-Slaying before), now onwards to Death Peak!
+
+**>-20-<***
+2300 AD - Death peak
+**********
+
+For the purposes  of this challenge, it  is intended that Crono  remains in 
+the party  wherever possible,  and  for sentiment's  sake, to  also  remain 
+in  the lead! Form  a party  of Frog  Robo and  Ayla to  rescue our  level 1  
+hero from death's clutches.
+
+Now another  important preparation is  Ayla, you should  have by now  after 
+all your  battles since  your Rubble-grinding  at Mt  Woe have  gotten 
+Ayla's  last tech -  Triple Kick,  and if  not should only  need a  few more  
+TP to  get it, fight enemies in the area,  or if you need quite a few  then 
+the Nu at 65000000 BC should suffice  to push her over the  edge, you will 
+need it  in the upcoming battles.
+
+Now head  around Death Peak  like you normally  would, however just  before 
+you face off against the first Lavos Spawn set up your 3 Characters 
+accordingly:
+
+Frog: Demon Hit, Safe Helm, Ruby Armor, Wallet 
+Ayla: Rainbow Helm, Ruby Armor, Gold Stud 
+Robo: Best Weap, Rainbow Helm, Ruby Armor, Gold Erng
+
+A/N: I  haven't gotten around  to play testing with  the Swallow, for  those 
+of you  wanting to  try  a Minimum-Tabs  game.  This is  probably  the most  
+major example where the strategy will need to be changed.
+
+Try this equipment set-up: 
+Frog: Demon  Hit, Rainbow Helm/Vigil Hat, Ruby Armor, Silver Erng/Green Dream 
+Ayla: Rainbow Helm, Ruby Armor, Wallet 
+Robo: Best Weap, Rainbow Helm, Ruby Armor, Gold Erng
+
+You can  also try  swapping around Silver  & Gold Erngs,  and if  you 
+completed Fiona's Forest early,  you should have access to the  Vigil Hat and 
+Green Dream, in which  case if Vigil  Hat doesn't let Frog  survive the 
+opening  attack, the Green Dream will.
+
+**********
+Lavos Spawn
+Head - 4000 Hp
+**********
+
+With This Set Up all 3 should survive the opening attack.
+
+Now, sadly our  almighty Beast Toss dual tech  that works so well  on Dalton 
+is ineffective against  Lavos Spawn, but  not to  worry, we have  something 
+almost as good -  Drop Kick! Which combines Leap  Slash and Triple Kick,  
+with a small damage bonus  and without  the inaccuracies.  Now here  I went  
+all out  on the head with  Drop Kick  and Uzzi  Punches, not  bothering to  
+heal anyone,  as we only have  4000 Hp to hack  through, and should  be able 
+to deplete  that well before the second  round of needles. Do  not bother 
+charming the  head, it only holds an elixir.
+
+If you’re having trouble  here then perhaps you should designate  Robo or Frog 
+to be  the healer  with Lapis’  (hopefully  you should  have Charmed  a 
+few)  and have three other 2 Characters to go all  out. If the healer gets hit 
+by chaos or sleep then Designate Robo to be the healer.
+
+If you can’t kill him before his 2nd  wave of attacks then you should make 
+Ayla a ‘Tank’ with the following set up.
+
+Ayla: Safe Helm, Ruby Armour, Gold Erng. 
+Robo: Best Weap, Rainbow Helm, Ruby Armour, Silver Erng Frog: Demon Hit, 
+Rainbow Helm, Ruby Armour Left, Dash ring.
+
+Ayla will easily survive the opening  attack, revive Frog and designate Ayla 
+to be the healer with  Frog using Leap Slash and Ayla using  Mid Tonics & 
+Revives. Now head back & heal with a Shelter.
+
+Proceed  back through,  collecting the  new  weapons in  the chests  as you  
+go along,  you’ll face  another  Lavos Spawn  which  is exactly  the  same 
+as  the first. Repeat the  above strategy to kill  him. Head out and  head 
+with another Shelter, now proceed further along.
+
+Eventually you’ll face  a 3rd Lavos Spawn. Again repeat  the above strategy 
+for him. Now go retrieve your almighty Level One Crono, make sure you don’t 
+lose the fool again :).
+
+Now you have access to the flying Epoch,  ahead of us we have a series of 
+side- quests available  and Lavos  himself. If  you try  to fight  Lavos now  
+you can probably  be quite  confident you’ll  get  shredded. Here  is the  
+list of  the available  side-quests and  the important  items  that they  
+make available  on completion.
+
+Sun Stone: Sun Shades
+
+Rainbow Shell: Prism Helms, Prism Specs & Rainbow
+
+Geno Dome: Crisis & Terra Arm Weapons & Ribbon for Robo
+
+Northern Ruins: Nova/Moon Armor, and a nigh useless upgraded Masamune.
+
+Fiona’s Forest: Green Dream
+
+Ozzie's Fort: Nothing
+
+So, let's get cracking!
+
+Now, you  will want  to do  Sunken Desert  first, if  you haven't  completed 
+it already. The section still applies now as it did then, except this time 
+you have better weapons to whack him with.
+
+**>-21-<***
+Rainbow Shell Side Quest
+***********
+
+This will  be a tough  side quest, but  nothing but  a bump in  your 
+(unstable) road. Now proceed through he quest as per usual, at the Giant’s  
+Claw, make your party of anyone  who you like (+Crono!), keep the Wallet  on 
+Crono. If you wish  to do  any charming  then you’ll  need Ayla.  Personally 
+I  ran from  all fights because they were all very tough. 
+
+There are  a few Rubbles  in the area,  now at this  point only Robo  and 
+Marle probably need tech  points, Robo's Shock being more  immediately 
+important than Marle's Life  II. So  form a  party with Robo  Ayla and  Crono 
+to  tackle them, with the equipment setup suggested before, albeit with newer 
+weapons.
+
+Along with  a Power tab  in here there  is also  the Frenzy Band, which  you 
+are going to need if you plan on tacking Ocean Palace's Lavos in a NG+
+
+Eventually you’ll face Rust Tyrano.
+
+***********
+Rust Tyrano
+25000 Hp
+***********
+
+Rust Tyrano  has a Red  Mail that can  be Charmed off  him. Which we  shall 
+do. Make up a Party of Crono, Ayla & anyone else (recommend Robo).
+
+I gave them the following set up.
+
+Crono: Red Mail, Hit Ring 
+Ayla : Ruby Armour, Wallet 
+Robo : Red Vest, Gold Stud
+
+Have Ayla  charm the Red  Mail then Triple Kick,  then attack until  dead. 
+Have Robo use  Uzzi Punch until  out of MP, then  just normally attack.  Rust 
+Tyrano has only 2  attacks that can  hurt you, which are his  2 bites. 2  
+bites on the same character  will kill  him, so  just revive  that 
+character.  Keep hacking away at those 25000 Hp's and Rust Tyrano will 
+eventually fall.
+
+After the following scenes go to 1000 AD, Guardia Castle.
+
+Make sure your inventory is prepared:
+
+30 Revives
+50 Mid Tonics
+
+The upcoming  fight with  Yakra is very  tough, and we're  also forced  to 
+have Marle in our party what's worse.
+
+Proceed through as you normally would. Form a party of Crono Ayla and Marle
+
+**********
+Yakra
+20000 Hp
+**********
+
+Having Ayla with you lets you charm an extra White Mail.
+
+I suggest setting up your characters as follows.
+
+Crono: Slasher, Vigil/Sight Hat & Speed Belt 
+Marle: Wallet 
+Ayla : Safe Helm, Ruby Armour & Amulet
+
+A/N: Another battle  I recall where the Safe Helm  was infinitely valuable, 
+try this equipment set-up:
+
+Crono: Slasher & Speed Belt 
+Marle: Wallet 
+Ayla : Vigil Hat, Ruby Armour & Gold Erng
+
+And you'll  need a stock of  50 Full Tonics,  use these in place  of Mid- 
+Tonics and use the same strategy, except keeping Ayla's health always above 
+380.
+
+There’s not  much in Yakra at  first when you  fight him, Charm the  White 
+Mail off him at the start  and just use Rock Throw with Ayla,  let Crono & 
+Marle die & stay  dead. Make  sure Ayla’s  Hp is at  least 250  throughout. 
+In  fact your only source of damage this fight should be Ayla's Rock Throws
+
+As soon  as Yakra  blurts out  ‘Heard it about  it from  the Ancestors’  he 
+has switched into  his second phase,  and will  perform a target-all  needle 
+attack that will  kill Crono and Marle  and hit Ayla  for 250, make sure  
+she's healed immediately before! Now, after  the needles hit,  Yakra will 
+throw  a set of  single-target needles attacks in  rapid  succession, almost 
+as  quickly  as Ayla gets  turns  in, you need  to  fast on  the  ball  
+here.  Have  Ayla  heal herself  constantly  with Mid/Full Tonics  (Use a 
+full tonic  if she dips  below 70 Hp) and  she *should* ride out the storm  
+on the other side, alive. Once she  does, revive Crono, his role now is  to 
+heal Ayla and to  distract fire from her,  have Ayla constantly Rock Throw  
+Yakra, and  Crono constantly healing  Ayla with  Mid Tonics/Ethers, so not 
+spend a  turn attacking with Crono, just leave his  turn available if he gets 
+his early. If Crono  falls, immediately revive him with  Ayla, Yakra will  
+use his target- all attack  again a few  times followed by  the needle 
+barrage  onslaught, ride out the storm the same way as before then revive 
+Crono. Repeat this process and after 40 Rock Throws Yakra should fall.
+
+Now you have the  choice between a Prism Dress or 3 Prism  Helms. Here, we 
+will be wanting  the Helms, we  will eventually need the  Prism Dress later,  
+but we can charm Mother Brain for that (those!).
+
+Now first place I suggest you go to is the Sun Palace in 2300 AD.
+
+**>-22-<***
+Sun Stone Side Quest
+***********
+
+When you reach the palace  you must fight Son of the Sun.  I suggest you form 
+a party of Crono, Marle & Ayla.
+
+The  reason why  I chose  Marle  was because  she  needs Tech  Points, and  
+any character really can  do this battle. I chose  Ayla because the Son  of 
+the Sun has a Black Mail that can be charmed off him. And Charm we will!
+
+**********
+Son of Sun
+2200 Hp
+**********
+
+If Robo  still  needs Shock then  use  him, otherwise pick  Marle,  their 
+roles will be identical. Equip your characters something like this.
+
+Crono: Slasher, Red Vest, Wallet 
+Marle/Robo: Red Mail, Dash Ring 
+Ayla : Red Mail, Charm Top.
+
+You will need at least 20 revives for this fight.
+
+The  main reason why  we  did the Rainbow  Shell  quest first was  to  get 
+that second Red  Mail, making  this fight  a hundred times  easier, and  
+faster too. Now do not forget to charm the core, as it holds a Black Mail.
+
+Now the  only thing that  the Son of  Sun can do that  will deal any  damage 
+is his Shadow Beam attack  that targets a single character, at  our levels 
+it's an instant  KO so  just revive  the fallen  character, besides  that we  
+shouldn’t have any  need to  heal in this  fight, find  the correct flame  
+and hit  it 10 times to get the Moon Stone.
+
+Now after  the  shenanigans with converting  the  Moon Stone to  a  Sun 
+Stone, you'll get your hands  on the Sun Shades, and more  importantly, when 
+you speak to Melchior will  yield the PrismSpecs (!) and Rainbow  (!!). This 
+weapon alone lets Crono  far surpass  Ayla and  Robo in damage  capability, 
+and  an integral part of most upcoming boss fights as a result.
+
+**>-23-<***
+Geno Done Side Quest
+***********
+
+Robo must  be in the  lead, Crono will  take the second  spot and you  can 
+pick between  Ayla and  Frog  for  the  third spot,  I  recommend Ayla  
+despite  her increasing  redundancy in  the offense,  she's very  effective 
+as  a tank  with more health and defence than any other character..
+
+Equip your characters like this, this Dome is VERY tough. 
+
+Robo : Best Weap, Safe Helm, Black Mail, Gold Stud. 
+Crono: Rainbow, Black Vest, Wallet 
+Ayla : Best Weap, Prism Helm, Gold Erng
+
+The Shadow attacks used by the Robots  will gives you a few free turns, 
+however they more  often use physical  attacks. Crono and  Ayla's Dual tech  
+Falcon Hit is  especially  effective  here  and  will one  hit  kill  all  
+monsters  on  a horizontal on  the belt. Spam  Rock Throws,  Crono's Normal 
+Attack  and Robo's Uzzi Punch  at liberal otherwise,  Your Shadow Absorbing  
+armour will buy  you a few free  turns  but most of  their  attacks are 
+physical.  Heal  copiously and don't be surprised if you die here.
+
+After this battle swap the armours on Crono  and Ayla so Ayla has the Black 
+Vest Now after  this proceed through the factory  like you normally  would. 
+With the laser guards  I suggest just waiting these  out letting the  Shadow 
+Lasers heal you until they Self Destruct. After you  grab the 2 Dolls, but 
+when you collect the from opening it's  door with switches (i.e. not the one  
+where you short out that Proto Guard), examine under where it was sat for a 
+Speed tab.
+
+Swap Robo’s Black mail for a Red Mail before you fight Atropos.
+
+**********
+Atropos
+**********
+
+Just have Robo heal  himself with Cure Beam, when she  starts using Area 
+Bombs, lay your feet up and  wait for her to stop, you won’t need  to put the 
+Wallet on Robo, don’t worry.
+
+After  Atropos  stops  she’ll  give  Robo   her  Ribbon,  which  gives  Robo  
+a *permanent* +3 Speed & +10 Magic Defence Stat Boost. Not bad, at all!
+
+Go into  the room just above  where you fought  Atropos and grab the  Magic 
+Tab hidden in there. Now you must face the Mother Brain.
+
+**********
+Mother Brain & 3 Panels 
+Mother Brain - 5500 Hp 
+Panels - 1 Hp each
+**********
+
+As you  can see the  Mother Brain has  very little  Hp compared to  your 
+recent bosses but she  has 3 Panels that heal her  1000 Hp a hit. In  your 
+normal game you  most likely  wiped  out all  3  panels  then killed  the  
+mother brain  in seconds. Well it turns out  that’s not an option in a LLG 
+since  the mother brain breaks out with loads of party hitting attacks which 
+are nearly all one-hit-kills.
+
+I suggest making a party of Robo, Crono & Ayla and equipping them like this.
+
+Robo : Black Mail, Gold Stud 
+Crono: Black Vest, Wallet 
+Ayla : Black Mail, Silver Stud.
+
+Also set your battle speed to 8 (fastest)
+
+Even if you  take just 2 of the displays  out the Mother Brain is  still a 
+pain as it gets it‘s turns so damn fast. Take  2 out at the start then use 
+Dual Tech Boogie which affects the  last Panel with the Stop Status. Now as  
+far as I can tell, Boogie is  similar to Barrier and Shield, where  its 
+affliction period is determined by  real-time, and  so the  faster the 
+battle  speed, the  longer it effectively lasts.  Now once  you inflicted  
+Stop on  the panel,  go all  out on Mother Brain, Use  Triple Kick, Uzzi 
+punch  and Spincut (until out  of MP, then use normal  attack), you  should 
+be able  to kill off  Mother Brain  before the panel becomes  active again, 
+otherwise  use Boogie  again and hack  through her health.
+
+Mother Brain has a Blue Mail in it, which you will probably want to charm.
+
+After this you’ll receive the Terra & Crisis Arm (!) for Robo.
+
+**>-24-<***
+Northern Ruins Side Quest
+***********
+
+The monsters  in here  are very, very  tough. And can  only really  be 
+affected effectively by elemental attacks, for this reason we need Lucca.
+
+Now that we have  Crono, Robo & Lucca’s best weapons, now we  must get Frog’s 
+& Marle’s best  weapons and  some decent gear.  Go and repair  the ruins  how 
+you normally would. The monsters  here are very tough, as some  can only be 
+damaged by magical  attacks. Here I suggest  a party of  Crono, Lucca & 
+Robo.  At least equip them with the following.
+
+Crono: Rainbow & Gold Stud 
+Lucca: Taban Suit & SilverStud 
+Robo : Terra Arm & Wallet
+
+You are definitely going to need a few Ethers here.
+
+On the  Sentry’s use Lucca &  Crono’s dual Tech  Fire Sword on the  Sentry’s, 
+or Fire  Sword 2  if it  will  hit more  than  one. These  will be  one-hit- 
+kills. Despite most  damage comes from  Crono’s Rainbow strength,  it being 
+in  a Dual Tech means we can bypass Crono's normally abysmal accuracy.
+
+It’s  important you  heal  between fights  here. For  skeletons  & defunct,  
+I suggest again using  the Dual tech Fire Sword  2 again for 2300  Damage on 
+each Skeleton or normal Fire Sword for 1700 damage (one-hit-kills).
+
+When you reach Cyrus’s  grave, swap Frog in to get his  Masamune, then go 
+after the Siren, Valkerye.  Make sure you replace  Robo with Lucca &  give 
+the Wallet to Frog,  because as  of now Frog  is stronger than  Robo 
+although  Robo’s Uzzi Punch does make up for it, Frog’s cheaper to use for 
+now.
+
+Now when you get close to the Shiva  Edge & Valkerye you’ll face a few 
+monsters that can  be a pain (save  beforehand please). On  the Base’s & 
+Defuncts  use a single  Fire Sword  on  each for  a  One-Hit-Kill, have  
+Frog  Leap Slashing  a separate enemy  to the Fire  Sworded ones to  shorten 
+the battle,  because they can and will kill you if you’re not careful.
+
+Now when you reach  the 3 Chests, of course say no. Return  to 1000 AD, 
+collect the powered up Valkerye, Shiva Edge & Moon  Armour, Return to 600 AD 
+to grab the Kali Blade, Siren & Nova Armour.
+
+Now it may  be worth noting that Robo  with the Prism Helm, Moon  Armour & 
+Gold Erng and Atropos’s built in Ribbon Robo  will have a very nice 49 magic 
+Defence with 487 Hp. This  Set Up will allow Robo to  survive many normally 
+devastating magical attacks much more easily.
+
+**>-25-<***
+Ozzie’s Fort Side Quest
+***********
+
+Eurgh this is by  no means necessary or even helpful towards completing a LLG 
+but  I promised at the start that  this  guide details on  all  Side Quests 
+and,  well  that’s exactly what I am going to do.
+
+Ok you know where this place is. Take  Crono, Robo & Frog. We’re going to 
+blast our way in. Equip them.. 
+
+Crono: Wallet 
+Ayla : Prism Helm, Prism Specs
+Robo : Safe helm, Best Armours & Gold Stud
+
+3 Tosses on Flea and Slash make very short work of them.
+
+Heal up and  repeat same for Slash. Now  in the room with the  anvil that 
+Ozzie turns, go  grab the Magic Tab. Before  you leave  the room,  if you 
+want the Items  from Slash, Flea &  Ozzie, go outside, heal, save and equip 
+them.
+
+Crono: Rainbow, Black Vest, Wallet 
+Robo : Terra Arm, Safe Helm, Black Mail, Prism Specs 
+Ayla : Prism Helm, Black Mail, Gold Erng
+
+Note:  This  strategy   is  aimed  at  completionists  like   myself  who  
+want everything, including the  unique items they hold. But by  all means 
+ignore the charming parts of the strategy if you aren't interested.
+
+**********
+Ozzie, Slash & Flea
+Great Ozzie - 6000 Hp
+Super Slash - 4000 Hp
+Flea Plus - 4000 Hp
+**********
+
+Start with Slash, Charm off him and pray  it hits. Have Robo & Crono just 
+heal, if Crono  dies Revive him  with Robo only if you have  a free turn.  
+After the Charm open with Dual tech Beast Toss for obscene damage, you want 
+to hold Crono's turn as he cannot survive any counterattacks, instead have 
+him heal and use a Shield on Ayla.  You’ll be hit by a counter, if  Crono is  
+alive heal the injured character.  Now hit  Slash again with another Beast 
+Toss and Slash should be  dead. Now the pressure is really let off on you. 
+Repeat  the same  for Flea  now then  Ozzie, using  Elixirs, Ethers  & 
+Mid/Full Tonics when needed.
+
+A/N: Your  Black armour  should defend  you against  their Triple  Attack 
+Delta Force which normally wipes the whole party.
+
+After go grab  the Dash ring & Sight  Cap, go sink Ozzie. Now  you have 
+finished all side quests. The Black Omen & Lavos stand before you.
+
+**>-26-<***
+The Black Omen
+***********
+
+Inside here  are several bosses of  which some of  them will be very  easy, 
+or hard depending  on what game you  are playing. This  is where I will  
+begin the crossroads between  the no-tabs and  regular playthrough.  If you 
+are  going to attempt a regular playthrough then you want to:
+
+Use Speed  Tabs on  Robo, then Crono  until they  are both at  a maximum  of 
+15 Speed, and then dump  any remaining ones on Marle, if  any. It's only 
+important to get Robo's speed up right at this moment. Use all Magic and Pwr 
+Tabs on Robo.
+
+Now before you enter, make sure you fulfil the following checklist:
+
+Now make sure you have the following list of items: 99 Mid Tonics 60 Full 
+Tonics 40 Ethers
+40 Mid Ethers
+15 Shelters
+99 Revives
+10 Barriers and Shields
+
+This lot of  items should be plenty enough  to get you through  this place, 
+and you do need  a fair bit of  luck. Now go to the  Black Omen in 1000  AD 
+(so you can play through it again when you complete it).
+
+Now you must stand  before the Black Omen. Bring Crono Frog &  Robo with you 
+as they’re the best physical characters you have. Now equip them.
+
+Crono: Wallet
+Frog : Prism Helm, Black Mail, Silver Erng 
+Robo : Prism Helm, Black mail, Gold Erng
+
+You’ll start  off by fighting  Laser Guards. Just  wait these out,  the 
+healing from  your Black  Mail  is sufficient  for  one character  to  
+survive all  the explosions.
+
+Now  you must  make  a  few  preparations if  you  are attempting  the  
+regular playthrough. Go to 65000000  BC and fight the Frogs at  the hunting 
+range there until Robo’s  Hp is  exactly 319  (highest Hp  possible ending  
+with a  9). Now I suggest you finish  off the fight using Robo’s Uzzi Punch  
+on the Frogs (with the cursor  in memory mode),  Ayla’s beast toss &  Crono’s 
+Spin cut.  Heal with Tonics and Ethers after this, we need to Robo 
+specifically at 319 Hp.
+
+**********
+Mega Mutant
+Top - 4500 Hp
+Bottom - 4000 hp
+**********
+
+Crono: Rainbow, & Wallet 
+Robo : Crisis, Prism Helm, Moon Armour & Prism Specs 
+Ayla :  Prism helm, Lumin Robe, Sun Shades
+
+This fight  is normally incredibly tough, as  you can probably  tell by 
+reading the no-tabs strategy guide for this fight.
+
+Now with this  equipment set-up we have basically geared  up our characters 
+for an all-out  assault. Our trust  tech Beast Toss,  coupled with the  Sun 
+Shades, Prism  Specs, The  Crisis  Arm and  all  the Pwr  Tabs we  gave  Robo 
+are  just itching to deal something quite special.
+
+So open  out this fight  with Beast Toss, Robo  and Ayla should  be 
+comfortably fast  enough to get  this  turn in before  either  bit of the  
+Mega  Mutant can move,  and result  is  spectacular. 3700  damage  (!!!), 
+now  just  1 hit  from Crono's  Spincut will  finish off  the  bottom half  
+before he  can even  move, effectively bypassing his  extremely annoying 
+Chaotic Zone attack.  If you don't get the attacks  in perfectly, or is  
+Crono misses, reset and  right Spekkio to change the battle parameters, and 
+try it again, this should not be hard.
+
+Once the  bottom is down you  should have ample time  to finish off the  top, 
+2 beast tosses and  it's done, the fight is very  straightforward once the 
+bottom falls.
+
+No-Tabs Strategy:
+
+As mentioned  before, all the  bosses where possible  I will provide  a no- 
+tabs strategy too,  Megamutant is  one of the  toughest bosses in  the game  
+with no tabs and  requires some luck  and a  well scripted opening.  
+Megamutant's first few moves  are preset so a step-by-step  strategy is 
+possible.  Now, the bottom has  4000 Hp,  if we  can  kill it  with both  
+Ayla  and Robo  still alive,  or Ayla/Robo at full  health, we win, as the  
+top is very manageable  alone. But as it is, it's effectively 2 bosses at the 
+same time!
+
+You will need:
+2 Megalixirs
+2 Barriers
+4-5 Lapis
+5 Full Tonics
+2-3 Elixir
+Battle speed - Slowest
+Fast Reactions
+Some luck
+
+There are  a handful of  Megalixirs available in chests  at this point,  one 
+of which being at Guardia Castle, consult Phoenix's FAQ for the others.
+
+Equip your party exactly like so: 
+Crono: Slasher, Wallet 
+Ayla: Prism Helm, Lumin Robe, SilverErng 
+Robo: Prism Helm, Moon Armor, Gold Erng
+
+In order to  win we must string together  a series of attacks,  with this 
+setup both  Ayla and  Robo  are maximally  defended  against  its strongest  
+attacks, particularly chaotic  zone. With  this set-up  both Crono  and Ayla  
+should get their first  turn in before  Chaotic Zone  very comfortably, Robo  
+however will not, and  is the reason  why we cannot  opt for the  same simple 
+strategy  as we would with tabs.
+
+Now you must do the following:
+
+Crono uses Barrier on Ayla/Robo Ayla uses Barrier on Ayla/Robo
+*Bottom Half uses Chaotic Zone (220 To all) 
+Robo uses a Lapis 
+Ayla Triple Kicks (650)
+*Top Half uses Mutant Gas (100 to one) 
+Button Half uses Spike Attacks (100 to one) 
+Robo either uses Lapis or Full  Tonic/Elixir(if only Ayla) on hurt 
+character(s) 
+Ayla triple Kicks (650)
+*Top Half uses Blacken (350 to 1 character)
+*Bottom Half uses Hp Down (0 Dmg) 
+Robo  uses  Elixir   on  Ayla  if  she's  hurt,    or   a  Megalixir  
+otherwise Ayla Triple Kicks (650)
+*Spike & Absorption (100 each) 
+Robo uses a Megalixir 
+Ayla Triple Kicks (650)
+*Chaotic Zone & Mutant  Gas Poison (Ayla and Robo will  barely survive), and 
+at 8 speed, your Barriers will just about expire after this Beast Toss 
+(1700), finishes bottom.
+
+The top  half will probably kill a  character immediately after  this, but 
+have the survivor  Full Tonic  himself and they  should get a  chance to  
+revive the other quite  easily after.  Now just  attack with Beast  Toss and  
+Triple Kicks and the top  half will not last long.  You can replenish yours  
+Barriers too if you wish, but it shouldn't be necessary.
+
+After this fast paced fight you finally have access to the Black Omen.
+
+After this fight equip your Characters:
+
+Crono: Rainbow, Prism Helm, Black Vest, Wallet 
+Robo : Terra Arm, Prism helm, Black Mail, Gold Erng 
+Ayla : Prism Helm, Black Mail, Silver Erng.
+
+Note: the Silver Erng on Ayla will be replaced with a Gold Erng shortly.
+
+This Set-up will get  you through most the Black Omen. As  most of the 
+monsters here use Shadow Attacks.  You want to charm a lot of the  enemies 
+here. You can Charm an  Extra Gold  Erng off  the Synchrites.  Give this  
+extra Gold  Erng to Ayla.
+
+Now go save &  use a Shelter. Now head through and you’ll  fight 2 Panels. 
+EACH Panel holds  a charmable  Speed Tab.  So guess  what we’re  going to  
+do. Charm them! Panels  aren’t the easiest of  enemies at all,  with 1875 Hp 
+and  they do quite heavy damage with missiles and  rarely use healable Shadow 
+attacks. Charm one of the panels  while Robo Uzzi Punches & Crono Attacks  
+it, then repeat for the other.  If Robo isn’t  ** Speed Yet,  give the Tabs 
+to  him now. If  he is, give them to Crono. Heal at the Save point or use Mid 
+Tonics & Ethers.
+
+Now straight  after this fight  you’ll fight another  2 Panels, both  holding 
+a Speed Tab each. Charm  a Speed tab off each then kill them.  Heal with 
+Ethers & Mid Tonics again. 
+
+Head through  and equip a Red  Armor on each  character, now run from  the 
+Orbs in there (you’ll absorb the Flare attacks).
+
+In the next room are Metal Mutes, Equip  a White Armour on each character & 
+run from them, however  when you face Flycops,  Charm an Extra Gold  Stud off 
+them, this will come useful later.
+
+Head up the teleporter & out onto a  lift. Make sure everyone is healed to 
+Full Hp &  Mp. I  suggest giving  everyone Black Armour.  If you  face Goons  
+on the elevator, the chances are you’re going to have  to open your save in 
+the 
+next few seconds. If you face anyone else you should have no problem.
+
+**********
+Goons x2
+3000 Hp each
+**********
+
+I’ll treat these  2 like a boss for those  of you who unlucky enough run 
+into  them. They have about 3000  Hp each,  and are  VERY tough. Chances  are 
+you  can’t beat  them. I suggest  you go  all out  with Crono’s  Spin Cut,  
+Robo’s Uzzi  punch &  Ayla’ s Triple Kick and just  pray you can take one 
+down, heal and  take the other down before your annihilated. That’s all the 
+help I can give right now.
+
+After the  elevator equip Red  Armour on everyone and  run from the  Orbs. 
+Head around 7  collect the  Megalixir. Run from  the next fight  & head  
+through the door.
+
+Head around & Collect the Magic seal then head through the door.
+
+Grab the items in this room and Save & Use a Shelter.
+
+Near the top right Nu  is a Haste Helm! This Helm is  magnificent as it gives 
+a character permanent Haste status. Give this Helm to Ayla for now.
+
+In the next room  is a Tubster. This Tubster respawns every  time you leave 
+the room via the exit  you just came out of, what’s more important  is that 
+you can Charm a  Power Tab  each time off  this Tubster. This  Tubster isn’t  
+even that hard because it only counterattacks (painfully.. counterattacks)
+
+Ideally, you  should Charm  about 160 Power  tabs off this  Tubster to  Max 
+out Robo & Crono’s  Power, unless of course you are  doing a minimum-tabs 
+challenge then you  need not  bother here until  you try to  tackle ocean  
+palace's Lavos This will take an absolute age, so you might want to do this 
+in segments.
+
+I suggest you give your characters the following equipment for this ordeal.
+
+Crono: Wallet
+Marle : Gold Stud
+Ayla : Haste Helm & Gold Stud
+
+-Move the Revives to the top of your item list to save yourself a headache.
+
+Use Mid Ethers  on Ayla when out of MP  and just Revive her if  her charm 
+fails (and gets  killed by  the counter).  Twin charm  works well  here if  
+Marle has boosted speed. Run after you charm successfully.
+
+Now make sure you buy 99 Full Tonics from the Nu before you proceed after.
+
+Proceed through to the next room, run  from the Metal Mutes & the Gold 
+Shields, we don’t care about  those. Now you’ll face sets of  4 Ruminators 
+ahead. GREAT! These Ruminators respawn just  like the Tubster does, but you  
+only need to run into the very  near by door & return for  them to respawn. 
+From these  we get 2 things.
+
+1.) Infinite Megalixirs 
+2.) 72 Tech Points a battle
+
+I suggest  you Charm the  full 99 Megalixirs from  these. You most  likely 
+will not  need  this  many,  but  you  will need  a  good  fraction  of  
+this  much, especially on a minimal tabs run.
+
+Use the following Set-Up
+
+Crono: Rainbow & Wallet 
+Marle: Siren & Hit Ring 
+Ayla : Haste Helm & Charm Top
+
+Charm  the 4  Ruminators, after  wait for  them to  kill each  other until  
+one remains, then  have Marle attack that one,  hopefully stopping it  and 
+have the others  attack  too. You  should  be  able  to  quickly and  
+conveniently  get Marle's Life 2  here, as well as  a lifetime supply of  
+Megalixirs, we're going to need a lot of these in our upcoming battles, not 
+to mention for Lavos.
+
+After your  done with your  Megalixir charming, swap  Robo back in,  and 
+head back the way  you came (towards the Tubster you  were previously 
+Charming power Tabs from). Make  sure you have the  White Armours equipped 
+on  everyone so you survive the  Metal Mute, we don’t  want to be  wasting 
+all this work  don’t we? Head back all the way to the Save point, save and 
+heal.
+
+You probably want to  finish charming power tabs here now  if you didn't 
+finish this  job from  before, you  will want  both  Crono and  Robo at  ** 
+Pwr.  Now, importantly,  if  you  want  to  attempt Ocean  Palace  Lavos  in  
+a  NG+,  you definitely want  to also be  charming enough power Tabs  to also 
+boost  Ayla to ** Pwr,  and also enough  speed tabs to  max her speed  too, 
+there are  2 power tabs easily  available in the NG+ before  ocean palace 
+however,  so getting her to 14  Speed is sufficient for  now, but would  also 
+make Lavos easier  in this run too. Note,  if you are attempting a  no-tabs 
+run, you must  still charm the Speed Tabs, because  there is just no  way to 
+beat Lavos's  inner forms without improved speed.
+
+Now continue  through the black omen,  running from everything and  opening 
+all the  chests, there  are  several  Speed Tabs  available  in  these too,  
+you'll eventually be  teleported to  a large  room with  monsters called  
+Aliens which appear when stepping  on the trigger boxes,  charm these for a  
+Magic Tab each, sadly however,  these enemies do not  respawn. Continue 
+through as  before, and save/heal   before your next  fight. If you  are 
+using  tabs, you want  to give all your Magic Tabs to Robo.
+
+Now go save up in the next room. The next fight is a toughie.
+
+**********
+Giga Mutant
+Top - 6000 Hp
+Bottom - 5000 Hp
+**********
+
+Giga Mutant is pretty  much IMMUNE to all physical attacks,  only Magic will 
+do any damage. Even Physical-Magic combo attacks  don’t work because it’s not 
+that the physical  attacks miss. It’s  just that  he’s got INSANE  physical 
+defence. Therefore we have  no choice but to go  to magic attacks. On  top of 
+everything his attack set  is pretty much  random so it’s  very hard  to give 
+you  a clear- cut strategy and he  counters every Magical attack made 
+against  him with an absorb MP attack (less then 10 MP).
+
+While my  previous strategy used  Lucca, I found  a more conservative  one 
+with using Ayla as a tank to be more effective
+
+Crono: White Vest, Wallet 
+Robo : Haste Helm, White Mail, Gold Stud 
+Ayla: Prism Helm, White Mail, Gold Erng
+
+As I just mentioned,  Ayla's role here is to be a tank,  the survivor, open 
+out with Crono and Ayla  applying a Barrier and a shield on  Ayla before 
+Crono dies if possible, if not  then don't worry, now Ayla should  be able to 
+comfortably survive all attacks  dealt by both bits, only an  unlucky life 
+shaver+something else at  the wrong time  will do her  in. With this  have 
+Ayla solely  focus on healing and  reviving, you  CAN spam Megalixirs  every 
+turn but  I opted  to be much more  conservative  and relied much  more  on 
+Full Tonics,  and  only used Megalixirs  when both  Characters are  damaged  
+or needed  MP. Gigamutant  does have a  few attacks that  will kill Robo  in 
+1 hit, so  Ayla will need  to keep reviving him,  it's almost  not worth  
+healing him  unless it's  convenient or Ayla has  nothing else to  do, 
+lightning bit will  help you in  that department too. Robo  should use  
+relentlessly use  Shock every turn  he gets,  that's his only role this  
+fight, he should not need  needed to help with  healing at all. Shock does 
+~300 dmg a  hit to both parts, 20 of those  and both bits will fall, it 
+doesn't  take as long  as you would think,  the Tyrano fights  are actually 
+longer than this.
+
+Now go  back & SAVE  and use a  shelter. Proceed  forth into the  elevator, 
+put Ayla in your party and  give Robo the Prism Specs, Ayla the Wallet  & 
+Crono the Gold Stud. If you  Face Goons, you know what to  do, 1 Beast Toss 
+on  each will give you 3200  damage on  each with  Robo’s max power.  If they 
+aren't Goons.  Show NO mercy!
+
+Heal up  and head out  of the elevator, give  everyone Black Armour.  Shred 
+the Synchrites. When you hit  the bats you’ll trigger a forced  fight with 2 
+Goons. Put the Prism  Specs on Robo and deal with  them with a Beast Toss  on 
+each (be quick). Now go  deal with the Tubsters  in the same way  (charm them 
+beforehand if you wish), just revive before you attack.
+
+In  the next  room  are 4  Panels.  They are  the  same as  the  ones we  
+faced previously, but  a big difference this  time is how  we can deal with  
+them. At ** Pwr  Crono with  the Rainbow can  one hit  kill all 4  of these  
+with Falcon Hit, but we  don't to do that. By switching  to the Slasher 2 or  
+Kali Blade He should do just over  1700 to all of them, which is easily  
+finished off. So if you are playing with tabs, equip your characters like so:
+
+Crono: Slasher II/Kali Blade, Black Vest, Wallet 
+Robo : Terra Arm, Prism Helm, Black Mail, Gold Erng 
+Ayla : Haste Helm, Black Mail, Gold Erng
+
+If you have  boosted Ayla's Atk too, then  you must tailor down  the weapon 
+too until falcon hit does  in that 1700 damage range. Now open  with Falcon 
+hit and have Robo  use a  Barrier on  Ayla (the missile  attacks are  
+actually magical, contraire to what you  may have thought), Ayla Charms away  
+and either kills off the panels  herself with Cat  Attack, or Robo/Crono do  
+it. But Robo  & Crono's primary roles  here are to  talk and purely heal,  
+damage stacks up  very, very quickly and  you can easily  die, especially if 
+you  are struggling to  get your first Charm off. Don't  use Ayla's regular 
+attack command keep  her in the tech box, as  it'll save you  losing ATB 
+time  to the  panels. Make sure  you finish off a  panel immediately  after 
+charming  it, it's  imperative to  reduce their numbers at the earliest 
+opportunity.
+
+If you didn't use take, take the following setup: 
+Crono: Rainbow, Black Vest, Prism Specs 
+Ayla: Haste Helm, Black Mail, Gold Erng 
+Robo: Titan Arm, Prism Helm, Wallet
+
+The strategy  is the same as  before, Falcon Hit will  deal 1550 to all,  and 
+a single cat attack  will finish these off, here have  Robo purely defensive, 
+and Barrier him  ASAP,  and spam Megalixirs  liberally  with Robo, this  is  
+just a riskier version of the with-tabs game.
+
+Don’t be  surprised if you die  here, a LLG was  never supposed to be  easy, 
+no reason it should be now...
+
+In  the following  room you’ll  meet one  of  the most  boring yet  one of  
+the easiest bosses in the  game. Put Ayla in your party with Robo.  All you 
+need or this fight are 30 Full Tonics.
+
+**********
+Terra Mutant
+20000 Hp
+**********
+
+Your Set-Up should be:
+
+Crono: Not Red Armour, Wallet (So he dies quick!) 
+Ayla : Red Mail, Charm Top 
+Robo : Prism Helm, Red Mail, Gold Erng
+
+Same set-up for with or without-tabs.
+
+Terra Mutant  has the most sophisticated  survival mechanism I have  ever 
+seen. It sucks  its own bodily fluids whilst  thrashing out at  what's 
+attacking it, and  when  it runs  out  of  said bodily  fluids,  only  then 
+does  it  perish. Now, with this equipment  set-up Robo is immortal if you  
+keep healing him with Full Tonics,  he's too slow to  follow up any  attacks, 
+even if you're  slow at pressing the item button.  Don't attack him once, as 
+he  will keep draining his bottom  half,  which will  fall  after  *gulp*  
+20  absorptions. This  is  very boring, but it  will happen. Heal Robo  after 
+every attack sent  his way except the lava & weak absorption attacks, and 
+this battle is good as won.
+
+I only used 20 Full Tonics, if that helps you gauge how long it should take.
+
+Now head out and prepare for your next fight, which is a little trickier.
+
+*********
+Lavos Spawn
+Head - 10000 Hp
+*********
+
+Set up your characters
+
+Crono: Slasher, Wallet
+Robo : Terra Arm, Haste Helm, Blue Mail, Gold Erng 
+Ayla : Prism helm, Blue Mail, Charm top
+
+Same set-up for with or without-tabs.
+
+The beak has a  Haste Helm which we must charm. Now  with Robo's equipment 
+set- up here,  he can survive any  attack of Lavos  Spawn's, but no more  
+then that. So, open  the battle  by Ayla  charming the head  and Crono  
+doing.... nothing, Ayla and  Crono will get knocked  out after a  couple of 
+turns, after  which do not revive them. If  Ayla doesn't get the Haste Helm 
+before  she dies then just reset and try again. 
+
+Now with Robo, thanks to  the Haste Helm he is fast enough  to get in about 
+1.5 turns in for  every one of Lavos Spawn's,  if you follow the  rule 
+'Attack only when  Robo is  at full  health' then  you should  comfortably 
+be  able to  heal before being  nailed twice by  the Lavos Spawn, which  will 
+kill Robo.  So just hold off attacks as  fast as you can with Full  
+Tonics/Elixirs, and before long you'll  have a  turn with  Robo whilst  at 
+Full  Health, where  you can  safely attack.  Lavos’s water  attack rise  will 
+only  serve to  give you  a free  turn attacking, after  7-15 Uzzi  punches, 
+depending  on your  Tab usage,  the spawn will fall.
+
+Now go back and save,  we have a tough series of fights  ahead of us, not 
+least of which, Lavos! But first..
+
+*********
+Panels x5
+1875 Hp each
+*********
+
+The  difficulty of  this fight  depends  on your  Tabs situation,  if you  
+were thorough through  the game you should  already have easily gotten  
+enough Speed Tabs to  Max out Crono Marle  & Robo, and if  you don't intend 
+on  tackling the Ocean Palace  Lavos, then  those Tabs  are all  you will  
+need. If  you weren't very thorough though,  or were and need  them for 
+Ayla's Speed,  then count how many tabs you  do need, and only charm  that 
+many, as fighting 5  panels at the same time is suicide in the long term.
+
+Set up your characters: With-Tabs: 
+Crono: Varying Weapon, Haste Helm, Black Vest, Wallet 
+Robo : Titan Arm, Prism Helm, Black Mail, Gold Erng 
+Ayla : Prism Helm, Black Mail, Gold Erng
+
+Without-Tabs
+Crono: Rainbow, Black Vest, Prism Specs 
+Ayla: Haste Helm, Black Mail, Gold Erng 
+Robo: Haste Helm, Prism Helm, Wallet
+
+The strategy for both equipment sets are the same.
+
+As before, open with  Falcon hit to critically damage all 5  panels, now if 
+you require 3 or less panels,  use Robo's Area Bomb to clear 2  of the 
+panels, of 4 then clear 1  panel with Rocket Punch, if  (God help you) 5  
+then, instead have Robo  use  a Barrier  on  himself.  With  some  Ayla's 
+charms  are  successful, immediately kill  the Charmed  panel with  
+Rocketpunch, and  if Crono  gets any further turns have  him use Barriers on 
+Robo then  Ayla. By spamming Megalixirs and attacks  you  should have a  
+chance  of getting the  necessary  tabs whilst surviving the fight.
+
+If you  need no tabs then  1 falcon hit with  the Rainbow w/ tabs  will 
+finish this, or 1 Falcon hit and Shock with the second equipment set-up.
+
+Now save & use a shelter. 
+
+Prepare your party:
+
+Crono: Rainbow, Haste Helm, Black Mail Haste Helm & Gold Stud 
+Robo : Terra Arm, Haste Helm, Blue Mail, Gold Stud 
+Ayla : Prism Helm, Black Mail, Gold Erng
+
+If you  have ANY spare Speed  Tabs left over, give  them all to Ayla  now. 
+Also note that  the no-tabs  set-up and  strategies remain exactly  the same  
+as the regular playthrough,  it just takes longer  to do the  same job, and 
+you  run a bigger  risk of  dying against  Zeal's final  form. But  the 
+challenges  should play out very similarly.
+
+You  probably  noticed no-one  is  wearing  the  Wallet,  that is  because  
+the next boss fights give no Exp. Which is  great because Crono can now be 
+used for his Confuse. 
+
+**********
+Zeal 
+11500 Hp
+**********
+
+Her  obscene evasion  is made  moot  point by  our pinpoint  Beast Tosses,  
+her Hallation attacks are  empty threats, as she  can only target 1  
+character at a time otherwise,  so here just revive characters  that die and  
+do not otherwise heal.  Use Megalixirs  to recover  MP  and have  Crono  use 
+Confuse  (all 2  of them..), Queen Zeal will not last very long at all.
+
+After this Zeal Throws you into the Mammon Machine.
+
+**********
+Mammon Machine
+18000 Hp
+*********
+
+Mammon machine is  very hard if you don't  know what you are  doing, but 
+that's where I come in!
+
+Now,  the Mammon  Machine  has 2  phases. Modifying  Phase  & Attacking  
+Phase. Using any Magical attacks during  the Modifying Phase will increase  
+the Mammon Machine’ s Attack power  in the Attack  phase & using  any 
+Physical Attacks  increases the Mammon Machine’s defence during said Attack 
+Phase.
+
+During  the  modifying   phase  you  will  do  nothing   except  revive  
+fallen characters using a Megalixir to recover MP.
+
+When the  mammon machine  releases its  stored energy, Ayla  will be  the 
+lone survivor.  Do not  bother  healing,  have Ayla  immediately 
+revive  Robo followed by  Crono. Have Robo  use 3 Uzzi Punches  (1400 damage) 
+and  have Ayla use 1  or 2 Triple Kicks  and Crono his 2  Confuses, depending 
+on if  your fast enough). Soon  you’ll  be hit by  2  Point Flares (kills  
+one  character each). Ignore  the fallen  characters and  continue  your 
+onslaught  until the  Mammon machine switches  back into  its modifying  
+phase, where  you just  repeat the above process.  If you follow this 
+process  the Mammon machine  will fall after 3-6 cycles.
+
+All in all this battle just takes a little while.
+
+*********
+Zeal
+Head: 20000 Hp
+*********
+
+This  form is  nothing like  the previous  2 fights,  Zeal is  by all  
+accounts absolutely lethal, and must be treated with respect!
+
+Now, start  the  fight with Crono  using  a Megalixir, Robo  Uzzi  Punching 
+the Head & Ayla Charming a Prism Dress from  the left hand (and thus get hit 
+by it ’ s counter). Now here are the list of attacks:
+
+2 Different Shadow  Laser attacks: Healing to Ayla &  Crono, hurts Robo 130- 
+180 Shadow Gear: Heals Crono & Ayla and Kills Robo Hexagon  Mist: Kills  
+Crono,  Heals Robo  and sometimes  kills  Ayla (Ayla  can usually survive 
+this from Full Hp) Stargate / Lighting: Kills a Single character Halation - 
+Hp of all characters goes to 1
+
+It’s a very  good thing indeed that you  got 2 Haste Helms.  Because these 
+make this battle  much easier. Now  your absolute priority  in this fight  
+should be to  revive  any  fallen  character  immediately,   you  can't  
+afford  to  lose character's turns  due to them  being dead. Your  second 
+priority should  be to keep healing  with Megalixirs.  Ayla will  survive 
+Hexagon  Mist from  full Hp, but if she  dies instead then you have  a Lone 
+Robo, who might  be fast enough o revive  and recover  if you are  lucky, 
+but you  are very  vulnerable indeed. Robo  can also  survive the  single  
+shadow lasers  from full  Hp, being  fully healed here is a big advantage.
+
+Only then  do  you have permission  to  attack. Crono has  his  Confuse 
+attack, Robo Uzzi Punch and Ayla Triple kick, target the head only. 
+
+Basically if  you keep priority in  reviving fallen characters with  your 
+first available  character, and  using  Megalixirs/Uzzi Punch/Confuse  when 
+you  have your characters available,  this battle  will not be  so tough. 
+The  best way  to go about the battle is to ONLY target the head.
+
+If  you get  hit by  Halation,  pretend it  never happened  because you  
+should assume all attacks  that hit you that  you can’t absorb,  will kill, 
+the only  form of healing to  Hp should be  Megalixirs, which are  primarily 
+there to  recover MP for all party members.
+Basically below is the list of the roles of the 3 characters.
+
+Robo: Uzzi Punches the Head & Revives on demand ONLY 
+Crono:  Uses Confuse  on  the Head  and  uses Megalixirs  +  Revives on  
+demand 
+Ayla: Only uses Revives & Megalixirs on demand ONLY
+
+After  Zeal falls  you’ll  go up  against  Lavos,  who will  take  the form  
+of previous bosses you fight.
+
+*********
+Lavos (Hedgehog Form)
+*********
+
+Swap Ayla out for Frog & Give Robo the Prism Specs & Crono the Sun Shades
+
+Dragon Tank:
+Attack each bit once..
+
+Guardian & Bite:
+Single Uzzi Punch to the Main Body
+
+Heckran:
+2 Shocks off Robo
+
+Zombor:
+Single Uzzi Punch on each bit is enough
+
+Masa & Mune:
+Regularly attack it a few times..
+
+Zombor:
+Crono uses Lightning & Robo uses Uzzi Punch Twice & Frog Leap Slashes once
+
+Magus:
+Robo can do Fire (Mega Bomb) Lightning (Shock) and Shadow (Laser Spin)  and 
+Frog can do  Water, then use Uzzi  punch & Leap Slash  and he shouldn’t get a 
+single Dark Matter in.
+
+Tyrano & Azala:
+Gold Stud & Red Armour for all.  Kill Azala with Shock & Annihilate Tyrano 
+with your favourite techs.
+
+Keep Red Mail on all and pummel the middle.
+
+Actual Lavos (10000 Hp):
+
+Equip Robo & Ayla:
+
+Robo: Haste Helm, Nova Armour, Gold Erng 
+Ayla: Prism Helm, Prism Dress, Gold Erng
+
+This set-up should allow Robo & Ayla to survive all attacks thrown at them.
+
+Start out with Robo using Uzzi Punch & Ayla standing by.
+
+Basically just  have  Robo constantly use  Uzzi  Punch on every  turn  he 
+gets. Ayla should be fast  enough to get turns against Lavos in a  1:1 ratio. 
+So Ayla should  wait until  Lavos  uses an  attack, then  use  a Megalixir  
+immediately after it. This will keep your HP & MP both full throughout.
+
+Now  as soon  as you  get in,  you will  SAVE and  exit through  the gate,  
+you obviously.. need to make a few preparations before the final showdown.
+
+**>-27-<***
+Lavos Preparation & Lavos Final Battle
+***********
+
+It's been a long  road, but the moment of truth has  finally arrived! Lavos 
+may have been  quite straightforward,  if epic  in your  regular gameplays,  
+but he really is a most lethal animal in a LLG.
+
+Both the  second and  final forms of  Lavos have many,  many attacks  that 
+will wipe  your party  off  the  map in    single hit,  and  there  is no  
+possible equipment set-up that  can change this. We had a  similar situation 
+with Magus' Dark Matter all  the way back then, but  we were able to work  
+around that with our Barriers. This  time, we have Crono, Marle &  Robo's 
+triple tech, Lifeline, which is as it says, literally our only hope of 
+winning this. 
+
+Furthermore this  is where the  no-tabs game ends,  there is absolutely  no 
+way to win  this short of  using Magus without  using any  Tabs, as your  
+party are blown off  the  battlefield before they  can  get any chance  of  
+a foot- hold, boosting Robo's  Speed is  imperative, and we  will be needing  
+to make  use of those Speed Tabs right now if you haven't already.
+
+You  can attempt a  'minimal  tabs' run by  giving  Robo just 5  Speed  Tabs 
+and nobody anything  else, use the  same equipment list  as the regular  LLG 
+except you will now need  to use that Swallow you took earlier,  and all the 
+hardships you have  had  to endure. I  haven't  myself play tested this  
+perfectly  yet, I simply  used a  Slasher and  Speed/Power  Tabs to  get  the 
+same  stats as  the Swallow, but  I can confirm  from that it  is possible.  
+I will include  a more detailed strategy  with my  next update  if there  is 
+sufficient  interest for this, but it should  play our very similarly to a 
+regular  LLG, except you have much less  margin for  error, and  when Lavos'  
+body activates  you need  to be prepared as it can splash attacks faster than 
+you can Lifeline them.
+
+If  you are  playing a  regular LLG,  you  want to  Max out  Crono and  
+Marle's Speed, and  get Robo to 15  speed, no more and  no less. You should  
+have their PWR's maxed out already.
+
+You will need
+Minimum of 
+40 Megalixirs 
+30 Revives 
+5 Heals 
+Battle Speed 8 (slowest) 
+A healthy dose of luck
+
+Equip your characters:
+
+Crono: Rainbow, Haste Helm, Red Vest, Gold Stud 
+Marle: Prism Helm, Red Mail, Gold Stud 
+Robo : Terra Arm, Haste Helm, Red Mail, Green Dream
+
+Go to 1999 AD via the Bucket or Epoch, whichever you fancy.
+
+*********
+Lavos Form 2
+Body: 25000 Hp
+Left Arm: 7000 Hp
+Right Arm: 9000 Hp
+*********
+
+There is a  good reason why Robo is at  15 and not ** Speed, and  that is, if 
+a character with  Auto-Revive status dies with  his turn available, then  
+when he is revived, his ATB bar  is set back to zero and he  loses his Haste 
+status for that  first  turn  he has  after  being  revived,  this  is not  
+the  case  for partially  full,  or full  but  without  the  turn  available, 
+ATB  bars.  This affects you  hugely in this  battle, and because of  this is 
+why  'saving' your character's turns  is not beneficial.  It's usually 
+better  to use any  junk on your turn  (Megalixirs  are usually a  good  bet) 
+left save  being  killed with that turn  open, and having  to wait a  long 
+time  before you get  another turn with that character again.
+
+That aside now, so you run into Lavos,  who greets you with Lavos Beams / 
+Doors of Doom  Open  attack. And completely  level  your party, before  you  
+can even move! So much for lifelining our way to victory..
+
+Not quite
+
+Robo has  been equipped with  the Green Dream, which lets  us cling on,  now 
+you must  move  quickly, Robo  needs  to  revive Crono  and  use  a Full  
+Tonic  on himself.  He  should  be  able  to  do this  thanks  to  Haste  
+and  our  speed manipulation.
+
+Now Lavos will  lash out with his two  sickles, after which only  Crono or 
+Robo will survive  (Robo  has enough def  and  health, barely, to  survive  1 
+Sickle attack). Now  that character revives Marle  1st, and then the  other 
+character, now cast  Lifeline, well  in time for  Lavos' second wave  of 
+sickles.  You can probably  squeeze  a Confuse  attack  in  with  Crono  (on  
+the Left  Arm)  and Megalixir  with Robo  here  before  they  hit, after  
+which  you want  to  cast Lifeline  again. Lavos  will wipe  you  out once  
+again and  Lifeline will  now revive all three  characters. If you made  it 
+this far, well  done, you finally got yourself a (fragile) foothold in this 
+steep battle for the future!
+
+Now,  Lavos' body  is in  its  engaging phase,  and  will not  issue any  
+more attacks until  it has done so,  which is a few  turns away. The arms  
+too, will not attack  for a  while, I suggest  you hold off  casting 
+Lifeline  again just yet and  go all-out on the  left arm, you really  need 
+to take this  out before the body  engages, as  the three  parts together  
+easily overwhelm  the party. This should  be quite easy, have Crono  Confuse 
+every turn and  Robo Uzzi Punch, Marle doesn't have  auto-haste but 
+conveniently gets in 1  Megalixir for every 2 of Crono's  and Robo's 
+attacks, dedicate Marle to  be your Megalixir spammer. The left  arm should  
+quickly fall, even  without using any  Tabs. Now  you are safe to  restablish 
+lifeline.  Go all-out on  the right arm  and you  should be able  to take  
+that down  before  or just  after  the main  body engages  (and performs his 
+powerful  party-targeting fire attack, which we  absorb thanks to our 
+armours).
+
+The  right arm  shouldn’t take  too  much longer  than  the left  arm did,  
+your priority is  to make sure  at least 2  characters have auto-revive  
+status from lifeline, whenever 2 characters lose it,  make it your absolute 
+priority to re- establish Lifeline.  With both arms  gone, hack through  
+those 25k Hp  the body has,  you should  be easily  fast enough  to re-
+establish  lifeline before  the next  party-lethal attack.  Reviving  fallen 
+characters,  like  the Queen  Zeal battle, should remain our #1 priority.
+
+**********
+Lavos Form 3
+Left Bit: 3000 Hp
+Centre Bit: 10000 Hp
+Right Bit (Core) 30000 Hp
+**********
+
+This battle  will go  similarly to  the first. Basically  the first  thing 
+that should be on your  mind is *Lifeline*. Bring it up ASAP,  hopefully 
+Crono has 4 or more MP  left when you enter this  battle allowing you to  
+cast Lifeline off the bat. If not then you got a  bumpy start, use a 
+Megalixir straight away with Crono  or Robo  and wait  for  his turn  to  
+become available  again then  cast Lifeline. If the  bits keep picking you 
+off with  single attacks, keep reviving until everyone has their turn, then 
+get Lifeline up.
+
+Now repeat the  process you did previously,  only this time you’re  going to 
+need to  use Lifeline  a  bit  more  because the  Bits  attack you  more  
+frequently (everything is  a 1 Hit Kill except  Evil Star, which  basically 
+does nothing). Again if  2 or more  characters have been  relieved of Auto-
+Life,  get Lifeline up again as soon as possible. 
+
+Before you  start attacking,  be aware of  Lavos’s party-hitting  attacks, 
+these are  dependent on  where  we  go  with Lavos's  Time  Warp, which  
+changes  the background. They are as follows:
+
+65000000 BC Jungle - Grand Stone - Kills Party 
+600 AD - Magus's Castle - Evil Star - Halves Parties' HP 
+1000 AD -  Leene Square - Kills Crono,  Marle, Robo can survive,  with a 
+random status (use a Heal) 
+2400 AD - Lab Ruins - Dreamless - Kills Party 
+12000 BC  - Mammon Machine -  Invading Light - Kills  Party - Needs all  3 
+bits alive.
+
+Basically, everything here  floors your party except Death Star,  which you 
+can just ignore,  if Lavos warps  to 12000 BC  without a  bit present, he  
+will not launch that attack  until the bits are  revived, after which you  
+have a couple of turns  before that happens. You  can manipulate this by  
+immediately killing off the  small bit when  it's revived and  causing Lavos  
+to be *stuck*,  as he cannot time  warp  again until he  launches  the 
+attack. You  can  buy yourself many easy turns attack this way although it's 
+not essential.
+
+Now, focus on  taking the Left Bit  out first, Crono's Confuse  and Robo's 
+Uzzi Punch should make  short work of it, even  without Power Tabs. Now  you 
+want to heal  up and  make sure  lifeline is  on  all 3  members while  
+waiting for  the core's defence  to go down,  from then you  will go  all-out 
+on the  right core until  it revives  the  left bit,  completely  ignore the  
+centre  bit in  this battle, it's not worth touching him.
+
+Always make  sure your Lifeline is  up on at least  2 characters at a  time 
+and you should  pull through  just fine  here, don’t  take any  more risks  
+then you must, you really don’t want to keep redo-ing the previous battle.
+
+Eventually the  Core WILL  fall, CONGRATULATIONS! You  completed the  Low 
+Level Game challenge!
+
+Enjoy your ending!
+
+Extras!
+
+What better  way to finish  off this FAQ  then to  include a couple  of 
+battles that  you are  really not  supposed  to fight.  Let's begin  with 
+the  easiest, you'll need access to cheats for this:
+
+**>-28-<***
+Spekkio, Pink Nu Form
+20000 Hp
+***********
+
+Have you  ever wondered what  it would be  like to face  the Pink Nu  with 
+your feebly-levelled party? Well, sadly  we need a party member at  Level ** 
+in order for him  to appear, which  is just not possible  without using 
+cheats,  but the Pink Nu  can be  tackled with a  legitimate Low-Level party  
+once you  get that part out  of the  way. I will  not detail how  to do 
+exactly  here until  I get someone  who is  good with  cheat codes,  but 
+essentially  you need  to make  a character (Magus)  Level ** and  in the 
+lead  of the  party when you  enter the room,  then turn off  the  code and 
+swap  Magus  out for your  party  of Crono, Marle and Robo at levels 1, 4 and 
+16.
+
+Equip them as follows:
+Crono: Rainbow, Haste Helm, White Mail Gold Stud 
+Marle: Haste Helm, White Mail, Gold Stud 
+Robo: Red Mail, Gold Stud/Prism Specs
+
+You will need:
+10 Megalixirs
+10 Revives
+
+Now  you  probably  want  to  keep resetting  this  until  Spekkio  opens  
+with Luminaire, after  which you should  have time to  revive Robo and  get 
+Lifeline online. After which you  want to fight in a very similar manner  to 
+how you did against Lavos,  except you  will be  attacking exclusively  with 
+Ice  Sword I/II and Robo's  Shock, as  single physical  attacks are  
+ineffective. Robo  is your least useful character  here, so have his  main 
+role to be  to spam Megalixirs. Spekkio has  Hallation and  Salt, which  are 
+practically free  turns for  us to attack him,  because  Spekkio deals such  
+obscene  damage that it  if  we can't absorb it, we'd  surely be seeing five  
+digit damage if the  game's engine were capable of it!
+
+So,  always keep  lifeline  active so  that  at least  2  players will  
+survive anything, and you  should have ample opportunity to attack  and 
+whittle away at that 20k health of his.
+
+
+**>-29-<***
+Ocean Palace Lavos
+30000 Hp
+***********
+
+Probably the  hardest monster you  can ever face, sadly  this is just  not 
+even remotely  possible on  our first-playthrough  as  we need  practically 
+all  the equipments that  are not available  until later  in the game,  
+actually scratch that he's  *barely* beatable even with all  the equipments 
+later  on too! Think of your  hardest battle in this LLG  challenge, and 
+multiply  its difficulty by about ten, that's roughly how hard this battle is.
+
+Ocean  Palace  Lavos  isn't  *meant*  to be  beatable  by  a  regular  or  
+even overleveled  playthrough, and  sure as  hell wasn't  intended for  a 
+Low  Level Party. But I wouldn't be writing here if it was impossible 
+wouldn't !
+
+AFAIK Xuxon  and I were the  first players successful  in taking him down  in 
+a LLG, the original thread is still available as I write this: 
+http://www.gamefaqs.com/boards/563538-chrono-trigger/42693858 But  this 
+strategy  is realistically  only feasible  with an  emulator, and  by abusing 
+save states, you rely on luck the entire battle on Lavos not targeting Ayla. 
+
+So  instead I  have come  up with  a  much more  sound strategy,  which can  
+be played from  start to  finish even on  a SNES console,  it still  requires 
+some luck at the start,  but the outcome after that is entirely  in your 
+hands. This is why  you need to  play through the  game twice, to  get a 
+third  Haste Helm, it's mandatory for this strategy to work.
+
+You need:
+50 Heals
+50 Shields
+99 Revives
+99 Megalixirs
+
+Crono & Robo set to using items in the Menu memory.
+
+Crono &  Ayla at **  Speed, Robo can  be 15 or  **, depending on  how 
+seriously you want  the developers ending,  15 if you  are serious, doing  
+this increases the  difficulty by  about 2x  but guarantees  you a  
+definitive chance  against Lavos' second form's attack without resorting to 
+random resetting.
+
+You need exactly the following equipment set-up:
+
+Crono: Rainbow, Haste Helm, Green Dream 
+Robo: Terra Arm, Haste Helm, Nova Armor, Frenzy Band 
+Ayla: Haste Helm, Prism Dress, Gold Erng
+
+There is  no equipment set-up that allows  Ayla to survive  Lavos' DRFTH 
+attack without a  Shield, or Auto-Protect  (Safe Helm), and  we are 
+completely  at the mercy of  our ATB  bars when Lavos  launches his initial  
+attack, if  Crono has his  turn available  when  DRFTH comes,  we are  
+screwed.  Furthermore we  need Lavos' first Needles  attack to hit Robo not  
+Ayla, but that's all  the luck we will need,  the rest  is up to  you. To get 
+this battle to open how we need it to, go back and fight/run away from the 
+monsters at the switches to change the battle parameters.
+
+Now  with this set-up  Ayla has  no status protection, sadly  there  is no 
+way around  this and hence  Chaotic  Zone will always Confuse Ayla, 
+fortunately we can work around this.
+
+For the opening:
+Lavos Uses Destruction Rains from the Heavens (DRFTH) 
+Crono gets his turn immediately and revives Robo 
+Crono uses a Megalixir Lavos uses  Chaotic Zone  - Kills Crono  - Robo 
+should  counter attack  450 dmg 
+Robo Revives Ayla Robo uses Shield on Ayla 
+Lavos Uses Needles, *Must* Hit Robo 
+Ayla uses a Megalixir 
+Ayla waits until Lavos uses DRFTH
+
+Lavos will then repeat his cycle over and over: 
+DRFTH - 500 Dmg to a shielded Ayla 
+Chaotic Zone - 150 to Robo and Ayla, confuses Ayla 
+Needles - Kills 1 character 
+And he will launch those  attacks at **  Speed, same speed as your non-hasted 
+Ayla.
+
+Needles cannot be  survived regardless of what equipment set-up  we use, 
+sadly. And by itself makes  the battle very tricky due to its  random nature 
+and risk of  killing  Ayla. When  Ayla  dies  she loses  her  shield,  she 
+needs  to  be revived, healed  and re-shielded, that's 3 whole  turns. AND 
+we  have the DRFTH of Lavos'  next cycle breathing  down our necks that  we 
+have to  survive, with Ayla having time to react too.
+
+You have to really  be on the ball to survive this case.  Now continue with 
+his pattern.  Now at  the  end of  Lavos's  opening  cycle we  have  a 
+hasted  Ayla instead of  Crono standing,  it's that  difference that allows  
+us to  make our counter-attack.
+
+*Start Point*
+1.) Ayla holds her turn ready 
+2.)Lavos Uses DRFTH 
+3.)Ayla immediately revives Robo 
+4.)Ayla WAITS with her turn until Robo is 60% complete ATB bar 
+5.)Ayla uses a Megalixir 
+6.)Lavos uses Chaotic  Zone - Confuses and  Hurts Ayla, Robo will  80% 450 
+(900 crit) dmg counter attack 
+7.)Robo should get his turn reasonably safely  before Ayla, uses a Heal on 
+Ayla 
+8.)Ayla revives Crono 
+9.)Robo wait with his turn 
+10.) Ayla  inputs Triple  Kick if  she gets  her next  turn before  Lavos 
+(Fast Fingers!!) 1
+1).Lavos uses Needles, Kills one character 
+12.) If  Ayla gets  her turn  during this animation,  then select  Triple 
+Kick, which will hit immediately after Needles
+
+Now this  is where  things get  tricky, you  really need  to move  your 
+fingers quickly here, and what you do will depend on who Lavos targets
+
+Ayla:
+Lavos kills Ayla (and makes Steps 10 & 12 Void) 
+Robo immediately revives Ayla 
+Crono Uses Megalixir 
+Robo uses Shield on Ayla 
+Crono *might* be fast enough to get in a Spincut (1000) 
+Lavos  Uses DRFTH, Ayla  should  just about get  her  turn on cue,  go  back 
+to Start Point
+
+Robo:
+Lavos kills Robo
+First of Ayla & Crono uses a Megalixir 
+Second of Ayla & Crono uses a Shield 
+Ayla Waits  with her turn  (her ATB bar  might not  quite fill if  you 
+selected Triple Kick at step 10 before DRFTH) 
+Crono *might* be fast enough to get in a Spincut (1000) 
+Lavos Uses DRFTH, Ayla should get her turn on cue, go back to Start Point
+
+Crono:
+Lavos kills Crono
+Ayla Triple Kicks
+Robo uses a Megalixir
+Ayla Triple Kicks
+Robo uses a Shield on Ayla 
+Lavos  Uses DRFTH, Ayla  should  just about get  her  turn on cue,  go  back 
+to Start Point
+
+You are  not always going to  be fast enough  to make your attacks,  Lavos' 
+ATB bar does  not move when  you are in  the Items & Techs  Menu, but it  
+does move when you're moving between  them on first command screen, you  need 
+to spend as little time in  there as humanly possible,  often you will not  
+be fast enough, and thus  will have to sacrifice  one or all of  your attacks 
+just to  get into Sync again.  But don't beat  yourself too much  losing 
+multiple cycles  with no Attacks, Robo's  counter attack will effectively  
+whittle away at  Lavos' health and will cumulate a  decent number at the end 
+of this, especially  if he hits a few criticals.
+
+Ayla can afford to  have a partially (75%+) full ATB bar  when DRFTH comes, 
+but no less,  as she will  not be able  to get her  Megalixir in after  she 
+revives Robo.  If  you find  yourself  in  a critical  state  and  might not  
+make  the Megalixir in  time, then do  not make the pause  before using the  
+Megalixir at Step 4, use the following emergency pattern:
+
+3.)Ayla immediately revives Robo 
+4a.)Ayla uses a Megalixir
+ 5a.)Lavos uses Chaotic Zone - Confuses and Hurts Ayla 
+6a.)Ayla randomly attacks 
+7a.)Robo heals Ayla 
+8a.)Ayla/Robo revives Crono 
+9.)Wait for Lavos Needles 
+10.) If  Ayla falls, use  the standard pattern,  if Robo/Crono falls,  have 
+the survivor use  a Megalixir  and Shield, in  that order, and  have Ayla  
+wait out DRFTH (Sacrifice your attacking opportunity) 
+11.) Lavos Uses DRFTH, go back to Start Point
+
+Your best  attacking  chances will be  from  when Crono is  targeted,  but 
+you should have enough  items to last 50 cycles,  so if you average  just 
+over 1000 damage a  round and don't  take any more  risks, you  should be 
+able  to finish him, eventually.
+
+This took  me many, many resets,  and is by  a country mile the  hardest 
+battle possible in  Crono Trigger,  I only  know a  handful of  other people  
+who have managed this, if you win, well done!
+
+Now if you want  the developers ending... best of luck,  use same strategies 
+as described in  the original  Lavos section,  except give  Marle the  third 
+Haste Helm. Hopefully  you have  enough Megalixirs  and luck to  see this  
+through. I haven't done this yet myself,  and I only know of 1 person  that 
+had as I write this, join the elite band!
+
+**>-30-<***
+Lower Levels - The Theory
+***********
+
+As far as reducing  the minimum levels even further go, I  am most certain 
+that this work  is finished. Quite  recently I have managed  to get an  excel 
+format of  this  working  quite  well,  with all  the  relevant  experience  
+mechanics programmed in.  I haven’t managed  yet to find  an automated method  
+of checking every single encounter combination, but my iterative theory goes 
+as follows.
+
+Chrono must remain at level 1 Marle must finish at level 4 Ayla must finish 
+at level 20
+
+These final  lowest levels  are very  trivially proven even  by pen  and 
+paper, it's impossible to get  any of these 3 characters at a  lower level 
+then stated in this FAQ,  no matter how you shuffle the  EXP, it's 
+impossible. Additionally it's almost impossible  that sacrificing a level off 
+Crono  and Marle will make an improvement of more  than 1 level elsewhere, but 
+that  WILL affect your Lavos battle  average. Additionally  Ayla  always 
+absorbs  the  maximum  exp she  can here, and thus cannot sacrifice another 
+level intentionally even if she tried.
+
+So that  leaves us  with Frog,  Lucca's and  Robo's levels  that have  room 
+for tinkering, and  judging by the end game  experience buffers, Lucca  is 
+the best candidate for squeezing  an additional level out of. But  her party 
+position in almost all her  battles is all but  forced, and even tinkering  
+with Marle's 110 exp  buffer isn’t  having  the desired  effect,  Lucca needs  
+to  save exp  just before the Magus  battle, but she cannot afford  to be in 
+the Main  party to do so because of Crono and Marle.
+
+Frog and  Robo are  similar affairs,  but requiring  much greater  exp 
+savings, fiddling with  the exp again  yielded negative  results with the  
+excel charts, which agree perfectly game results.
+
+Basically  the final  party  levels of  1  4 15  15  16 20  37  are the  
+lowest possible withstanding the  maximum level of scrutiny I can  give it. 
+If anybody wants to  attempt to refute this,  please contact me  and I'll 
+give you  what I have to give you the best chance to do so.
+
+Accepting this I have  always wanted to trivialize the Nizbel  II fight, if 
+you ever want  to see  how painstaking  that fight  once was,  you need  only 
+watch MoogleBoss's take on  the fight. And the accomplishment  of safely 
+accommodating the extra exp needed for this has most certainly warranted this 
+update.
+
+**>-31-<***
+Videos
+***********
+While these  may appear or  disappear over time,  I'd really like  to 
+recommend MoogleBoss's excellently documented  playthrough now available  on 
+YouTube, and easily searchable using Chrono Trigger Low-Level game MoogleBoss 
+as keywords.
+
+**>-32-<***
+Author's Notes
+***********
+Chrono Trigger is  always a game  I will hold close to  my heart and  I am 
+glad to be a  small part of the community of  players it has. I would  like 
+to thank QHorvik on his  so far excellent LP which  had spurred me to  
+rewrite this FAQ. I was quite frankly  embarrassed at my writing style a 
+long  way back, but most definitely proud.
+
+There are many  people who have supported me throughout  the production of 
+this guide,  in  particular   the  earlier  versions,  that  I  wish   I  
+had  fully acknowledged and credited,  and now too far  in the past to  fully 
+remember who they were.  But if  any of you  who I  have not mentioned  do 
+come  across this version of the FAQ, be known that you have been most 
+gratefully appreciated.
+
+**>-33-<***
+Credits
+***********
+CyberSarkany -  A substantial amount of  play testing and refining the  order 
+of doing several things,  including grabbing chests and when to  save. Also 
+helped in no small  part with the Magus Strategy  at both 600A.D. and  12000 
+B.C. Also for showing  how to end  battles quickly on Zenan  Bridge. Probably 
+a  few more things than  I do wish  I remembered, please contact  me if you  
+stumble across this FAQ!
+
+Xuxon  - Extensive  Ocean Palace  Lavos  discussion, and  for breaking  
+through with the first successful attempt in a LLG.
+
+Moogleboss  - For his  video  documentation of the  challenge  and 
+play testing, for suggesting to use Power Tabs on Magus when struggling.
+
+TrynaBeFunny - In  his DS version of the  LLG FAQ, for pointing out  a 15 
+Speed Robo is superior to a ** Speed Robo, and for crediting some of my 
+strategies.
+
+Unknown  -  For  suggesting  the  original   Nizbel  II  strategy  used,  
+with Attacking 3x  and Lightning  3x on  Nizbel, a  tedious but  successful 
+strategy that stood for 7 years.
+
+Jellyslayer &  Others -  For reminding me  of the new  Nizbel II  strategy, 
+now made possible by exp shuffling
+
+QHorvik -  For his  excellent LP on  a LLG, also  for play testing  the 
+original ocean palace  Lavos strategies, and for  motivating me to publish  
+this update. Also  for  his board  members  who  explained  the  mechanics 
+of  avoiding  the encounter just before Nizbel (at the door)
+
+Fast Blood  - For  reminding me  of the trick  to avoid  the buggers  battle 
+in Proto Dome.
+
+Crinkles - For  his original LLG FAQ, the original  and still mainstream 
+Second and Third Lavos forms strategy, and use of Berserker for the R-Series.
+
+The n00b Avenger - For helpful forum discussions in the first few versions, 
+and for his Level/Stat chart which enabled me to compute the theoretical exp 
+margins rather painlessly.
+
+If anybody else  has helped me with this, especially  from 2005, please 
+contact me so I may credit you.
+
+**>-34-<***
+Final Notes
+***********
+
+I will  safely say  this is one  of the  last updates to  this FAQ,  there 
+will variations based on  this format made available for the  iPhone 
+platform, which I have played myself  very enjoyably. Watch out for these  if 
+you are intending on playing on such platforms.
+
+**>-35-<***
+Version History
+***********
+1.0-1.3:
+The original  outlay  of the FAQ,  with  all the original  boss  strategies 
+and suggestions
+
+2.0:
+Completely revised,  and repaired much of  the faulty grammar  and 
+presentation Strategies   for  Pink   Nu  form   of   Spekkio,  and   Ocean  
+Palace's   Lavos 
+New strategy for Nizbel II 
+No  longer  requires  the  tedious Acid/Alkalines  encounter  to  go  
+perfectly 
+Credits Section Added Laid out strategies for minimal tab abuse to maximise 
+the possible challenge
+
+2.2:
+Fixed most spelling errors and lost formatting from interconverting between
+word and notepad
+
+
+**>-36-<***
+Contact Details
+***********
+
+My  e-mail  is   envisage.wood@gmail.com,  please  contact   me  with  
+anything pertaining to this  FAQ, comments, suggestions,  discoveries 
+including refining boss strategies will be appreciated. Feel free to contact 
+me, any error pointing etc. will be GREATLY appreciated.
+
+End of FAQ
+
+Crono Trigger Perfect Low-level Game FAQ version 2.2 19/08/2012
+View in: Text Mode
+
+GameFAQsfacebook.com/GFAQstwitter.com/GameFAQs
+Help / Contact UsChange Colors 
+gamespot.comgiantbomb.commetacritic.comgamerankings.com
+
+SitemapAdvertisePartnershipsCareersPrivacy PolicyAd ChoiceTerms of UseReport Ad
+
+© 2018 CBS Interactive Inc. All rights reserved.
