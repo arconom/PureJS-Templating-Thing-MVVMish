@@ -1,4 +1,10 @@
- Menu
+\**&gt;\-([\d.]+)\-&lt;\**\s*\r?\n([^*]+?)\r?\n\*+\r?\n([\s\S]+?)(?=\**&gt;\-([\d.]+)\-&lt;\**\s*\r?\n([^*]+?)\r?\n\*+\r?\n)
+<div class="chapter"><h3 id="$1">$2</h3>$3</div>\r\n
+
+^\s*\r?\n([\s\S]+?)(?=^\s*\r?\n)
+<div>$1</div>
+
+Menu
 Log In Sign Up
 GameFAQs
 ANSWERS	BOARDS	
