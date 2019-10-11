@@ -889,4 +889,22 @@ var Helper =
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
     }
+    , searchObjectForKey: function(object, query, objectKey) {
+//     console.log("searchObjectForKey: " + objectKey, object, query);
+    return Object.keys(object).filter(function(x) {
+        return object.hasOwnProperty(x) && x !== objectKey && x.toLowerCase().indexOf("vue") === -1 && x !== "parent" && x !== "frames" && x !== "top" && x !== "__vue__" && x !== "_parentVnode" && x !== "_renderProxy" && x !== "self" && x !== "_self" && x !== "$root" && x !== "ancestorOrigins";
+    }).reduce(function(a, c, i) {
+        if (c.toLowerCase().indexOf(query.toLowerCase()) > -1) {
+            a.set(c, object[c]);
+        } else if (object[c] && typeof object[c] === "object") {
+            var map = searchObjectForKey(object[c], query, c);
+            if(map.size > 0){
+                a.set(c, map);    
+            }
+        }
+        return a;
+
+    }, new Map());
+}
+
 };
